@@ -1,0 +1,23 @@
+export const routePaths = {
+  home: '/',
+  login: '/login',
+  register: '/register',
+  dashboard: '/dashboard',
+  profile: '/profile',
+  assessment: '/assessment',
+  careerDNA: '/career-dna',
+  recommendations: '/recommendations',
+  colleges: '/colleges',
+  scholarships: '/scholarships',
+  roadmap: '/roadmap',
+  chatbot: '/chatbot',
+  settings: '/settings',
+  admin: {
+    home: '/admin',
+    users: '/admin/users',
+    questions: '/admin/questions',
+    colleges: '/admin/colleges',
+    scholarships: '/admin/scholarships',
+    reports: '/admin/reports',
+  },
+} as const;

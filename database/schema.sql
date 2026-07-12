@@ -1,0 +1,1 @@
+-- FutureForge database schema placeholder

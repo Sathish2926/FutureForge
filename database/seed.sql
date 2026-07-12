@@ -1,0 +1,1 @@
+-- FutureForge seed data placeholder
