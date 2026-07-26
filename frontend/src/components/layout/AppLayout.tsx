@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, User, Compass, MapPin, GraduationCap, Sparkles } from 'lucide-react';
+import { NotificationBell } from './NotificationBell';
 
 const AppLayout: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +35,7 @@ const AppLayout: React.FC = () => {
 
       <header 
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-background/80 backdrop-blur-lg border-b border-white/10 shadow-sm' : 'bg-transparent'
+          isScrolled ? 'bg-background/80 backdrop-blur-lg border-b border-border shadow-sm' : 'bg-transparent'
         }`}
       >
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -62,17 +63,18 @@ const AppLayout: React.FC = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">
+            <NotificationBell />
+            <Link to="/login" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Log in
             </Link>
-            <Link to="/register" className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-full text-sm font-medium transition-all shadow-[0_0_15px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)]">
+            <Link to="/register" className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium transition-all shadow-[0_0_15px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)]">
               Get Started
             </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-white"
+            className="md:hidden text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -86,7 +88,7 @@ const AppLayout: React.FC = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-background border-b border-white/10"
+              className="md:hidden bg-background border-b border-border"
             >
               <div className="flex flex-col px-4 py-4 space-y-4">
                 {navLinks.map((link) => (
@@ -100,9 +102,9 @@ const AppLayout: React.FC = () => {
                     {link.name}
                   </Link>
                 ))}
-                <div className="pt-4 border-t border-white/10 flex flex-col space-y-3">
+                <div className="pt-4 border-t border-border flex flex-col space-y-3">
                   <Link to="/login" className="text-center text-sm font-medium text-muted-foreground">Log in</Link>
-                  <Link to="/register" className="bg-primary text-white text-center px-4 py-2 rounded-full text-sm font-medium">Get Started</Link>
+                  <Link to="/register" className="bg-primary text-primary-foreground text-center px-4 py-2 rounded-full text-sm font-medium">Get Started</Link>
                 </div>
               </div>
             </motion.div>

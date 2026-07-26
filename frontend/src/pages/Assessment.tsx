@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from '../components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Timer, BrainCircuit, CheckCircle2 } from 'lucide-react';
 
@@ -37,7 +37,7 @@ const mockQuestions = [
   }
 ];
 
-const Assessment: React.FC = () => {
+export const AssessmentPage: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [timeLeft, setTimeLeft] = useState(600); // 10 minutes total
@@ -84,7 +84,7 @@ const Assessment: React.FC = () => {
   if (isCompleted) {
     return (
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center p-4">
-        <div className="glass-card w-full max-w-md p-8 text-center">
+        <div className="glass-card border-border shadow-sm w-full max-w-md p-8 text-center">
           <AnimatePresence mode="wait">
             {isAnalyzing ? (
               <motion.div
@@ -139,7 +139,7 @@ const Assessment: React.FC = () => {
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">{question.category}</span>
             <div className="text-sm text-muted-foreground">Question {currentQuestion + 1} of {mockQuestions.length}</div>
           </div>
-          <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-full border border-white/10 shadow-sm">
+          <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-full border border-border shadow-sm">
             <Timer className={`w-4 h-4 ${timeLeft < 60 ? 'text-error' : 'text-primary'}`} />
             <span className={`font-mono font-medium ${timeLeft < 60 ? 'text-error animate-pulse' : ''}`}>
               {formatTime(timeLeft)}
@@ -165,7 +165,7 @@ const Assessment: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
-            className="glass-card p-8 md:p-12"
+            className="glass-card border-border shadow-sm p-8 md:p-12"
           >
             <h2 className="text-2xl md:text-3xl font-medium mb-10 leading-relaxed">
               {question.text}
@@ -176,9 +176,9 @@ const Assessment: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => handleAnswer(option)}
-                  className="w-full text-left p-4 rounded-xl border border-white/10 bg-background/30 hover:bg-primary/20 hover:border-primary/50 transition-all duration-200 group flex items-center"
+                  className="w-full text-left p-4 rounded-xl border border-border bg-background/30 hover:bg-primary/20 hover:border-primary/50 transition-all duration-200 group flex items-center"
                 >
-                  <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center mr-4 group-hover:border-primary group-hover:text-primary transition-colors">
+                  <div className="w-8 h-8 rounded-full border border-border flex items-center justify-center mr-4 group-hover:border-primary group-hover:text-primary transition-colors">
                     {String.fromCharCode(65 + index)}
                   </div>
                   <span className="text-lg">{option}</span>
@@ -193,4 +193,3 @@ const Assessment: React.FC = () => {
   );
 };
 
-export default Assessment;

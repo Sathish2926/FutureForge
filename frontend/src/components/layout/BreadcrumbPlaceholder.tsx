@@ -1,3 +1,3 @@
 export function BreadcrumbPlaceholder() {
-  return <div className="text-sm text-slate-500">Breadcrumb placeholder</div>;
+  return <div className="text-sm text-muted-foreground">Breadcrumb placeholder</div>;
 }

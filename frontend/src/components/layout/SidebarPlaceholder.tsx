@@ -9,10 +9,10 @@ type SidebarPlaceholderProps = {
 
 export function SidebarPlaceholder({ title, items, footer }: SidebarPlaceholderProps) {
   return (
-    <aside className="flex h-full w-72 flex-col border-r border-slate-200 bg-slate-950 px-5 py-6 text-slate-100">
+    <aside className="flex h-full w-72 flex-col border-r border-slate-200 bg-slate-950 px-5 py-6 text-foreground">
       <div className="mb-8">
         <div className="text-lg font-semibold">{title}</div>
-        <div className="text-sm text-slate-400">Navigation placeholder</div>
+        <div className="text-sm text-muted-foreground">Navigation placeholder</div>
       </div>
       <nav className="flex flex-1 flex-col gap-2">
         {items.map((item) => (
@@ -22,7 +22,7 @@ export function SidebarPlaceholder({ title, items, footer }: SidebarPlaceholderP
             className={({ isActive }) =>
               [
                 'rounded-xl px-4 py-3 text-sm transition-colors',
-                isActive ? 'bg-white/10 text-white' : 'text-slate-300 hover:bg-white/5 hover:text-white',
+                isActive ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-background hover:text-foreground',
               ].join(' ')
             }
           >

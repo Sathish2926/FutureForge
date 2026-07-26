@@ -13,7 +13,6 @@ FutureForge is an AI-powered career and education guidance platform. This reposi
 ## Next Steps
 
 This scaffold is ready for feature development. Business logic, AI features, authentication flows, recommendation systems, and database operations are intentionally left unimplemented.
-# FutureForge
 
 An AI-powered platform that provides personalized career and education guidance through assessments, Career DNA profiling, explainable AI recommendations, college and scholarship suggestions, and career roadmaps.
 

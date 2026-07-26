@@ -3,31 +3,65 @@ import type { Config } from 'tailwindcss';
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
-        brand: {
-          50: 'rgb(var(--color-brand-50) / <alpha-value>)',
-          100: 'rgb(var(--color-brand-100) / <alpha-value>)',
-          200: 'rgb(var(--color-brand-200) / <alpha-value>)',
-          300: 'rgb(var(--color-brand-300) / <alpha-value>)',
-          400: 'rgb(var(--color-brand-400) / <alpha-value>)',
-          500: 'rgb(var(--color-brand-500) / <alpha-value>)',
-          600: 'rgb(var(--color-brand-600) / <alpha-value>)',
-          700: 'rgb(var(--color-brand-700) / <alpha-value>)',
-          800: 'rgb(var(--color-brand-800) / <alpha-value>)',
-          900: 'rgb(var(--color-brand-900) / <alpha-value>)',
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        popover: {
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
+        },
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+        success: {
+          DEFAULT: "var(--success)",
+        },
+        warning: {
+          DEFAULT: "var(--warning)",
+        },
+        error: {
+          DEFAULT: "var(--error)",
+        }
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-      spacing: {
-        18: '4.5rem',
-        88: '22rem',
-        112: '28rem',
-      },
-      screens: {
-        xs: '480px',
       },
     },
   },

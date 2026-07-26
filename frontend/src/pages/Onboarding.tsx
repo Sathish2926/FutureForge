@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
 import { useNavigate } from 'react-router-dom';
 
 const steps = [
@@ -57,7 +57,7 @@ const Onboarding: React.FC = () => {
           </div>
         </div>
 
-        <div className="glass-card p-8 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
+        <div className="glass-card border-border shadow-sm p-8 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentStep}
@@ -126,11 +126,11 @@ const Onboarding: React.FC = () => {
             </motion.div>
           </AnimatePresence>
 
-          <div className="flex justify-between mt-8 pt-4 border-t border-white/10">
+          <div className="flex justify-between mt-8 pt-4 border-t border-border">
             <Button variant="outline" onClick={handleBack} disabled={currentStep === 0} className="bg-background/50">
               Back
             </Button>
-            <Button onClick={handleNext} className="bg-primary hover:bg-primary/90 text-white">
+            <Button onClick={handleNext} className="bg-primary hover:bg-primary/90 text-primary-foreground">
               {currentStep === steps.length - 1 ? 'Complete Setup' : 'Continue'}
             </Button>
           </div>

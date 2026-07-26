@@ -27,7 +27,7 @@ const CustomNode = ({ data }: any) => {
         </div>
       </div>
       {data.description && (
-        <div className="text-xs text-muted-foreground border-t border-white/10 pt-2 mt-2">
+        <div className="text-xs text-muted-foreground border-t border-border pt-2 mt-2">
           {data.description}
         </div>
       )}
@@ -149,7 +149,7 @@ const Roadmaps: React.FC = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.1 }}
-        className="flex-1 glass-card rounded-3xl overflow-hidden border border-white/10 relative"
+        className="flex-1 glass-card border-border shadow-sm rounded-3xl overflow-hidden border border-border relative"
       >
         <ReactFlow
           nodes={nodes}
@@ -161,14 +161,14 @@ const Roadmaps: React.FC = () => {
           fitView
           className="bg-transparent"
         >
-          <Controls className="bg-card border border-white/10 fill-white" />
+          <Controls className="bg-card border border-border fill-white" />
           <MiniMap 
             nodeColor={(n) => {
               if (n.data?.completed) return '#10B981';
               return '#4F46E5';
             }} 
             maskColor="rgba(15, 23, 42, 0.7)"
-            className="bg-card border border-white/10"
+            className="bg-card border border-border"
           />
           <Background color="#334155" gap={16} size={1} />
         </ReactFlow>

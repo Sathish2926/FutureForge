@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Briefcase, TrendingUp, DollarSign, Brain, Bookmark } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { Input } from '../components/ui/input';
+import { Button } from '../components/ui/button';
 
 const MOCK_CAREERS = [
   {
@@ -74,12 +74,12 @@ const CareerExplorer: React.FC = () => {
             <Input 
               type="text" 
               placeholder="Search careers, skills, or industries..." 
-              className="pl-12 py-6 bg-background/50 border-white/10 text-lg rounded-2xl"
+              className="pl-12 py-6 bg-background/50 border-border text-lg rounded-2xl"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e: any) => setSearchTerm(e.target.value)}
             />
           </div>
-          <Button variant="outline" className="py-6 px-6 rounded-2xl bg-background/50 border-white/10 gap-2">
+          <Button variant="outline" className="py-6 px-6 rounded-2xl bg-background/50 border-border gap-2">
             <Filter className="w-5 h-5" /> Filters
           </Button>
         </div>
@@ -92,8 +92,8 @@ const CareerExplorer: React.FC = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-6 py-2 rounded-full whitespace-nowrap transition-all text-sm font-medium ${
                 activeCategory === cat 
-                  ? 'bg-primary text-white shadow-[0_0_15px_rgba(79,70,229,0.4)]' 
-                  : 'bg-card border border-white/5 hover:bg-white/5 text-muted-foreground'
+                  ? 'bg-primary text-primary-foreground shadow-[0_0_15px_rgba(79,70,229,0.4)]' 
+                  : 'bg-card border border-border hover:bg-background text-muted-foreground'
               }`}
             >
               {cat}
@@ -112,7 +112,7 @@ const CareerExplorer: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ delay: index * 0.05 }}
-              className="glass-card group flex flex-col justify-between"
+              className="glass-card border-border shadow-sm group flex flex-col justify-between"
             >
               <div>
                 <div className="flex justify-between items-start mb-4">
@@ -125,7 +125,7 @@ const CareerExplorer: React.FC = () => {
                       <span className="text-sm text-muted-foreground">{career.category}</span>
                     </div>
                   </div>
-                  <button className="text-muted-foreground hover:text-white transition-colors">
+                  <button className="text-muted-foreground hover:text-foreground transition-colors">
                     <Bookmark className="w-5 h-5" />
                   </button>
                 </div>
@@ -147,19 +147,19 @@ const CareerExplorer: React.FC = () => {
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {career.skills.map(skill => (
-                    <span key={skill} className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs text-muted-foreground">
+                    <span key={skill} className="px-3 py-1 rounded-md bg-background border border-border text-xs text-muted-foreground">
                       {skill}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="flex items-center justify-between pt-4 border-t border-white/5">
+              <div className="flex items-center justify-between pt-4 border-t border-border">
                 <div className="flex items-center space-x-2">
                   <Brain className="w-5 h-5 text-primary" />
                   <span className="font-semibold text-primary">{career.match}% Match</span>
                 </div>
-                <Button className="bg-white/10 hover:bg-primary hover:text-white text-foreground border-0 transition-all rounded-xl">
+                <Button className="bg-muted hover:bg-primary hover:text-foreground text-foreground border-0 transition-all rounded-xl">
                   View Path
                 </Button>
               </div>

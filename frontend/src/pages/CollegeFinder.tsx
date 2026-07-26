@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Building, MapPin, GraduationCap, Users, Banknote, Navigation } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { Input } from '../components/ui/input';
+import { Button } from '../components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Fix for default marker icons in react-leaflet
 import L from 'leaflet';
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+// @ts-ignore
+import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+// @ts-ignore
+import iconUrl from 'leaflet/dist/images/marker-icon.png';
+// @ts-ignore
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+delete (L.Icon.Default.prototype as { _getIconUrl?: () => string })._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconUrl: markerIcon,
-  iconRetinaUrl: markerIcon2x,
-  shadowUrl: markerShadow,
+  iconUrl: iconUrl,
+  iconRetinaUrl: iconRetinaUrl,
+  shadowUrl: shadowUrl,
 });
 
 const MOCK_COLLEGES = [
@@ -36,8 +39,8 @@ const CollegeFinder: React.FC = () => {
     <div className="h-[calc(100vh-4rem)] flex flex-col md:flex-row relative">
       
       {/* Sidebar List */}
-      <div className="w-full md:w-96 bg-background/80 backdrop-blur-xl border-r border-white/10 flex flex-col h-1/2 md:h-full z-10">
-        <div className="p-6 border-b border-white/10">
+      <div className="w-full md:w-96 bg-background/80 backdrop-blur-xl border-r border-border flex flex-col h-1/2 md:h-full z-10">
+        <div className="p-6 border-b border-border">
           <h1 className="text-2xl font-bold mb-4 flex items-center">
             <Building className="mr-2 text-primary" /> College Finder
           </h1>
@@ -45,9 +48,9 @@ const CollegeFinder: React.FC = () => {
             <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input 
               placeholder="Search by city or name..." 
-              className="pl-9 bg-black/20 border-white/10"
+              className="pl-9 bg-black/20 border-border"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e: any) => setSearchTerm(e.target.value)}
             />
           </div>
         </div>
@@ -61,12 +64,12 @@ const CollegeFinder: React.FC = () => {
               className={`p-4 rounded-xl cursor-pointer transition-colors border ${
                 selectedCollege?.id === college.id 
                   ? 'bg-primary/20 border-primary' 
-                  : 'bg-black/20 border-white/5 hover:border-white/20'
+                  : 'bg-black/20 border-border hover:border-border'
               }`}
             >
               <h3 className="font-bold text-lg mb-1">{college.name}</h3>
               <div className="flex items-center text-sm text-muted-foreground mb-3">
-                <span className="px-2 py-0.5 rounded-full bg-white/10 text-xs mr-2">{college.type}</span>
+                <span className="px-2 py-0.5 rounded-full bg-muted text-xs mr-2">{college.type}</span>
                 Rank #{college.ranking}
               </div>
               <div className="grid grid-cols-2 gap-2 text-sm">
@@ -100,7 +103,7 @@ const CollegeFinder: React.FC = () => {
                 <div className="font-sans text-background p-1">
                   <h3 className="font-bold text-lg mb-1">{college.name}</h3>
                   <p className="text-sm mb-2">{college.type} University</p>
-                  <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-white">View Details</Button>
+                  <Button size="sm" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">View Details</Button>
                 </div>
               </Popup>
             </Marker>
@@ -108,7 +111,7 @@ const CollegeFinder: React.FC = () => {
         </MapContainer>
         
         {/* Map Overlay info if needed */}
-        <div className="absolute bottom-6 right-6 z-[1000] glass-card p-3 rounded-full flex space-x-2">
+        <div className="absolute bottom-6 right-6 z-[1000] glass-card border-border shadow-sm p-3 rounded-full flex space-x-2">
           <Button size="icon" variant="secondary" className="rounded-full bg-background/80 hover:bg-primary"><Navigation className="w-4 h-4" /></Button>
         </div>
       </div>
