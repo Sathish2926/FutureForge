@@ -1,50 +1,71 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from '../../../components/ui/button';
-import { Input } from '../../../components/ui/input';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Home } from 'lucide-react';
+import { cn } from '../../../lib/utils';
+
+const FINANCIAL_PREFERENCES = [
+  { label: 'Needs Scholarship', emoji: '🎓', value: 'needs_scholarship' },
+  { label: 'Self-Funded', emoji: '💰', value: 'self_funded' },
+  { label: 'Loan Ready', emoji: '🏦', value: 'loan_ready' },
+  { label: 'Flexible', emoji: '🔄', value: 'flexible' },
+];
 
 export default function StepConstraints({ initialData, onNext, onBack }: { initialData: any, onNext: (data: any) => void, onBack: () => void }) {
-  const [formData, setFormData] = useState<any>(initialData || {});
+  const [financialPref, setFinancialPref] = useState<string>(initialData.financial_background || '');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') handleSubmit();
+    if (e.key === 'Escape') onBack();
+  };
+
+  const handleSubmit = () => {
+    onNext({
+      financial_background: financialPref,
+    });
   };
 
   return (
-    <div className="glass-card border-border shadow-sm py-10 px-8 max-w-3xl mx-auto">
-      <h2 className="text-3xl font-bold text-foreground mb-2 text-center">Constraints & Logistics</h2>
-      <p className="text-muted-foreground text-center mb-8">This helps us filter out recommendations that won't work for you.</p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Preferred Location</label>
-          <Input name="preferred_location" value={formData.preferred_location || ''} onChange={handleChange} className="bg-background border-border text-foreground" placeholder="e.g. Any, Bangalore, Remote" />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Budget for Education/Courses</label>
-          <Input type="number" name="budget" value={formData.budget || ''} onChange={handleChange} className="bg-background border-border text-foreground" placeholder="Total Budget in INR" />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Annual Family Income</label>
-          <Input type="number" name="family_income" value={formData.family_income || ''} onChange={handleChange} className="bg-background border-border text-foreground" placeholder="In INR (for Scholarships)" />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Preferred Language</label>
-          <select name="languages" value={formData.languages?.[0] || 'English'} onChange={(e) => setFormData({...formData, languages: [e.target.value]})} className="w-full h-10 px-3 py-2 rounded-md bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-            <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Tamil">Tamil</option>
-            <option value="Telugu">Telugu</option>
-            <option value="Kannada">Kannada</option>
-          </select>
+    <div className="glass-card border-border shadow-sm py-10 px-8 max-w-4xl mx-auto" tabIndex={0} onKeyDown={handleKeyDown}>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-foreground mb-2">Financial Approach</h2>
+        <p className="text-muted-foreground">How are you planning to fund your upcoming education or upskilling?</p>
+      </div>
+
+      <div className="space-y-8 mb-10">
+        {/* Financial Preference */}
+        <div className="bg-background border border-border rounded-xl p-6">
+          <div className="flex items-center gap-2 mb-4">
+            <Home className="w-5 h-5 text-[#2D305A]" />
+            <h3 className="font-semibold text-foreground">Funding Strategy</h3>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {FINANCIAL_PREFERENCES.map(({ label, emoji, value }) => (
+              <motion.button
+                key={value}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => setFinancialPref(value)}
+                className={cn(
+                  'p-4 rounded-xl border-2 text-center transition-all duration-200 flex flex-col items-center gap-2',
+                  financialPref === value
+                    ? 'bg-[#2D305A]/10 border-[#2D305A] shadow-md'
+                    : 'bg-white/50 border-border hover:bg-[#E2E2FA]/20'
+                )}
+              >
+                <span className="text-2xl">{emoji}</span>
+                <span className={cn('font-medium text-xs', financialPref === value ? 'text-[#2D305A]' : 'text-foreground')}>{label}</span>
+              </motion.button>
+            ))}
+          </div>
         </div>
       </div>
-      
-      <div className="flex justify-between mt-8 pt-6 border-t border-border">
+
+      <div className="flex justify-between pt-6 border-t border-border">
         <Button variant="ghost" onClick={onBack} className="text-muted-foreground hover:text-foreground">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back
         </Button>
-        <Button onClick={() => onNext(formData)} className="bg-primary hover:bg-primary/90 text-primary-foreground">
+        <Button onClick={handleSubmit} disabled={!financialPref} className="bg-[#2D305A] hover:bg-[#2D305A]/90 text-white shadow-md">
           Next Step <ArrowRight className="w-4 h-4 ml-2" />
         </Button>
       </div>

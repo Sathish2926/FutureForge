@@ -2,12 +2,12 @@ from sqlalchemy.orm import Session
 from app.models.career import Career
 from app.models.profile import CareerDNA, Profile
 from app.models.recommendation import Recommendation, RecommendationWeightConfig
-from app.services.ai.mock_provider import MockAIProvider
+from app.services.ai.gemini_provider import GeminiProvider
 
 class CareerRecommendationEngine:
     def __init__(self, db: Session, ai_provider=None):
         self.db = db
-        self.ai_provider = ai_provider or MockAIProvider()
+        self.ai_provider = ai_provider or GeminiProvider()
 
     async def generate_recommendations(self, user_id: int):
         dna = self.db.query(CareerDNA).filter(CareerDNA.user_id == user_id).first()
@@ -26,17 +26,7 @@ class CareerRecommendationEngine:
         # Fetch all careers
         careers = self.db.query(Career).all()
         if not careers:
-            # Auto-seed mock careers for demonstration
-            mock_careers = [
-                Career(title="AI Engineer", industry="Technology", base_salary_min=10.0, base_salary_max=25.0, demand_score=9.5, difficulty="High", required_education="B.Tech CS"),
-                Career(title="Product Manager", industry="Business", base_salary_min=12.0, base_salary_max=30.0, demand_score=8.5, difficulty="Medium", required_education="MBA"),
-                Career(title="Data Scientist", industry="Technology", base_salary_min=9.0, base_salary_max=22.0, demand_score=9.0, difficulty="High", required_education="B.Tech/M.Sc"),
-                Career(title="Digital Marketing Specialist", industry="Marketing", base_salary_min=4.0, base_salary_max=12.0, demand_score=8.0, difficulty="Low", required_education="Any Degree"),
-                Career(title="UI/UX Designer", industry="Design", base_salary_min=6.0, base_salary_max=18.0, demand_score=8.5, difficulty="Medium", required_education="Design Degree/Portfolio")
-            ]
-            self.db.add_all(mock_careers)
-            self.db.commit()
-            careers = self.db.query(Career).all()
+            raise ValueError("No careers found in the database. Please seed the database first.")
         
         # Example Matching Algorithm
         scored_careers = []
@@ -49,6 +39,15 @@ class CareerRecommendationEngine:
             interest_match = 1.0 if profile.interests and career.industry in profile.interests else 0.5
             base_score += interest_match * config.interest_weight
 
+            # Heavy weight on Career Goal
+            goal_match = 0.0
+            if profile.career_goal:
+                if career.title.lower() in profile.career_goal.lower() or profile.career_goal.lower() in career.title.lower():
+                    goal_match = 1.0
+                elif career.industry.lower() in profile.career_goal.lower():
+                    goal_match = 0.8
+            base_score += goal_match * config.goal_weight * 2.0 # Boost goal weight
+
             scored_careers.append({
                 "career": career,
                 "score": min(base_score, 1.0)
@@ -58,10 +57,20 @@ class CareerRecommendationEngine:
         scored_careers.sort(key=lambda x: x["score"], reverse=True)
         top_careers = scored_careers[:3]
 
+        # Clear existing recommendations for this user to prevent duplicates
+        self.db.query(Recommendation).filter(Recommendation.user_id == user_id).delete()
+        self.db.commit()
+
         recommendations = []
         for match in top_careers:
-            # Generate AI Insights
-            prompt = f"Explain why {match['career'].title} is a good fit for someone with interests {profile.interests}."
+            # Generate AI Insights heavily relying on Career Goal
+            dna_traits = f"Analytical: {dna.analytical}, Leadership: {dna.leadership}, Creativity: {dna.creativity}, Problem Solving: {dna.problem_solving}"
+            prompt = (
+                f"Explain why {match['career'].title} is a good fit for someone whose ultimate Career Goal is '{profile.career_goal or 'Undecided'}'. "
+                f"Their Career DNA traits are: {dna_traits}. "
+                f"Provide a clear justification for WHY this is recommended, and WHY NOT other alternative paths. "
+                f"Ensure the discussion heavily aligns with their specific goal. If their goal is non-technical, do NOT discuss programming."
+            )
             ai_insights = await self.ai_provider.generate_structured_completion(prompt)
 
             # Persist to DB

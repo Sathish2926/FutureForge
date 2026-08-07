@@ -9,6 +9,7 @@ export type RouteItem = {
 export type UserProfile = {
   id: number;
   user_id: number;
+  career_dna_completed: boolean;
   education_level: string | null;
   institution: string | null;
   marks: number | null;

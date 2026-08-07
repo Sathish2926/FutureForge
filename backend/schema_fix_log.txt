@@ -1,0 +1,31 @@
+Creating missing tables...
+Tables created successfully.
+Adding missing columns to 'profiles' table...
+Column institution might already exist or error: (sqlite3.OperationalError) duplicate column name: institution
+[SQL: ALTER TABLE profiles ADD COLUMN institution character varying]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column location might already exist or error: (sqlite3.OperationalError) duplicate column name: location
+[SQL: ALTER TABLE profiles ADD COLUMN location character varying]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column dob might already exist or error: (sqlite3.OperationalError) duplicate column name: dob
+[SQL: ALTER TABLE profiles ADD COLUMN dob character varying]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column occupation might already exist or error: (sqlite3.OperationalError) duplicate column name: occupation
+[SQL: ALTER TABLE profiles ADD COLUMN occupation character varying]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Adding missing columns to 'career_dna' table...
+Column user_type might already exist or error: (sqlite3.OperationalError) duplicate column name: user_type
+[SQL: ALTER TABLE career_dna ADD COLUMN user_type character varying]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column completion_percentage might already exist or error: (sqlite3.OperationalError) duplicate column name: completion_percentage
+[SQL: ALTER TABLE career_dna ADD COLUMN completion_percentage integer]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column last_completed_step might already exist or error: (sqlite3.OperationalError) duplicate column name: last_completed_step
+[SQL: ALTER TABLE career_dna ADD COLUMN last_completed_step integer]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column is_completed might already exist or error: (sqlite3.OperationalError) duplicate column name: is_completed
+[SQL: ALTER TABLE career_dna ADD COLUMN is_completed boolean]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Column updated_at might already exist or error: (sqlite3.OperationalError) duplicate column name: updated_at
+[SQL: ALTER TABLE career_dna ADD COLUMN updated_at timestamp with time zone]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

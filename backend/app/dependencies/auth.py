@@ -72,25 +72,33 @@ def get_current_user(
     firebase_uid = decoded_token.get("uid")
     email = decoded_token.get("email")
 
-    user = db.query(User).filter(User.firebase_uid == firebase_uid).first()
-    if user is None and email:
-        user = db.query(User).filter(User.email == email).first()
+    try:
+        user = db.query(User).filter(User.firebase_uid == firebase_uid).first()
+        if user is None and email:
+            user = db.query(User).filter(User.email == email).first()
 
-    if user is None:
-        # Auto-create user if they don't exist yet but have a valid token
-        user = User(
-            firebase_uid=firebase_uid,
-            email=email,
-            full_name=decoded_token.get("name", "")
+        if user is None:
+            # Auto-create user if they don't exist yet but have a valid token
+            user = User(
+                firebase_uid=firebase_uid,
+                email=email,
+                full_name=decoded_token.get("name", "")
+            )
+            db.add(user)
+            db.commit()
+            db.refresh(user)
+        elif not user.firebase_uid:
+            user.firebase_uid = firebase_uid
+            db.commit()
+
+        if not user.is_active:
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="User account is inactive")
+
+        return user
+    except Exception as e:
+        import traceback
+        err = traceback.format_exc()
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, 
+            detail=f"Database error in authentication: {str(e)}\n\n{err}"
         )
-        db.add(user)
-        db.commit()
-        db.refresh(user)
-    elif not user.firebase_uid:
-        user.firebase_uid = firebase_uid
-        db.commit()
-
-    if not user.is_active:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="User account is inactive")
-
-    return user

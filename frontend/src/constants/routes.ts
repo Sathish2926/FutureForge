@@ -8,6 +8,7 @@ export const routePaths = {
   careerDNA: '/career-dna',
   careerDetails: '/careers/:id',
   recommendations: '/recommendations',
+  recommendationDetail: '/recommendations/:id',
   colleges: '/colleges',
   scholarships: '/scholarships',
   scholarshipProfile: '/scholarships/profile',

@@ -6,7 +6,7 @@ from app.models.ai_cache import ProviderLog
 from app.services.ai.provider_interface import AIProvider
 
 class GeminiProvider(AIProvider):
-    def __init__(self, model_name: str = "gemini-2.5-pro", session_id: int = None):
+    def __init__(self, model_name: str = "gemini-1.5-pro", session_id: int = None):
         super().__init__()
         # In production, these should be verified on app startup
         api_key = os.environ.get("GEMINI_API_KEY")
@@ -46,7 +46,8 @@ class GeminiProvider(AIProvider):
                 
         except Exception as e:
             error_msg = str(e)
-            response_text = "I apologize, but I am currently unable to process your request due to a technical error."
+            print(f"Gemini API Error: {error_msg}")
+            raise RuntimeError(f"Gemini API Error: {error_msg}")
             
         finally:
             latency = int((time.time() - start_time) * 1000)
@@ -63,6 +64,31 @@ class GeminiProvider(AIProvider):
                 db.commit()
                 
         return response_text
+        
+    async def generate_completion(self, prompt: str, db: Session = None, **kwargs) -> str:
+        """Implementation of abstract method from AIProvider"""
+        return self.generate_response(prompt, db, **kwargs)
+        
+    async def generate_structured_completion(self, prompt: str, db: Session = None, **kwargs) -> dict:
+        """Helper to force and parse JSON output from the model."""
+        import json
+        structured_prompt = f"{prompt}\n\nIMPORTANT: Return ONLY valid JSON. Do not include markdown code blocks like ```json."
+        response_text = self.generate_response(structured_prompt, db, **kwargs)
+        
+        # Clean up markdown if model still adds it
+        response_text = response_text.strip()
+        if response_text.startswith("```json"):
+            response_text = response_text[7:]
+        if response_text.startswith("```"):
+            response_text = response_text[3:]
+        if response_text.endswith("```"):
+            response_text = response_text[:-3]
+            
+        try:
+            return json.loads(response_text)
+        except json.JSONDecodeError as e:
+            print(f"Gemini JSON Parsing Error. Raw response: {response_text}")
+            raise ValueError(f"Failed to parse Gemini response as JSON: {e}\nResponse snippet: {response_text[:200]}")
 
     def stream_response(self, prompt: str, db: Session = None, **kwargs):
         # Implementation for StreamingResponse in FastAPI

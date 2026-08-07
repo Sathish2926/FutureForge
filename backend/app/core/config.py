@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     debug: bool = Field(default=True, alias="DEBUG")
     api_v1_prefix: str = Field(default="/api/v1", alias="API_V1_PREFIX")
     database_url: str = Field(
-        default="postgresql+psycopg2://futureforge:futureforge@localhost:5432/futureforge",
+        default="sqlite:///./futureforge.db",
         alias="DATABASE_URL",
     )
     allowed_origins: list[str] = Field(default=["http://localhost:5173"], alias="ALLOWED_ORIGINS")

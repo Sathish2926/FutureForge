@@ -5,122 +5,162 @@ from datetime import datetime
 from app.dependencies.auth import get_current_user
 from app.dependencies.database import get_db
 from app.models import User
-from app.models.profile import CareerDNA, CareerDNAAcademic, CareerDNAPersonality, Profile
-from app.schemas.career_dna import CareerDNAResponse, StepSaveRequest
+from app.models.profile import CareerDNA, Profile
+from app.models.assessment import AssessmentSession, AssessmentResponse, AssessmentOption
+from app.schemas.career_dna import CareerDNAResponse
+from app.services.career_dna_engine import AdaptiveEngineService, ScoringEngineService, ContextBuilderService
 
 router = APIRouter(prefix="/career-dna", tags=["career_dna"])
 
-@router.post("/start", response_model=CareerDNAResponse)
-def start_career_dna(
+@router.post("/session/start")
+def start_assessment_session(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    """Initialize or fetch existing Career DNA progress."""
-    cdna = db.query(CareerDNA).filter(CareerDNA.user_id == current_user.id).first()
-    if not cdna:
-        cdna = CareerDNA(
-            user_id=current_user.id,
-            completion_percentage=0,
-            last_completed_step=1
-        )
-        db.add(cdna)
+    """Initializes a new adaptive assessment session."""
+    # Check for existing incomplete session
+    session = db.query(AssessmentSession).filter(
+        AssessmentSession.user_id == current_user.id,
+        AssessmentSession.status == "IN_PROGRESS"
+    ).first()
+    
+    if not session:
+        session = AssessmentSession(user_id=current_user.id, status="IN_PROGRESS")
+        db.add(session)
         db.commit()
-        db.refresh(cdna)
-    return cdna
-
-@router.get("/progress", response_model=CareerDNAResponse)
-def get_progress(
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-):
-    cdna = db.query(CareerDNA).filter(CareerDNA.user_id == current_user.id).first()
-    if not cdna:
-        raise HTTPException(status_code=404, detail="Career DNA not started.")
-    return cdna
-
-@router.put("/step/{step_id}")
-def save_step(
-    step_id: int,
-    payload: StepSaveRequest,
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-):
-    cdna = db.query(CareerDNA).filter(CareerDNA.user_id == current_user.id).first()
-    if not cdna:
-        raise HTTPException(status_code=404, detail="Career DNA not found.")
-
-    data = payload.data
-    
-    if step_id == 2:
-        cdna.user_type = data.get("user_type")
-    
-    elif step_id == 3:
-        if not cdna.academic:
-            cdna.academic = CareerDNAAcademic()
-        for key, value in data.items():
-            if hasattr(cdna.academic, key):
-                setattr(cdna.academic, key, value)
-                
-    elif step_id == 4:
-        profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
-        if not profile:
-            profile = Profile(user_id=current_user.id)
-            db.add(profile)
-        profile.skills = data.get("skills", [])
+        db.refresh(session)
         
-    elif step_id == 5:
-        profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
-        if profile:
-            profile.interests = data.get("interests", [])
-            
-    elif step_id == 6:
-        # Personality
-        # Clear existing
-        db.query(CareerDNAPersonality).filter(CareerDNAPersonality.career_dna_id == cdna.id).delete()
-        answers = data.get("answers", [])
-        for ans in answers:
-            db.add(CareerDNAPersonality(
-                career_dna_id=cdna.id,
-                scenario_key=ans.get("scenario_key"),
-                selected_option=ans.get("selected_option")
-            ))
-            
-    elif step_id == 7:
-        profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
-        if profile:
-            profile.learning_style = data.get("learning_style")
-            
-    elif step_id == 8:
-        profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
-        if profile:
-            if "career_goal" in data: profile.career_goal = data["career_goal"]
-            
-    elif step_id == 9:
-        profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
-        if profile:
-            if "budget" in data: profile.budget = data["budget"]
-            if "family_income" in data: profile.family_income = data["family_income"]
-            if "preferred_location" in data: profile.preferred_location = data["preferred_location"]
-            if "languages" in data: profile.languages = data["languages"]
-
-    # Update progress
-    cdna.last_completed_step = step_id
-    cdna.completion_percentage = int((step_id / 10.0) * 100)
+    engine = AdaptiveEngineService(db)
+    questions = engine.get_next_questions(session.id, current_user.id, limit=3)
     
-    db.commit()
-    db.refresh(cdna)
-    return {"status": "success", "last_completed_step": cdna.last_completed_step}
+    return {
+        "session_id": session.id,
+        "last_completed_step": session.last_completed_step,
+        "questions": questions
+    }
 
-@router.post("/complete")
-def complete_career_dna(
+@router.get("/session/status")
+def get_session_status(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = db.query(AssessmentSession).filter(
+        AssessmentSession.user_id == current_user.id,
+        AssessmentSession.status == "IN_PROGRESS"
+    ).first()
+    
+    if session:
+        return {"status": "IN_PROGRESS"}
+    return {"status": "NOT_STARTED"}
+
+@router.get("/session/next")
+def get_next_questions(
+    session_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = db.query(AssessmentSession).filter(
+        AssessmentSession.id == session_id, 
+        AssessmentSession.user_id == current_user.id
+    ).first()
+    
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+        
+    engine = AdaptiveEngineService(db)
+    questions = engine.get_next_questions(session.id, current_user.id, limit=3)
+    return {"questions": questions}
+
+@router.post("/session/submit")
+def submit_answer(
+    session_id: int,
+    question_id: int,
+    option_id: int,
+    time_taken_ms: int = 0,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = db.query(AssessmentSession).filter(
+        AssessmentSession.id == session_id,
+        AssessmentSession.user_id == current_user.id
+    ).first()
+    
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+        
+    resp = AssessmentResponse(
+        session_id=session.id,
+        question_id=question_id,
+        option_id=option_id,
+        time_taken_ms=time_taken_ms
+    )
+    db.add(resp)
+    
+    session.last_completed_step += 1
+    session.updated_at = datetime.utcnow()
+    db.commit()
+    
+    return {"status": "saved"}
+
+@router.post("/session/complete")
+async def complete_session(
+    session_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = db.query(AssessmentSession).filter(
+        AssessmentSession.id == session_id,
+        AssessmentSession.user_id == current_user.id
+    ).first()
+    
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+        
+    session.status = "COMPLETED"
+    db.commit()
+    
+    scoring = ScoringEngineService(db)
+    cdna = scoring.calculate_scores(session.id, current_user.id)
+    
+    context_builder = ContextBuilderService(db)
+    cdna = await context_builder.generate_ai_summary(current_user.id)
+    
+    return {"status": "completed", "career_dna_id": cdna.id}
+
+@router.get("/results", response_model=CareerDNAResponse)
+def get_results(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
     cdna = db.query(CareerDNA).filter(CareerDNA.user_id == current_user.id).first()
-    if not cdna:
-        raise HTTPException(status_code=404, detail="Career DNA not found.")
+    if not cdna or not cdna.is_completed:
+        raise HTTPException(status_code=404, detail="No completed Career DNA found.")
         
-    cdna.is_completed = True
-    cdna.completion_percentage = 100
-    db.commit()
-    return {"status": "completed"}
+    profile = db.query(Profile).filter(Profile.user_id == current_user.id).first()
+    
+    return {
+        "id": cdna.id,
+        "is_completed": cdna.is_completed,
+        "analytical": cdna.analytical,
+        "creativity": cdna.creativity,
+        "leadership": cdna.leadership,
+        "programming": cdna.programming,
+        "problem_solving": cdna.problem_solving,
+        "communication": cdna.communication,
+        "entrepreneurship": cdna.entrepreneurship,
+        "learning_ability": cdna.learning_ability,
+        "business_orientation": cdna.business_orientation,
+        "financial_thinking": cdna.financial_thinking,
+        "public_service": cdna.public_service,
+        "career_identity": cdna.career_identity,
+        "strengths": cdna.strengths,
+        "growth_areas": cdna.growth_areas,
+        "learning_style": cdna.learning_style,
+        "work_style": cdna.work_style,
+        "decision_style": cdna.decision_style,
+        "motivation": cdna.motivation,
+        "career_readiness": cdna.career_readiness,
+        "goal_reality_check": cdna.goal_reality_check,
+        "career_goal": profile.career_goal if profile else None,
+        "education_level": profile.education_level if profile else None
+    }

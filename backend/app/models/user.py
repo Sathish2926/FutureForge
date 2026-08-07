@@ -26,7 +26,7 @@ class User(Base):
     profile = relationship("Profile", back_populates="user", uselist=False)
     career_dna = relationship("CareerDNA", back_populates="user", uselist=False)
 
-    assessments = relationship("Assessment", back_populates="user")
+    assessment_sessions = relationship("AssessmentSession", back_populates="user")
     saved_careers = relationship("SavedCareer", back_populates="user")
     saved_colleges = relationship("SavedCollege", back_populates="user")
 

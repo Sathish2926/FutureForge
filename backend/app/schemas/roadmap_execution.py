@@ -36,7 +36,7 @@ class RoadmapMilestoneBase(BaseModel):
 
 class RoadmapBase(BaseModel):
     id: int
-    career_id: int
+    career_id: Optional[int] = None
     title: str
     description: Optional[str] = None
     estimated_completion_months: int

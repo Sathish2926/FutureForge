@@ -1,8 +1,15 @@
 import { apiClient } from './http';
 import type { RoadmapBase } from '../types';
 
-export async function generateRoadmap(careerId: number): Promise<RoadmapBase> {
-  const response = await apiClient.post<RoadmapBase>(`/roadmap/generate/${careerId}`);
+export async function generateRoadmap(config: { targetCareer?: string, timeline?: string, skillLevel?: string, priority?: string } = {}): Promise<RoadmapBase> {
+  const params = new URLSearchParams();
+  if (config.targetCareer) params.append('target_career', config.targetCareer);
+  if (config.timeline) params.append('timeline', config.timeline);
+  if (config.skillLevel) params.append('skill_level', config.skillLevel);
+  if (config.priority) params.append('priority', config.priority);
+  
+  const queryString = params.toString() ? `?${params.toString()}` : '';
+  const response = await apiClient.post<RoadmapBase>(`/roadmap/generate${queryString}`);
   return response.data;
 }
 

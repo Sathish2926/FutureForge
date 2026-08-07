@@ -248,9 +248,13 @@ export function ScholarshipProfilePage() {
     (
       <motion.div key="academic" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
         <SelectField label="Academic Stage *" value={form.academic_stage} onChange={(v) => updateField('academic_stage', v)} options={ACADEMIC_STAGES} />
-        <InputField label="Current Course" value={form.current_course ?? ''} onChange={(v) => updateField('current_course', v || null)} placeholder="e.g. B.Tech Computer Science" />
-        <InputField label="Current Year" type="number" value={form.current_year ?? ''} onChange={(v) => updateField('current_year', v ? parseInt(v) : null)} placeholder="e.g. 2" />
-        <InputField label="Percentage / CGPA" type="number" value={form.percentage_cgpa ?? ''} onChange={(v) => updateField('percentage_cgpa', v ? parseFloat(v) : null)} placeholder="e.g. 85.5" />
+        {!['class_10', 'class_12'].includes(form.academic_stage) && (
+          <>
+            <InputField label="Current Course" value={form.current_course ?? ''} onChange={(v) => updateField('current_course', v || null)} placeholder="e.g. B.Tech Computer Science" />
+            <InputField label="Current Year" type="number" value={form.current_year ?? ''} onChange={(v) => updateField('current_year', v ? parseInt(v) : null)} placeholder="e.g. 2" />
+          </>
+        )}
+        <InputField label={['class_10', 'class_12'].includes(form.academic_stage) ? "Percentage / Marks" : "Percentage / CGPA"} type="number" value={form.percentage_cgpa ?? ''} onChange={(v) => updateField('percentage_cgpa', v ? parseFloat(v) : null)} placeholder={['class_10', 'class_12'].includes(form.academic_stage) ? "e.g. 95" : "e.g. 85.5"} />
       </motion.div>
     ),
     // Step 1: Location
@@ -278,8 +282,8 @@ export function ScholarshipProfilePage() {
     // Step 4: Institution
     (
       <motion.div key="institution" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
-        <InputField label="Institution Name" value={form.institution_name ?? ''} onChange={(v) => updateField('institution_name', v || null)} placeholder="e.g. Anna University" />
-        <InputField label="University" value={form.university ?? ''} onChange={(v) => updateField('university', v || null)} placeholder="e.g. Anna University" />
+        <InputField label="Institution Name" value={form.institution_name ?? ''} onChange={(v) => updateField('institution_name', v || null)} placeholder={['class_10', 'class_12'].includes(form.academic_stage) ? "e.g. Delhi Public School" : "e.g. Anna University"} />
+        <InputField label={['class_10', 'class_12'].includes(form.academic_stage) ? "Board" : "University"} value={form.university ?? ''} onChange={(v) => updateField('university', v || null)} placeholder={['class_10', 'class_12'].includes(form.academic_stage) ? "e.g. CBSE or State Board" : "e.g. Anna University"} />
         <SelectField label="Institution Type" value={form.institution_type ?? ''} onChange={(v) => updateField('institution_type', v || null)} options={[{ value: 'government', label: 'Government' }, { value: 'private', label: 'Private' }, { value: 'aided', label: 'Government Aided' }]} />
       </motion.div>
     ),

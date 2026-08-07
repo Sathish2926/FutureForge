@@ -7,6 +7,7 @@ export const appRoutes = {
     { path: routePaths.assessment, title: 'Assessment', description: 'Assessment page placeholder.' },
     { path: routePaths.careerDNA, title: 'Career DNA', description: 'Career DNA page placeholder.' },
     { path: routePaths.recommendations, title: 'Recommendations', description: 'Recommendations page placeholder.' },
+    { path: routePaths.recommendationDetail, title: 'Recommendation Detail', description: 'AI career report.' },
     { path: routePaths.colleges, title: 'Colleges', description: 'Colleges page placeholder.' },
     { path: routePaths.scholarships, title: 'Scholarships', description: 'Scholarship dashboard.' },
     { path: routePaths.scholarshipProfile, title: 'Scholarship Profile', description: 'Scholarship eligibility profile.' },
@@ -14,8 +15,10 @@ export const appRoutes = {
     { path: routePaths.scholarshipDetail, title: 'Scholarship Detail', description: 'Detailed scholarship information.' },
     { path: routePaths.scholarshipBookmarks, title: 'Saved Scholarships', description: 'Bookmarked scholarships.' },
     { path: routePaths.roadmap, title: 'Roadmap', description: 'Roadmap page placeholder.' },
+    { path: routePaths.roadmapExecution, title: 'Execution Hub', description: 'Roadmap execution hub.' },
     { path: routePaths.chatbot, title: 'Chatbot', description: 'Chatbot page placeholder.' },
     { path: routePaths.simulator, title: 'What-If Simulator', description: 'AI Scenario Engine.' },
+    { path: routePaths.careerDetails, title: 'Career Hub', description: 'Career intelligence hub.' },
     { path: routePaths.settings, title: 'Settings', description: 'Settings page placeholder.' },
   ],
   adminRoutes: [

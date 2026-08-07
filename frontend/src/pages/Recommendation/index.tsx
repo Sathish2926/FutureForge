@@ -8,9 +8,9 @@ import { Button } from '../../components/ui/button';
 import { useToast } from '../../components/ui/toast';
 import { fetchRecommendations, generateRecommendations } from '../../services/recommendations';
 import type { RecommendationResponse } from '../../types';
+import { Skeleton } from '../../components/ui/skeleton';
 
 import RecommendationCard from './components/RecommendationCard';
-import RecommendationDetailModal from './components/RecommendationDetailModal';
 
 export function RecommendationPage() {
   const navigate = useNavigate();
@@ -18,7 +18,6 @@ export function RecommendationPage() {
   const [loading, setLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [recommendations, setRecommendations] = useState<RecommendationResponse[]>([]);
-  const [selectedRec, setSelectedRec] = useState<RecommendationResponse | null>(null);
 
   useEffect(() => {
     async function load() {
@@ -53,8 +52,13 @@ export function RecommendationPage() {
 
   if (loading) {
     return (
-      <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="w-12 h-12 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+      <div className="min-h-screen pt-20 pb-12 bg-background relative max-w-7xl mx-auto px-4 sm:px-6">
+        <Skeleton className="w-full h-32 rounded-2xl mb-10 bg-muted" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[1, 2, 3].map((i) => (
+            <Skeleton key={i} className="h-80 w-full rounded-2xl bg-muted" />
+          ))}
+        </div>
       </div>
     );
   }
@@ -80,7 +84,7 @@ export function RecommendationPage() {
             onClick={handleGenerate} 
             disabled={isGenerating}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground shrink-0 shadow-[0_0_20px_rgba(79,70,229,0.3)]"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground shrink-0 shadow-[0_0_20px_rgba(45,48,90,0.3)]"
           >
             {isGenerating ? (
               <><RefreshCw className="w-5 h-5 mr-2 animate-spin" /> Analyzing Profile...</>
@@ -113,7 +117,7 @@ export function RecommendationPage() {
               >
                 <RecommendationCard 
                   recommendation={rec} 
-                  onViewDetails={setSelectedRec} 
+                  onViewDetails={() => navigate(`/recommendations/${rec.id}`)} 
                 />
               </motion.div>
             ))}
@@ -121,12 +125,6 @@ export function RecommendationPage() {
         )}
 
       </div>
-
-      <RecommendationDetailModal 
-        isOpen={!!selectedRec}
-        onClose={() => setSelectedRec(null)}
-        recommendation={selectedRec}
-      />
     </div>
   );
 }

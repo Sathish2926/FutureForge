@@ -4,11 +4,10 @@ from .profile import Profile, CareerDNA
 from .career import Career, CareerSkill, SavedCareer, CareerDetail, CareerInsight, CareerTimeline, CareerLearningResource, RelatedCareer, CareerBookmark, CareerComparison
 from .college import College, SavedCollege, Degree, CollegeCourse, DegreeCareerLink
 from .assessment import (
-    Assessment,
+    AssessmentSession,
     AssessmentResponse,
-    Question,
-    QuestionCategory,
-    QuestionOption,
+    AssessmentQuestion,
+    AssessmentOption,
 )
 from .scholarship import Scholarship
 from .scholarship_profile import ScholarshipProfile

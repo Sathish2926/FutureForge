@@ -46,8 +46,9 @@ export function ProfilePage() {
       setFormData(p);
       setIsEditing(false);
       toast("Profile updated successfully.", "success");
-    } catch (err) {
-      toast("Failed to update profile.", "error");
+    } catch (err: any) {
+      const errMsg = err.response?.data?.detail || "Failed to update profile.";
+      toast(errMsg, "error");
     } finally {
       setLoading(false);
     }
@@ -105,18 +106,23 @@ export function ProfilePage() {
                 <InfoItem icon={<Briefcase />} label="Occupation" value={profile?.occupation || 'Not provided'} />
                 <InfoItem icon={<BookOpen />} label="Career Goal" value={profile?.career_goal || 'Not provided'} />
               </div>
+              <h3 className="text-xl font-bold text-foreground mt-10 mb-6 border-b border-border pb-4">Financial Details</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <InfoItem icon={<UserCircle />} label="Family Income Range" value={profile?.family_income?.toString() || 'Not provided'} />
+                <InfoItem icon={<UserCircle />} label="Budget" value={profile?.budget?.toString() || 'Not provided'} />
+              </div>
             </motion.div>
           ) : (
             <motion.div key="edit" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-6">
                <h3 className="text-xl font-bold text-foreground mb-6 border-b border-border pb-4">Edit Profile</h3>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Date of Birth</label>
-                    <Input type="date" name="dob" value={formData.dob || ''} onChange={handleChange} className="bg-background border-border text-foreground focus:border-primary" />
+                    <label className="text-sm font-medium text-muted-foreground">Date of Birth (Locked from Signup)</label>
+                    <Input type="date" name="dob" value={formData.dob || ''} disabled className="bg-muted border-border text-muted-foreground" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Gender</label>
-                    <select name="gender" value={formData.gender || ''} onChange={handleChange} className="w-full h-10 px-3 py-2 rounded-md bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
+                    <label className="text-sm font-medium text-muted-foreground">Gender (Locked from Signup)</label>
+                    <select name="gender" value={formData.gender || ''} disabled className="w-full h-10 px-3 py-2 rounded-md bg-muted border border-border text-muted-foreground">
                       <option value="">Select Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
@@ -128,8 +134,8 @@ export function ProfilePage() {
                     <Input name="location" value={formData.location || ''} onChange={handleChange} placeholder="e.g. Chennai, Tamil Nadu" className="bg-background border-border text-foreground focus:border-primary" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Preferred Language</label>
-                    <select name="languages" value={formData.languages?.[0] || 'English'} onChange={(e) => setFormData({...formData, languages: [e.target.value]})} className="w-full h-10 px-3 py-2 rounded-md bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
+                    <label className="text-sm font-medium text-muted-foreground">Preferred Language (Locked from Signup)</label>
+                    <select name="languages" value={formData.languages?.[0] || 'English'} disabled className="w-full h-10 px-3 py-2 rounded-md bg-muted border border-border text-muted-foreground">
                       <option value="English">English</option>
                       <option value="Tamil">Tamil</option>
                       <option value="Hindi">Hindi</option>
@@ -139,8 +145,8 @@ export function ProfilePage() {
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Education Level</label>
-                    <select name="education_level" value={formData.education_level || ''} onChange={handleChange} className="w-full h-10 px-3 py-2 rounded-md bg-background border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
+                    <label className="text-sm font-medium text-muted-foreground">Education Level (Locked from Signup)</label>
+                    <select name="education_level" value={formData.education_level || ''} disabled className="w-full h-10 px-3 py-2 rounded-md bg-muted border border-border text-muted-foreground">
                       <option value="">Select Level</option>
                       <option value="10th">10th Standard</option>
                       <option value="12th">12th Standard</option>
@@ -150,16 +156,30 @@ export function ProfilePage() {
                     </select>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Institution</label>
-                    <Input name="institution" value={formData.institution || ''} onChange={handleChange} placeholder="School / College Name" className="bg-background border-border text-foreground focus:border-primary" />
+                    <label className="text-sm font-medium text-muted-foreground">Institution / Company</label>
+                    <Input name="institution" value={formData.institution || ''} onChange={handleChange} placeholder="Name" className="bg-background border-border text-foreground focus:border-primary" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Occupation</label>
-                    <Input name="occupation" value={formData.occupation || ''} onChange={handleChange} placeholder="e.g. Student, Software Engineer" className="bg-background border-border text-foreground focus:border-primary" />
+                    <label className="text-sm font-medium text-muted-foreground">Occupation (Locked from Signup)</label>
+                    <Input name="occupation" value={formData.occupation || ''} disabled className="bg-muted border-border text-muted-foreground" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-muted-foreground">Career Goal</label>
-                    <Input name="career_goal" value={formData.career_goal || ''} onChange={handleChange} placeholder="e.g. Data Scientist, Entrepreneur" className="bg-background border-border text-foreground focus:border-primary" />
+                    <label className="text-sm font-medium text-muted-foreground">Career Goal (Locked from Signup)</label>
+                    <Input name="career_goal" value={formData.career_goal || ''} disabled className="bg-muted border-border text-muted-foreground" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-muted-foreground">Family Income Range (Locked from Signup)</label>
+                    <select name="family_income" value={formData.family_income || ''} disabled className="w-full h-10 px-3 py-2 rounded-md bg-muted border border-border text-muted-foreground">
+                      <option value="">Select Range</option>
+                      <option value="100000">Below 2 Lakhs</option>
+                      <option value="300000">2-5 Lakhs</option>
+                      <option value="700000">5-10 Lakhs</option>
+                      <option value="1500000">Above 10 Lakhs</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-muted-foreground">Budget for Education/Courses</label>
+                    <Input name="budget" type="number" value={formData.budget || ''} onChange={handleChange} placeholder="Budget in Rs." className="bg-background border-border text-foreground focus:border-primary" />
                   </div>
                </div>
                

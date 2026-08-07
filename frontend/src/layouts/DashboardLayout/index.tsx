@@ -21,23 +21,8 @@ import {
   Award,
 } from 'lucide-react';
 import { routePaths } from '../../constants/routes';
-import { auth } from '../../lib/firebase';
-import { signOut } from 'firebase/auth';
-
-const mainNavItems = [
-  { icon: LayoutDashboard, label: 'Dashboard', path: routePaths.dashboard },
-  { icon: GraduationCap, label: 'Scholarships', path: routePaths.scholarships },
-  { icon: Bookmark, label: 'Saved', path: routePaths.scholarshipBookmarks },
-  { icon: Award, label: 'Recommendations', path: routePaths.scholarshipRecommendations },
-];
-
-const moduleNavItems = [
-  { icon: Compass, label: 'Career DNA', path: routePaths.careerDNA },
-  { icon: BookOpen, label: 'Assessment', path: routePaths.assessment },
-  { icon: MapPin, label: 'Colleges', path: routePaths.colleges },
-  { icon: MapPin, label: 'Roadmap', path: routePaths.roadmap },
-  { icon: MessageSquare, label: 'AI Chat', path: routePaths.chatbot },
-];
+import { getOccupationConfig, NavItem } from '../../constants/occupationConfig';
+import { useAuth } from '../../context/AuthContext';
 
 const bottomNavItems = [
   { icon: User, label: 'Profile', path: routePaths.profile },
@@ -49,20 +34,20 @@ export function DashboardLayout() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const [user, setUser] = useState(auth.currentUser);
-  const [loading, setLoading] = useState(true);
+  const { firebaseUser, profile, loading } = useAuth();
+  
+  const [navItems, setNavItems] = useState<NavItem[]>([]);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((u) => {
-      setUser(u);
-      if (!u) {
-        navigate(routePaths.login);
-      } else {
-        setLoading(false);
-      }
-    });
-    return () => unsubscribe();
-  }, [navigate]);
+    if (!loading && !firebaseUser) {
+      navigate(routePaths.login);
+    }
+  }, [firebaseUser, loading, navigate]);
+
+  useEffect(() => {
+    const config = getOccupationConfig(profile?.education_level || undefined, profile?.occupation || undefined);
+    setNavItems(config.navItems);
+  }, [profile]);
 
   useEffect(() => {
     setSidebarOpen(false);
@@ -78,6 +63,8 @@ export function DashboardLayout() {
 
   const handleLogout = async () => {
     try {
+      const { auth } = await import('../../lib/firebase');
+      const { signOut } = await import('firebase/auth');
       await signOut(auth);
       navigate(routePaths.home);
     } catch {
@@ -88,11 +75,11 @@ export function DashboardLayout() {
   const sidebarWidth = sidebarCollapsed ? 'w-[72px]' : 'w-72';
 
   const currentPageTitle = () => {
-    const allItems = [...mainNavItems, ...moduleNavItems, ...bottomNavItems];
+    const allItems: any[] = [...navItems, ...bottomNavItems];
     const match = allItems.find(item =>
       location.pathname === item.path || location.pathname.startsWith(item.path + '/')
     );
-    return match?.label || 'Dashboard';
+    return match?.label || match?.title || 'Dashboard';
   };
 
   return (
@@ -146,7 +133,7 @@ export function DashboardLayout() {
               </p>
             )}
             <div className="space-y-1">
-              {mainNavItems.map((item) => (
+              {navItems.map((item) => (
                 <NavLink
                   key={item.path}
                   to={item.path}
@@ -158,43 +145,16 @@ export function DashboardLayout() {
                       ? `${base} bg-primary/10 text-primary border border-primary/20 shadow-sm`
                       : `${base} text-muted-foreground hover:bg-muted hover:text-foreground border border-transparent`;
                   }}
-                  title={sidebarCollapsed ? item.label : undefined}
+                  title={sidebarCollapsed ? item.title : undefined}
                 >
                   <item.icon className="w-5 h-5 shrink-0" />
-                  {!sidebarCollapsed && <span className="text-sm font-medium">{item.label}</span>}
+                  {!sidebarCollapsed && <span className="text-sm font-medium">{item.title}</span>}
                 </NavLink>
               ))}
             </div>
           </div>
 
-          {/* Modules */}
-          <div>
-            {!sidebarCollapsed && (
-              <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-3 px-3">
-                Explore
-              </p>
-            )}
-            <div className="space-y-1">
-              {moduleNavItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className={({ isActive }) => {
-                    const base = `flex items-center gap-3 rounded-xl transition-all duration-200 ${
-                      sidebarCollapsed ? 'justify-center px-3 py-3' : 'px-4 py-3'
-                    }`;
-                    return isActive
-                      ? `${base} bg-background text-foreground border border-border shadow-sm`
-                      : `${base} text-muted-foreground hover:bg-muted hover:text-foreground border border-transparent`;
-                  }}
-                  title={sidebarCollapsed ? item.label : undefined}
-                >
-                  <item.icon className="w-5 h-5 shrink-0" />
-                  {!sidebarCollapsed && <span className="text-sm font-medium">{item.label}</span>}
-                </NavLink>
-              ))}
-            </div>
-          </div>
+
         </nav>
 
         {/* Bottom Section */}
@@ -229,15 +189,15 @@ export function DashboardLayout() {
           </button>
 
           {/* User Info */}
-          {!sidebarCollapsed && user && (
+          {!sidebarCollapsed && firebaseUser && (
             <div className="mt-4 p-3 rounded-xl bg-background border border-border">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold shrink-0 shadow-sm">
-                  {user.displayName?.charAt(0)?.toUpperCase() || user.email?.charAt(0)?.toUpperCase() || 'U'}
+                  {firebaseUser.displayName?.charAt(0)?.toUpperCase() || firebaseUser.email?.charAt(0)?.toUpperCase() || 'U'}
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-bold text-foreground truncate">{user.displayName || 'User'}</p>
-                  <p className="text-xs text-muted-foreground truncate">{user.email}</p>
+                  <p className="text-sm font-bold text-foreground truncate">{firebaseUser.displayName || 'User'}</p>
+                  <p className="text-xs text-muted-foreground truncate">{firebaseUser.email}</p>
                 </div>
               </div>
             </div>
@@ -294,7 +254,7 @@ export function DashboardLayout() {
               to={routePaths.profile}
               className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold shadow-md hover:ring-2 hover:ring-primary/50 transition-all"
             >
-              {user?.displayName?.charAt(0)?.toUpperCase() || user?.email?.charAt(0)?.toUpperCase() || 'U'}
+              {firebaseUser?.displayName?.charAt(0)?.toUpperCase() || firebaseUser?.email?.charAt(0)?.toUpperCase() || 'U'}
             </Link>
           </div>
         </header>
