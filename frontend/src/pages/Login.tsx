@@ -91,7 +91,17 @@ export default function Login() {
           await syncWithBackend(fbUser, name);
           return;
         } catch (fbErr: any) {
-          console.warn("Firebase auth failed, falling back to backend auth API:", fbErr);
+          console.warn("Firebase auth failed, evaluating fallback:", fbErr);
+          if (fbErr.code === "auth/email-already-in-use") {
+            setError("An account with this email already exists. Please click 'Sign in to your account' below.");
+            setLoading(false);
+            return;
+          }
+          if (fbErr.code === "auth/wrong-password" || fbErr.code === "auth/invalid-credential") {
+            setError("Incorrect password. Please check your credentials and try again.");
+            setLoading(false);
+            return;
+          }
         }
       }
 
