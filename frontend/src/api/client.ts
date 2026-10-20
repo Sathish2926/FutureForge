@@ -1,4 +1,11 @@
-const BASE = import.meta.env.VITE_API_BASE_URL || "/api";
+function getBaseUrl(): string {
+  const envUrl = import.meta.env.VITE_API_BASE_URL;
+  if (!envUrl) return "/api";
+  const trimmed = envUrl.trim().replace(/\/+$/, "");
+  return trimmed.endsWith("/api") ? trimmed : `${trimmed}/api`;
+}
+
+const BASE = getBaseUrl();
 
 export function getToken(): string | null {
   return sessionStorage.getItem("cp_token");

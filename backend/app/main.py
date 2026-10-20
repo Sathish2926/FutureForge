@@ -36,6 +36,22 @@ app.add_middleware(
 )
 
 
+@app.middleware("http")
+async def api_prefix_compatibility_middleware(request: Request, call_next):
+    # Support client requests made without /api prefix
+    path = request.url.path
+    if not path.startswith("/api") and not path.startswith("/docs") and not path.startswith("/openapi.json") and not path.startswith("/redoc"):
+        segments = [s for s in path.split("/") if s]
+        if segments and segments[0] in [
+            "auth", "profile", "careers", "colleges", "scholarships",
+            "roadmaps", "ai", "dashboard", "saved", "career-dna",
+            "recommendations", "career-catalog", "class10-copilot"
+        ]:
+            request.scope["path"] = f"/api{path}"
+    return await call_next(request)
+
+
+
 @app.exception_handler(Exception)
 async def unhandled_exception_handler(request: Request, exc: Exception):
     # Never leak raw stack traces to the client (spec §37)
