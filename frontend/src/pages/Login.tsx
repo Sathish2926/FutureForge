@@ -54,6 +54,11 @@ export default function Login() {
         setError(
           "Your Firebase API key in .env is invalid. Please check your Firebase Console settings."
         );
+      } else if (err.code === "auth/unauthorized-domain") {
+        const domain = window.location.hostname;
+        setError(
+          `Domain "${domain}" is not authorized in Firebase Console. To enable Google Sign-In, go to Firebase Console -> Authentication -> Settings -> Authorized domains -> Add "${domain}". Or use Email/Password below!`
+        );
       } else {
         setError(err.message || "Failed to sign in with Google.");
       }
