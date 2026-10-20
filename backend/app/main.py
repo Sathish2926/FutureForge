@@ -25,9 +25,11 @@ if allowed_origins_env:
         if o.strip():
             origins.append(o.strip())
 
+# Allow all Vercel deployments and localhost by default so frontend on Vercel connects without CORS hurdles
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins if "*" not in origins else ["*"],
+    allow_origins=origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
