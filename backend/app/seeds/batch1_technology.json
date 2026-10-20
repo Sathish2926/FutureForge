@@ -1,0 +1,1492 @@
+[
+  {
+    "slug": "full-stack-web-developer",
+    "name": "Full-Stack Web Developer",
+    "sector": "Technology",
+    "description": "Designs, builds, and maintains complete end-to-end web applications, spanning frontend interfaces, backend APIs, databases, and cloud deployment.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA, B.Sc Computer Science",
+    "typical_progression": "Frontend/Backend Intern → Junior Full-Stack Dev → SDE II → Tech Lead → Engineering Manager / Principal Architect",
+    "industry_sectors": "SaaS, E-Commerce, Fintech, Product Startups, IT Services",
+    "government_opportunities": "NIC, CDAC, Digital India, PSU IT Units",
+    "higher_study_routes": "M.Tech in CS/Software Systems, MS in Software Engineering",
+    "skill_building_timeline": "12-18 months dedicated practice",
+    "skills": [
+      { "name": "Programming Fundamentals", "priority": "core" },
+      { "name": "Data Structures & Algorithms", "priority": "core" },
+      { "name": "SQL / Databases", "priority": "core" },
+      { "name": "Git & Version Control", "priority": "core" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.98,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Programming & Web Architecture Fundamentals",
+          "skill_name": "Programming Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Web protocols, terminal hygiene, and vanilla programming mechanics are the mental models behind every framework.",
+          "prerequisites": [],
+          "actions": [
+            "Master terminal navigation, SSH keys, and Git CLI workflows (branch, merge, rebase).",
+            "Learn core JavaScript ES6+ (closures, event loop, async/await, DOM APIs).",
+            "Understand HTTP/HTTPS methods, headers, status codes, and browser rendering lifecycle."
+          ],
+          "resources": [
+            { "title": "MDN Web Docs: Learn Web Development", "url": "https://developer.mozilla.org/en-US/docs/Learn", "resource_type": "doc", "estimated_minutes": 180 },
+            { "title": "The Odin Project: Foundations Track", "url": "https://www.theodinproject.com/paths/foundations/courses/foundations", "resource_type": "course", "estimated_minutes": 360 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Frontend Frameworks, Server APIs & Relational Data",
+          "skill_name": "SQL / Databases",
+          "estimated_time": "10-12 weeks",
+          "why": "Modern full-stack delivery pairs client-side reactive state management with performant relational data modeling.",
+          "prerequisites": ["Programming Fundamentals"],
+          "actions": [
+            "Build SPAs using React or Next.js with TypeScript and TailwindCSS.",
+            "Architect REST APIs using Node.js/Express or Python/FastAPI with JWT authentication.",
+            "Design normalized relational schemas in PostgreSQL with indexes, foreign keys, and ORM migrations."
+          ],
+          "resources": [
+            { "title": "Full Stack Open (University of Helsinki)", "url": "https://fullstackopen.com/en/", "resource_type": "course", "estimated_minutes": 480 },
+            { "title": "PostgreSQL Official Tutorial", "url": "https://www.postgresql.org/docs/current/tutorial.html", "resource_type": "doc", "estimated_minutes": 120 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Production Deployment & Capstone Architecture",
+          "skill_name": "Data Structures & Algorithms",
+          "estimated_time": "8-10 weeks",
+          "why": "Generic tutorial clones do not get interviews; verified production systems with caching, auth, and containerization do.",
+          "prerequisites": ["SQL / Databases"],
+          "actions": [
+            "Build and deploy a multi-tenant app with background job queues (Redis) and webhooks.",
+            "Containerize client and server services using Docker & Docker Compose.",
+            "Set up CI/CD with GitHub Actions to deploy to AWS, GCP, or Render."
+          ],
+          "resources": [
+            { "title": "Docker Official Getting Started Guide", "url": "https://docs.docker.com/get-started/", "resource_type": "doc", "estimated_minutes": 90 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "System Design, DSA Benchmarks & Industry Hiring",
+          "skill_name": "Git & Version Control",
+          "estimated_time": "6-8 weeks",
+          "why": "Hiring bars evaluate algorithmic problem-solving speed, architectural reasoning, and collaborative Git practices.",
+          "prerequisites": ["Data Structures & Algorithms"],
+          "actions": [
+            "Solve NeetCode 150 core DSA patterns (arrays, hashmaps, two pointers, trees, DP).",
+            "Prepare high-level system design blueprints (load balancers, CDN caching, replication, CAP theorem).",
+            "Contribute to an open-source repo and publish a portfolio with live project links."
+          ],
+          "resources": [
+            { "title": "System Design Primer", "url": "https://github.com/donnemartin/system-design-primer", "resource_type": "doc", "estimated_minutes": 300 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "backend-systems-engineer",
+    "name": "Backend Systems Engineer",
+    "sector": "Technology",
+    "description": "Designs and maintains server-side logic, APIs, databases, and distributed systems that power applications at scale.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA, B.Sc Computer Science",
+    "typical_progression": "Backend Intern → Junior Backend Engineer → Senior Backend Engineer → Staff Engineer / Distributed Systems Architect",
+    "industry_sectors": "Fintech, SaaS, E-Commerce, Cloud Platforms, IT Services",
+    "government_opportunities": "NIC, CDAC, PSU IT Units",
+    "higher_study_routes": "M.Tech in Distributed Systems, MS in Computer Science",
+    "skill_building_timeline": "12-18 months dedicated practice",
+    "skills": [
+      { "name": "Programming Fundamentals", "priority": "core" },
+      { "name": "Data Structures & Algorithms", "priority": "core" },
+      { "name": "Databases & Caching", "priority": "core" },
+      { "name": "Distributed Systems", "priority": "core" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.97,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Core Programming, Networking & OS Concepts",
+          "skill_name": "Programming Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Backend engineering requires a solid grasp of processes, memory, sockets, and how requests flow through an OS and network stack.",
+          "prerequisites": [],
+          "actions": [
+            "Learn Python or Java/Go fundamentals (types, OOP, error handling, concurrency primitives).",
+            "Study TCP/IP, DNS, and how HTTP requests traverse client to server.",
+            "Practice Linux command-line usage, process management, and shell scripting."
+          ],
+          "resources": [
+            { "title": "CS50: Introduction to Computer Science (Harvard)", "url": "https://cs50.harvard.edu/x/", "resource_type": "course", "estimated_minutes": 600 },
+            { "title": "The Linux Command Line (free book)", "url": "https://linuxcommand.org/tlcl.php", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "APIs, Databases & Caching Layers",
+          "skill_name": "Databases & Caching",
+          "estimated_time": "10-12 weeks",
+          "why": "Efficient data access patterns and caching are what separate a toy backend from one that survives real traffic.",
+          "prerequisites": ["Programming Fundamentals"],
+          "actions": [
+            "Build REST and gRPC services with Go, Java (Spring Boot), or Python (FastAPI/Django).",
+            "Model relational data in PostgreSQL and unstructured data in MongoDB or Redis.",
+            "Implement caching strategies (write-through, cache-aside) and message queues (RabbitMQ/Kafka)."
+          ],
+          "resources": [
+            { "title": "Spring Boot Official Guides", "url": "https://spring.io/guides", "resource_type": "doc", "estimated_minutes": 300 },
+            { "title": "Kafka Documentation: Introduction", "url": "https://kafka.apache.org/documentation/#gettingStarted", "resource_type": "doc", "estimated_minutes": 120 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Scalable Service Capstone & Observability",
+          "skill_name": "Distributed Systems",
+          "estimated_time": "8-10 weeks",
+          "why": "Employers want evidence you can design services that stay observable and reliable under load, not just functionally correct.",
+          "prerequisites": ["Databases & Caching"],
+          "actions": [
+            "Build a microservice-based backend with load balancing and horizontal scaling.",
+            "Add structured logging, metrics (Prometheus), and tracing (OpenTelemetry).",
+            "Load-test the service with k6 or Locust and fix bottlenecks found."
+          ],
+          "resources": [
+            { "title": "Prometheus Getting Started", "url": "https://prometheus.io/docs/prometheus/latest/getting_started/", "resource_type": "doc", "estimated_minutes": 90 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Distributed Systems Theory & Interview Readiness",
+          "skill_name": "Data Structures & Algorithms",
+          "estimated_time": "6-8 weeks",
+          "why": "Senior backend interviews probe consistency models, partitioning, and failure handling in distributed systems.",
+          "prerequisites": ["Distributed Systems"],
+          "actions": [
+            "Study CAP theorem, consensus (Raft/Paxos), and database replication/sharding strategies.",
+            "Practice backend-focused system design case studies (URL shortener, rate limiter, chat system).",
+            "Solve LeetCode medium/hard problems focused on graphs, heaps, and concurrency."
+          ],
+          "resources": [
+            { "title": "Designing Data-Intensive Applications (companion notes)", "url": "https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "frontend-engineer",
+    "name": "Frontend Engineer",
+    "sector": "Technology",
+    "description": "Builds performant, accessible, and visually polished user interfaces that connect users to web applications.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA, B.Sc Computer Science, Design degrees with coding electives",
+    "typical_progression": "Frontend Intern → Junior Frontend Engineer → Senior Frontend Engineer → Frontend Architect / UI Platform Lead",
+    "industry_sectors": "SaaS, E-Commerce, Media, Product Startups, Design Agencies",
+    "government_opportunities": "NIC web portals, Digital India initiatives",
+    "higher_study_routes": "M.Tech in CS, MS in Human-Computer Interaction",
+    "skill_building_timeline": "9-14 months dedicated practice",
+    "skills": [
+      { "name": "HTML/CSS/JavaScript", "priority": "core" },
+      { "name": "Frontend Frameworks", "priority": "core" },
+      { "name": "Web Performance", "priority": "core" },
+      { "name": "Accessibility", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.97,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "HTML, CSS & JavaScript Mastery",
+          "skill_name": "HTML/CSS/JavaScript",
+          "estimated_time": "6-8 weeks",
+          "why": "Frameworks are abstractions over the DOM, CSS box model, and JS event loop — those fundamentals must be solid first.",
+          "prerequisites": [],
+          "actions": [
+            "Build 3-5 static responsive pages using semantic HTML5 and CSS Grid/Flexbox.",
+            "Learn vanilla JavaScript DOM manipulation, fetch API, and event delegation.",
+            "Practice mobile-first responsive design and CSS custom properties."
+          ],
+          "resources": [
+            { "title": "MDN CSS Layout Guide", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout", "resource_type": "doc", "estimated_minutes": 150 },
+            { "title": "JavaScript.info", "url": "https://javascript.info/", "resource_type": "doc", "estimated_minutes": 400 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Component Frameworks & State Management",
+          "skill_name": "Frontend Frameworks",
+          "estimated_time": "10-12 weeks",
+          "why": "Production UIs are built with component-based frameworks and predictable state management, not raw DOM scripting.",
+          "prerequisites": ["HTML/CSS/JavaScript"],
+          "actions": [
+            "Build applications in React with hooks, context, and a router (React Router).",
+            "Learn TypeScript for type-safe component props and state.",
+            "Manage complex state with Redux Toolkit or Zustand and fetch data with React Query."
+          ],
+          "resources": [
+            { "title": "React Official Documentation", "url": "https://react.dev/learn", "resource_type": "doc", "estimated_minutes": 300 },
+            { "title": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/intro.html", "resource_type": "doc", "estimated_minutes": 180 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Performance, Accessibility & Portfolio Projects",
+          "skill_name": "Web Performance",
+          "estimated_time": "8-10 weeks",
+          "why": "Frontend hiring bars now weight Lighthouse scores, accessibility compliance, and bundle size discipline heavily.",
+          "prerequisites": ["Frontend Frameworks"],
+          "actions": [
+            "Build a Next.js app with SSR/SSG and image/font optimization, then audit it with Lighthouse.",
+            "Implement WCAG 2.1 AA accessibility patterns (keyboard nav, ARIA, focus management).",
+            "Publish 2-3 polished portfolio projects with live deployment and clean READMEs."
+          ],
+          "resources": [
+            { "title": "web.dev: Learn Performance", "url": "https://web.dev/learn/performance", "resource_type": "course", "estimated_minutes": 240 },
+            { "title": "WAI-ARIA Authoring Practices Guide", "url": "https://www.w3.org/WAI/ARIA/apg/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Frontend System Design & Interview Prep",
+          "skill_name": "Accessibility",
+          "estimated_time": "5-7 weeks",
+          "why": "Senior frontend interviews test component architecture decisions, rendering trade-offs, and JS fundamentals under pressure.",
+          "prerequisites": ["Web Performance"],
+          "actions": [
+            "Practice frontend system design questions (design a Twitter feed, autocomplete, infinite scroll).",
+            "Solve JavaScript machine-coding rounds (debounce, throttle, custom hooks, event emitters).",
+            "Review a target company's design system and rebuild one of its components pixel-accurately."
+          ],
+          "resources": [
+            { "title": "GreatFrontEnd: Frontend System Design", "url": "https://www.greatfrontend.com/system-design", "resource_type": "course", "estimated_minutes": 200 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "data-scientist",
+    "name": "Data Scientist",
+    "sector": "Technology",
+    "description": "Extracts actionable insights from structured and unstructured data using statistics, machine learning, and business context.",
+    "recommended_subjects": "Mathematics, Statistics, Computer Science",
+    "common_entrance_exams": "JEE Main, CUET, ISI Admission Test",
+    "relevant_degrees": "B.Tech/B.Sc in CS/Statistics/Mathematics, B.Stat, Economics with quantitative focus",
+    "typical_progression": "Data Analyst / Junior DS → Data Scientist → Senior Data Scientist → Lead Data Scientist / Head of Data",
+    "industry_sectors": "Fintech, E-Commerce, Healthtech, Consulting, Ad-Tech",
+    "government_opportunities": "NITI Aayog data units, Census & NSSO analytics roles, ISRO data teams",
+    "higher_study_routes": "M.Sc Statistics/Data Science, MS in Analytics, PhD for research roles",
+    "skill_building_timeline": "12-16 months dedicated practice",
+    "skills": [
+      { "name": "Statistics & Probability", "priority": "core" },
+      { "name": "Python for Data Science", "priority": "core" },
+      { "name": "Machine Learning", "priority": "core" },
+      { "name": "Data Visualization & Storytelling", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.97,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Statistics, Linear Algebra & Python Basics",
+          "skill_name": "Statistics & Probability",
+          "estimated_time": "8-10 weeks",
+          "why": "Every ML model and A/B test decision rests on probability distributions, hypothesis testing, and linear algebra intuition.",
+          "prerequisites": [],
+          "actions": [
+            "Study descriptive/inferential statistics, hypothesis testing, and probability distributions.",
+            "Learn Python fundamentals plus NumPy for vectorized computation.",
+            "Cover linear algebra essentials: vectors, matrices, eigenvalues (used in PCA/ML)."
+          ],
+          "resources": [
+            { "title": "Khan Academy: Statistics and Probability", "url": "https://www.khanacademy.org/math/statistics-probability", "resource_type": "course", "estimated_minutes": 400 },
+            { "title": "3Blue1Brown: Essence of Linear Algebra", "url": "https://www.3blue1brown.com/topics/linear-algebra", "resource_type": "video", "estimated_minutes": 180 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Data Wrangling, EDA & Classical Machine Learning",
+          "skill_name": "Python for Data Science",
+          "estimated_time": "10-14 weeks",
+          "why": "Most real-world data science time is spent cleaning, exploring, and modeling with classical algorithms before deep learning even applies.",
+          "prerequisites": ["Statistics & Probability"],
+          "actions": [
+            "Perform exploratory data analysis with Pandas, Matplotlib, and Seaborn on messy real-world datasets.",
+            "Implement classical ML models (regression, decision trees, random forests, gradient boosting) with scikit-learn.",
+            "Learn feature engineering, cross-validation, and evaluation metrics (ROC-AUC, F1, RMSE)."
+          ],
+          "resources": [
+            { "title": "Kaggle Learn: Pandas & Intro to ML", "url": "https://www.kaggle.com/learn", "resource_type": "course", "estimated_minutes": 300 },
+            { "title": "scikit-learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "End-to-End Analytics Capstone",
+          "skill_name": "Data Visualization & Storytelling",
+          "estimated_time": "8-10 weeks",
+          "why": "A polished case study that goes from raw data to a business recommendation demonstrates the full DS workflow employers hire for.",
+          "prerequisites": ["Python for Data Science"],
+          "actions": [
+            "Pick a real dataset (Kaggle competition or public government data) and run a full analysis-to-recommendation pipeline.",
+            "Build an interactive dashboard using Tableau, Power BI, or Plotly Dash.",
+            "Write up findings as a data story with clear visualizations and a plain-language executive summary."
+          ],
+          "resources": [
+            { "title": "Kaggle Competitions", "url": "https://www.kaggle.com/competitions", "resource_type": "project", "estimated_minutes": 600 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "SQL Fluency, A/B Testing & Case Interviews",
+          "skill_name": "Machine Learning",
+          "estimated_time": "6-8 weeks",
+          "why": "Data science interviews heavily test SQL proficiency, experiment design, and business-case reasoning alongside modeling skill.",
+          "prerequisites": ["Data Visualization & Storytelling"],
+          "actions": [
+            "Practice advanced SQL (window functions, CTEs, joins) on StrataScratch or LeetCode Database problems.",
+            "Study A/B testing design, statistical power, and common product-metrics case interview frameworks.",
+            "Do 3-5 mock case interviews covering guesstimates, metrics diagnosis, and experiment design."
+          ],
+          "resources": [
+            { "title": "Mode Analytics: SQL Tutorial", "url": "https://mode.com/sql-tutorial/", "resource_type": "doc", "estimated_minutes": 180 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "machine-learning-engineer",
+    "name": "Machine Learning Engineer",
+    "sector": "Technology",
+    "description": "Builds, deploys, and scales machine learning models and the production infrastructure (pipelines, serving, monitoring) that keeps them running.",
+    "recommended_subjects": "Mathematics, Computer Science, Statistics",
+    "common_entrance_exams": "JEE Main, GATE (for M.Tech), CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science, M.Tech/MS in ML or AI",
+    "typical_progression": "ML Intern → ML Engineer → Senior ML Engineer → ML Platform Lead / Applied Research Scientist",
+    "industry_sectors": "AI Product Companies, Fintech, Healthtech, Autonomous Systems, Big Tech",
+    "government_opportunities": "DRDO AI labs, ISRO applied ML units, C-DAC AI initiatives",
+    "higher_study_routes": "MS/PhD in Machine Learning or AI",
+    "skill_building_timeline": "14-20 months dedicated practice",
+    "skills": [
+      { "name": "Python & Software Engineering", "priority": "core" },
+      { "name": "Machine Learning Theory", "priority": "core" },
+      { "name": "Deep Learning Frameworks", "priority": "core" },
+      { "name": "MLOps", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.96,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Math for ML & Solid Software Engineering",
+          "skill_name": "Python & Software Engineering",
+          "estimated_time": "8-10 weeks",
+          "why": "ML engineers are software engineers first — clean code, testing, and math intuition (calculus, linear algebra, probability) underpin everything else.",
+          "prerequisites": [],
+          "actions": [
+            "Strengthen Python OOP, testing (pytest), and packaging practices.",
+            "Cover multivariable calculus, linear algebra, and probability as applied to ML (gradients, matrix ops, Bayes' rule).",
+            "Learn NumPy/Pandas fluently for numerical and tabular data manipulation."
+          ],
+          "resources": [
+            { "title": "Mathematics for Machine Learning (Imperial College, free audit)", "url": "https://www.coursera.org/specializations/mathematics-machine-learning", "resource_type": "course", "estimated_minutes": 500 },
+            { "title": "Real Python: Testing Your Code", "url": "https://realpython.com/python-testing/", "resource_type": "doc", "estimated_minutes": 90 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Classical ML & Deep Learning Frameworks",
+          "skill_name": "Deep Learning Frameworks",
+          "estimated_time": "12-16 weeks",
+          "why": "ML engineers need working fluency in both classical ML (for tabular problems) and deep learning frameworks (for vision/NLP problems).",
+          "prerequisites": ["Python & Software Engineering"],
+          "actions": [
+            "Implement classical models with scikit-learn and understand bias-variance trade-offs.",
+            "Build neural networks in PyTorch (CNNs for vision, RNN/Transformer basics for sequence data).",
+            "Complete Andrew Ng's Deep Learning Specialization or equivalent to solidify theory."
+          ],
+          "resources": [
+            { "title": "PyTorch Official Tutorials", "url": "https://pytorch.org/tutorials/", "resource_type": "doc", "estimated_minutes": 300 },
+            { "title": "DeepLearning.AI: Deep Learning Specialization", "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/", "resource_type": "course", "estimated_minutes": 600 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Production ML Pipeline Capstone",
+          "skill_name": "MLOps",
+          "estimated_time": "10-12 weeks",
+          "why": "The gap between a Jupyter notebook model and a production model is the actual job — versioning, serving, and monitoring matter most.",
+          "prerequisites": ["Deep Learning Frameworks"],
+          "actions": [
+            "Build an end-to-end pipeline: data ingestion, feature store, training, and model registry (MLflow).",
+            "Deploy a model as a REST API using FastAPI + Docker, then serve it behind a load balancer.",
+            "Add drift monitoring and automated retraining triggers."
+          ],
+          "resources": [
+            { "title": "MLflow Documentation", "url": "https://mlflow.org/docs/latest/index.html", "resource_type": "doc", "estimated_minutes": 150 },
+            { "title": "Made With ML: MLOps Course", "url": "https://madewithml.com/", "resource_type": "course", "estimated_minutes": 400 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "System Design for ML & Research Reading",
+          "skill_name": "Machine Learning Theory",
+          "estimated_time": "6-9 weeks",
+          "why": "ML system design interviews assess your ability to architect scalable, reliable ML systems, not just model accuracy.",
+          "prerequisites": ["MLOps"],
+          "actions": [
+            "Study ML system design case studies (recommendation systems, fraud detection, search ranking).",
+            "Read and summarize 5-10 seminal papers relevant to your target specialization (CV, NLP, RecSys).",
+            "Practice coding interviews (LeetCode medium) plus ML-specific whiteboard questions."
+          ],
+          "resources": [
+            { "title": "Chip Huyen: Machine Learning System Design", "url": "https://huyenchip.com/machine-learning-systems-design/toc.html", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "data-analyst",
+    "name": "Data Analyst",
+    "sector": "Technology",
+    "description": "Turns raw business data into dashboards, reports, and recommendations that guide operational and strategic decisions.",
+    "recommended_subjects": "Mathematics, Statistics, Economics",
+    "common_entrance_exams": "CUET, State CETs",
+    "relevant_degrees": "B.Com, BBA, B.Sc Statistics/Economics, B.Tech (any branch)",
+    "typical_progression": "Junior Data Analyst → Data Analyst → Senior Analyst → Analytics Manager / BI Lead",
+    "industry_sectors": "E-Commerce, Banking, Retail, Consulting, SaaS",
+    "government_opportunities": "MoSPI/NSSO survey analytics, state planning departments",
+    "higher_study_routes": "MBA in Analytics, M.Sc Statistics, PGDM in Business Analytics",
+    "skill_building_timeline": "6-9 months dedicated practice",
+    "skills": [
+      { "name": "Excel & Spreadsheets", "priority": "core" },
+      { "name": "SQL", "priority": "core" },
+      { "name": "Data Visualization Tools", "priority": "core" },
+      { "name": "Business Statistics", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.96,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Excel, Basic Statistics & Data Literacy",
+          "skill_name": "Excel & Spreadsheets",
+          "estimated_time": "4-6 weeks",
+          "why": "Excel remains the universal first interface analysts use to explore, pivot, and sanity-check data before touching any tool.",
+          "prerequisites": [],
+          "actions": [
+            "Master pivot tables, VLOOKUP/XLOOKUP, and conditional formatting in Excel or Google Sheets.",
+            "Learn descriptive statistics: mean, median, standard deviation, correlation.",
+            "Practice cleaning messy, real-world spreadsheets (missing values, duplicates, formatting)."
+          ],
+          "resources": [
+            { "title": "Google: Data Analytics Foundations (free audit)", "url": "https://www.coursera.org/professional-certificates/google-data-analytics", "resource_type": "course", "estimated_minutes": 300 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "SQL Querying & Dashboarding",
+          "skill_name": "SQL",
+          "estimated_time": "8-10 weeks",
+          "why": "SQL is the primary way analysts pull data directly from company databases rather than waiting on engineers.",
+          "prerequisites": ["Excel & Spreadsheets"],
+          "actions": [
+            "Learn SQL joins, aggregations, subqueries, and window functions.",
+            "Build interactive dashboards in Tableau Public or Power BI.",
+            "Practice writing queries against public datasets (e.g. BigQuery public data)."
+          ],
+          "resources": [
+            { "title": "Mode Analytics: SQL Tutorial", "url": "https://mode.com/sql-tutorial/", "resource_type": "doc", "estimated_minutes": 180 },
+            { "title": "Tableau Public Training Videos", "url": "https://www.tableau.com/learn/training", "resource_type": "video", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Business Analysis Capstone Project",
+          "skill_name": "Data Visualization Tools",
+          "estimated_time": "6-8 weeks",
+          "why": "A portfolio project that answers a real business question end-to-end is what separates candidates from tutorial-followers.",
+          "prerequisites": ["SQL"],
+          "actions": [
+            "Choose a business dataset (sales, churn, marketing spend) and define a clear analytical question.",
+            "Build a full dashboard with KPIs, trends, and drill-downs; document your methodology.",
+            "Present findings as a one-page executive summary with actionable recommendations."
+          ],
+          "resources": [
+            { "title": "Kaggle Datasets", "url": "https://www.kaggle.com/datasets", "resource_type": "project", "estimated_minutes": 400 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Advanced Statistics & Interview Case Studies",
+          "skill_name": "Business Statistics",
+          "estimated_time": "4-6 weeks",
+          "why": "Analyst interviews test SQL speed under pressure plus the ability to reason through ambiguous business case questions.",
+          "prerequisites": ["Data Visualization Tools"],
+          "actions": [
+            "Practice timed SQL challenges on StrataScratch or HackerRank.",
+            "Study basic A/B testing and statistical significance concepts.",
+            "Rehearse case-style interview questions (e.g. 'metric X dropped 10%, diagnose why')."
+          ],
+          "resources": [
+            { "title": "HackerRank SQL Practice", "url": "https://www.hackerrank.com/domains/sql", "resource_type": "project", "estimated_minutes": 200 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "devops-cloud-engineer",
+    "name": "DevOps & Cloud Engineer",
+    "sector": "Technology",
+    "description": "Automates infrastructure provisioning, CI/CD pipelines, and cloud operations to enable fast, reliable software delivery.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA",
+    "typical_progression": "Junior DevOps Engineer → DevOps/Cloud Engineer → Senior SRE/DevOps → Platform Engineering Lead",
+    "industry_sectors": "Cloud Providers, SaaS, Fintech, E-Commerce, IT Services",
+    "government_opportunities": "NIC cloud infrastructure teams, Digital India cloud initiatives",
+    "higher_study_routes": "Cloud certifications (AWS/Azure/GCP) valued more than a master's degree here",
+    "skill_building_timeline": "10-14 months dedicated practice",
+    "skills": [
+      { "name": "Linux & Networking", "priority": "core" },
+      { "name": "Cloud Platforms", "priority": "core" },
+      { "name": "Infrastructure as Code", "priority": "core" },
+      { "name": "CI/CD & Containers", "priority": "core" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.97,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Linux, Networking & Scripting",
+          "skill_name": "Linux & Networking",
+          "estimated_time": "6-8 weeks",
+          "why": "Every cloud and automation tool sits on top of Linux systems and TCP/IP networking fundamentals.",
+          "prerequisites": [],
+          "actions": [
+            "Master Linux administration: users, permissions, systemd, package management.",
+            "Learn networking basics: subnetting, DNS, load balancers, firewalls.",
+            "Write automation scripts in Bash and Python."
+          ],
+          "resources": [
+            { "title": "Linux Journey", "url": "https://linuxjourney.com/", "resource_type": "course", "estimated_minutes": 240 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Containers, Cloud Platforms & IaC",
+          "skill_name": "Cloud Platforms",
+          "estimated_time": "10-12 weeks",
+          "why": "Containers and cloud provisioning are the default deployment unit for nearly all modern infrastructure.",
+          "prerequisites": ["Linux & Networking"],
+          "actions": [
+            "Learn Docker deeply and orchestrate multi-container apps with Kubernetes.",
+            "Get hands-on with one major cloud (AWS/Azure/GCP): compute, storage, networking, IAM.",
+            "Provision infrastructure with Terraform instead of manual console clicks."
+          ],
+          "resources": [
+            { "title": "Kubernetes Official Documentation", "url": "https://kubernetes.io/docs/home/", "resource_type": "doc", "estimated_minutes": 300 },
+            { "title": "Terraform: Get Started", "url": "https://developer.hashicorp.com/terraform/tutorials", "resource_type": "doc", "estimated_minutes": 180 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "CI/CD Pipeline & Infrastructure Capstone",
+          "skill_name": "CI/CD & Containers",
+          "estimated_time": "8-10 weeks",
+          "why": "A full pipeline from commit to production deployment is the single most convincing DevOps portfolio artifact.",
+          "prerequisites": ["Cloud Platforms"],
+          "actions": [
+            "Build a GitHub Actions or GitLab CI pipeline: build, test, scan, deploy to Kubernetes.",
+            "Set up monitoring/alerting with Prometheus and Grafana.",
+            "Document the architecture and write a runbook for on-call incident response."
+          ],
+          "resources": [
+            { "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Cloud Certification & Reliability Practices",
+          "skill_name": "Infrastructure as Code",
+          "estimated_time": "6-8 weeks",
+          "why": "Cloud certifications are one of the few credentials that directly increase DevOps hiring odds and validate breadth.",
+          "prerequisites": ["CI/CD & Containers"],
+          "actions": [
+            "Prepare for and pass AWS Certified Solutions Architect Associate or equivalent Azure/GCP cert.",
+            "Study SRE practices: SLOs, error budgets, incident postmortems.",
+            "Practice troubleshooting scenarios (a pod crash-loops, a deploy fails mid-rollout)."
+          ],
+          "resources": [
+            { "title": "AWS Certified Solutions Architect - Associate", "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cybersecurity-analyst",
+    "name": "Cybersecurity Analyst / Ethical Hacker",
+    "sector": "Technology",
+    "description": "Identifies, prevents, and responds to security threats by monitoring systems, testing defenses, and hardening infrastructure.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, B.Sc Cybersecurity",
+    "typical_progression": "SOC Analyst → Security Analyst → Penetration Tester / Security Engineer → Security Architect / CISO",
+    "industry_sectors": "Banking, Fintech, Government/Defence, IT Services, Product Companies",
+    "government_opportunities": "CERT-In, NCIIPC, Defence Cyber Agency, State Cyber Cells",
+    "higher_study_routes": "M.Tech in Cybersecurity, MS in Information Security, OSCP/CISSP certifications",
+    "skill_building_timeline": "12-16 months dedicated practice",
+    "skills": [
+      { "name": "Networking & OS Internals", "priority": "core" },
+      { "name": "Security Fundamentals", "priority": "core" },
+      { "name": "Penetration Testing", "priority": "core" },
+      { "name": "Incident Response", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.96,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Networking, OS & Security Fundamentals",
+          "skill_name": "Networking & OS Internals",
+          "estimated_time": "8-10 weeks",
+          "why": "You cannot secure or attack a system you do not understand — networking and OS internals are the prerequisite for everything in security.",
+          "prerequisites": [],
+          "actions": [
+            "Study TCP/IP, common ports/protocols, and how firewalls/proxies operate.",
+            "Learn Windows and Linux internals: processes, permissions, logging, registry basics.",
+            "Cover core security concepts: CIA triad, encryption basics, authentication vs authorization."
+          ],
+          "resources": [
+            { "title": "Professor Messer: Security+ Training", "url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/", "resource_type": "video", "estimated_minutes": 500 },
+            { "title": "TryHackMe: Pre Security Path", "url": "https://tryhackme.com/path/outline/presecurity", "resource_type": "course", "estimated_minutes": 400 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Offensive Security Tooling & Web App Security",
+          "skill_name": "Penetration Testing",
+          "estimated_time": "12-14 weeks",
+          "why": "Hands-on tool proficiency (scanning, exploitation, web app attacks) is what distinguishes practitioners from certificate collectors.",
+          "prerequisites": ["Networking & OS Internals"],
+          "actions": [
+            "Learn Kali Linux tooling: Nmap, Burp Suite, Metasploit, Wireshark.",
+            "Study the OWASP Top 10 and practice exploiting them in a legal lab (DVWA, PortSwigger Academy).",
+            "Complete guided rooms/boxes on TryHackMe or HackTheBox to build methodology."
+          ],
+          "resources": [
+            { "title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "resource_type": "course", "estimated_minutes": 500 },
+            { "title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "resource_type": "doc", "estimated_minutes": 90 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "CTFs, Home Lab & Reporting",
+          "skill_name": "Incident Response",
+          "estimated_time": "8-10 weeks",
+          "why": "Real hiring signal comes from CTF rankings, a documented home lab, and the ability to write a clear penetration test report.",
+          "prerequisites": ["Penetration Testing"],
+          "actions": [
+            "Compete in CTFs (picoCTF, HackTheBox seasonal events) and log write-ups publicly.",
+            "Build a home lab with a SIEM (e.g. Wazuh/Splunk free tier) to practice detection and log analysis.",
+            "Write a formal vulnerability assessment report for a lab environment following industry templates."
+          ],
+          "resources": [
+            { "title": "picoCTF", "url": "https://picoctf.org/", "resource_type": "project", "estimated_minutes": 400 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Certification & SOC/Interview Readiness",
+          "skill_name": "Security Fundamentals",
+          "estimated_time": "6-9 weeks",
+          "why": "Entry-level security hiring leans heavily on recognized certifications (Security+, eJPT) as a proxy for verified baseline skill.",
+          "prerequisites": ["Incident Response"],
+          "actions": [
+            "Prepare for CompTIA Security+ or eJPT certification.",
+            "Study common SOC analyst interview scenarios (triaging alerts, reading logs, phishing analysis).",
+            "Review legal/ethical boundaries and reporting obligations for security work."
+          ],
+          "resources": [
+            { "title": "CompTIA Security+ Certification", "url": "https://www.comptia.org/certifications/security", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mobile-app-developer",
+    "name": "Mobile App Developer (Android/iOS)",
+    "sector": "Technology",
+    "description": "Designs and builds native or cross-platform mobile applications for Android and iOS devices.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA",
+    "typical_progression": "Junior Mobile Developer → Mobile Developer → Senior Mobile Engineer → Mobile Platform Lead",
+    "industry_sectors": "Consumer Apps, Fintech, E-Commerce, Gaming, IT Services",
+    "government_opportunities": "UMANG and other government app development contracts via NIC/CDAC",
+    "higher_study_routes": "M.Tech in CS, specialized mobile development bootcamps",
+    "skill_building_timeline": "9-14 months dedicated practice",
+    "skills": [
+      { "name": "Programming Fundamentals", "priority": "core" },
+      { "name": "Native/Cross-Platform Frameworks", "priority": "core" },
+      { "name": "Mobile UI/UX Patterns", "priority": "supporting" },
+      { "name": "App Store Deployment", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.96,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Language Fundamentals & Mobile Concepts",
+          "skill_name": "Programming Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Mobile development requires solid grounding in either Kotlin/Swift or the JS/Dart ecosystem before touching UI frameworks.",
+          "prerequisites": [],
+          "actions": [
+            "Choose a track: Kotlin (Android native), Swift (iOS native), or Dart (Flutter cross-platform).",
+            "Learn the mobile app lifecycle, layout systems, and navigation basics for your chosen platform.",
+            "Build 2-3 simple single-screen apps to internalize the build-run-debug cycle."
+          ],
+          "resources": [
+            { "title": "Android Developers: Kotlin Fundamentals", "url": "https://developer.android.com/courses/android-basics-compose/course", "resource_type": "course", "estimated_minutes": 400 },
+            { "title": "Apple Developer: Swift Documentation", "url": "https://developer.apple.com/documentation/swift", "resource_type": "doc", "estimated_minutes": 300 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "State Management, Networking & Local Storage",
+          "skill_name": "Native/Cross-Platform Frameworks",
+          "estimated_time": "10-12 weeks",
+          "why": "Real apps fetch data from APIs, persist state locally, and manage complex UI state — this is where 'toy app' becomes 'real app'.",
+          "prerequisites": ["Programming Fundamentals"],
+          "actions": [
+            "Build apps using Jetpack Compose (Android), SwiftUI (iOS), or Flutter widgets.",
+            "Integrate REST APIs, handle async operations, and manage app-level state.",
+            "Use local storage (Room/CoreData/SQLite) and implement offline-first patterns."
+          ],
+          "resources": [
+            { "title": "Flutter Official Documentation", "url": "https://docs.flutter.dev/", "resource_type": "doc", "estimated_minutes": 350 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Polished App Capstone & Testing",
+          "skill_name": "Mobile UI/UX Patterns",
+          "estimated_time": "8-10 weeks",
+          "why": "A fully polished, tested app with real design sensibility is far more convincing to recruiters than five half-finished demos.",
+          "prerequisites": ["Native/Cross-Platform Frameworks"],
+          "actions": [
+            "Design and build one complete, portfolio-quality app addressing a real use case.",
+            "Write unit and UI tests; handle edge cases (no network, empty states, errors).",
+            "Follow platform design guidelines (Material Design or Human Interface Guidelines)."
+          ],
+          "resources": [
+            { "title": "Material Design Guidelines", "url": "https://m3.material.io/", "resource_type": "doc", "estimated_minutes": 150 },
+            { "title": "Apple Human Interface Guidelines", "url": "https://developer.apple.com/design/human-interface-guidelines", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Publishing, Performance & Interview Prep",
+          "skill_name": "App Store Deployment",
+          "estimated_time": "5-7 weeks",
+          "why": "Publishing a live app to an app store and understanding performance profiling is direct proof of production readiness.",
+          "prerequisites": ["Mobile UI/UX Patterns"],
+          "actions": [
+            "Publish your capstone app to the Google Play Store or Apple App Store (or TestFlight).",
+            "Profile app performance (memory leaks, jank, startup time) using platform profiling tools.",
+            "Practice mobile-specific interview topics: lifecycle callbacks, threading, memory management."
+          ],
+          "resources": [
+            { "title": "Google Play Console: Publish Your App", "url": "https://support.google.com/googleplay/android-developer/answer/9859152", "resource_type": "doc", "estimated_minutes": 90 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ai-nlp-engineer",
+    "name": "AI / NLP Engineer",
+    "sector": "Technology",
+    "description": "Builds systems that understand and generate human language, from search and chatbots to large language model applications.",
+    "recommended_subjects": "Mathematics, Computer Science, Linguistics (optional)",
+    "common_entrance_exams": "JEE Main, GATE (for M.Tech), CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science, M.Tech/MS in AI/NLP",
+    "typical_progression": "ML/NLP Intern → NLP Engineer → Senior NLP/AI Engineer → Applied Scientist / Research Lead",
+    "industry_sectors": "AI Product Companies, Search & Ad-Tech, Healthtech, Big Tech Research Labs",
+    "government_opportunities": "DRDO language processing units, C-DAC AI & language technology group",
+    "higher_study_routes": "MS/PhD in NLP or Computational Linguistics",
+    "skill_building_timeline": "14-20 months dedicated practice",
+    "skills": [
+      { "name": "Python & Deep Learning Basics", "priority": "core" },
+      { "name": "NLP Fundamentals", "priority": "core" },
+      { "name": "Transformer Architectures", "priority": "core" },
+      { "name": "LLM Application Development", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.95,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Deep Learning & Classical NLP Basics",
+          "skill_name": "Python & Deep Learning Basics",
+          "estimated_time": "8-10 weeks",
+          "why": "NLP is applied deep learning; you need neural network fundamentals before tackling language-specific architectures.",
+          "prerequisites": [],
+          "actions": [
+            "Complete a deep learning fundamentals course covering feedforward and recurrent networks.",
+            "Learn classical NLP: tokenization, TF-IDF, word embeddings (Word2Vec, GloVe).",
+            "Practice text preprocessing and basic classification tasks with scikit-learn/PyTorch."
+          ],
+          "resources": [
+            { "title": "Hugging Face NLP Course", "url": "https://huggingface.co/learn/nlp-course", "resource_type": "course", "estimated_minutes": 500 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Transformer Architectures & Fine-Tuning",
+          "skill_name": "Transformer Architectures",
+          "estimated_time": "10-14 weeks",
+          "why": "Every modern NLP system (translation, search, chat) is built on the transformer architecture — understanding attention is non-negotiable.",
+          "prerequisites": ["Python & Deep Learning Basics"],
+          "actions": [
+            "Study the 'Attention Is All You Need' architecture and implement a mini-transformer from scratch.",
+            "Fine-tune pretrained models (BERT, RoBERTa) for classification/NER tasks using Hugging Face Transformers.",
+            "Learn evaluation metrics for NLP tasks (BLEU, ROUGE, perplexity)."
+          ],
+          "resources": [
+            { "title": "Hugging Face Transformers Documentation", "url": "https://huggingface.co/docs/transformers/index", "resource_type": "doc", "estimated_minutes": 300 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "LLM Application Capstone",
+          "skill_name": "LLM Application Development",
+          "estimated_time": "8-10 weeks",
+          "why": "Building a real retrieval-augmented or agentic LLM application demonstrates the current highest-demand NLP engineering skill set.",
+          "prerequisites": ["Transformer Architectures"],
+          "actions": [
+            "Build a Retrieval-Augmented Generation (RAG) app using LangChain or LlamaIndex with a vector database.",
+            "Implement prompt engineering techniques and evaluate outputs systematically.",
+            "Deploy the application with an API layer and basic guardrails against prompt injection."
+          ],
+          "resources": [
+            { "title": "LangChain Documentation", "url": "https://python.langchain.com/docs/introduction/", "resource_type": "doc", "estimated_minutes": 250 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Research Fluency & Applied Interview Prep",
+          "skill_name": "NLP Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "AI/NLP hiring bars expect you to discuss trade-offs of recent papers and reason through applied system design.",
+          "prerequisites": ["LLM Application Development"],
+          "actions": [
+            "Read and be able to discuss 5-8 recent papers relevant to your specialization (retrieval, alignment, efficiency).",
+            "Practice applied ML system design questions (build a search ranking system, a chatbot with memory).",
+            "Solve coding interview problems with a focus on string/sequence algorithms."
+          ],
+          "resources": [
+            { "title": "Papers With Code: NLP", "url": "https://paperswithcode.com/area/natural-language-processing", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "site-reliability-engineer",
+    "name": "Site Reliability Engineer (SRE)",
+    "sector": "Technology",
+    "description": "Applies software engineering principles to operations, ensuring systems are reliable, scalable, and observable at all times.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT",
+    "typical_progression": "Junior SRE / Support Engineer → SRE → Senior SRE → Principal SRE / Reliability Architect",
+    "industry_sectors": "Big Tech, Cloud Providers, Fintech, SaaS at scale",
+    "government_opportunities": "NIC data center reliability teams",
+    "higher_study_routes": "Cloud/SRE certifications valued more than a master's; M.Tech CS optional",
+    "skill_building_timeline": "12-16 months dedicated practice",
+    "skills": [
+      { "name": "Software Engineering Fundamentals", "priority": "core" },
+      { "name": "Systems & Networking", "priority": "core" },
+      { "name": "Observability & Monitoring", "priority": "core" },
+      { "name": "Incident Management", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.95,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Programming, Linux & Distributed Systems Basics",
+          "skill_name": "Software Engineering Fundamentals",
+          "estimated_time": "8-10 weeks",
+          "why": "SREs write real software (automation, tooling) so a strong CS foundation is required, not just ops know-how.",
+          "prerequisites": [],
+          "actions": [
+            "Build proficiency in Python or Go for writing automation and tooling.",
+            "Deepen Linux systems knowledge: filesystems, processes, resource limits (cgroups).",
+            "Study distributed systems basics: consistency, replication, failure modes."
+          ],
+          "resources": [
+            { "title": "Google SRE Book (free online)", "url": "https://sre.google/sre-book/table-of-contents/", "resource_type": "doc", "estimated_minutes": 600 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Observability, Containers & Cloud Infrastructure",
+          "skill_name": "Observability & Monitoring",
+          "estimated_time": "10-12 weeks",
+          "why": "You cannot keep a system reliable without deep visibility into its behavior — metrics, logs, and traces are the SRE's core instruments.",
+          "prerequisites": ["Software Engineering Fundamentals"],
+          "actions": [
+            "Set up metrics, logging, and tracing pipelines with Prometheus, ELK/Loki, and OpenTelemetry.",
+            "Learn Kubernetes operations: deployments, autoscaling, health checks, rolling updates.",
+            "Provision infrastructure with Terraform and manage config with Ansible."
+          ],
+          "resources": [
+            { "title": "Grafana Documentation", "url": "https://grafana.com/docs/grafana/latest/", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Reliability Capstone: Chaos & On-Call Simulation",
+          "skill_name": "Incident Management",
+          "estimated_time": "8-10 weeks",
+          "why": "Simulated incident response and chaos testing prove you can operate under real production pressure, not just read theory.",
+          "prerequisites": ["Observability & Monitoring"],
+          "actions": [
+            "Deploy a multi-service application and define SLOs/error budgets for it.",
+            "Run chaos experiments (kill pods, inject latency) using tools like Chaos Mesh.",
+            "Write incident postmortems for simulated outages following a blameless template."
+          ],
+          "resources": [
+            { "title": "Chaos Mesh Documentation", "url": "https://chaos-mesh.org/docs/", "resource_type": "doc", "estimated_minutes": 120 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "SRE Interview Prep & Certification",
+          "skill_name": "Systems & Networking",
+          "estimated_time": "6-8 weeks",
+          "why": "SRE interviews blend coding rounds, systems design, and 'what would you do during this outage' scenario questions.",
+          "prerequisites": ["Incident Management"],
+          "actions": [
+            "Practice systems design questions with a reliability lens (design a rate limiter, a highly available queue).",
+            "Prepare for and take a relevant cloud certification (CKA or AWS SysOps).",
+            "Rehearse incident-response scenario interviews out loud with a peer."
+          ],
+          "resources": [
+            { "title": "Certified Kubernetes Administrator (CKA)", "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "embedded-systems-firmware-engineer",
+    "name": "Embedded Systems & Firmware Engineer",
+    "sector": "Technology",
+    "description": "Writes low-level software that runs directly on hardware, powering devices from consumer electronics to industrial controllers.",
+    "recommended_subjects": "Physics, Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, JEE Advanced, State CETs",
+    "relevant_degrees": "B.Tech/B.E. Electronics/ECE, Computer Engineering, Electrical Engineering",
+    "typical_progression": "Firmware Intern → Embedded Software Engineer → Senior Embedded Engineer → Embedded Systems Architect",
+    "industry_sectors": "IoT, Automotive, Consumer Electronics, Aerospace, Industrial Automation",
+    "government_opportunities": "DRDO, ISRO, BEL, HAL embedded systems divisions",
+    "higher_study_routes": "M.Tech in Embedded Systems/VLSI, MS in Computer Engineering",
+    "skill_building_timeline": "14-18 months dedicated practice",
+    "skills": [
+      { "name": "C Programming", "priority": "core" },
+      { "name": "Digital Electronics & Microcontrollers", "priority": "core" },
+      { "name": "RTOS & Embedded Protocols", "priority": "core" },
+      { "name": "PCB & Hardware Debugging", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.94,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "C Programming & Digital Electronics",
+          "skill_name": "C Programming",
+          "estimated_time": "8-10 weeks",
+          "why": "Firmware is written almost exclusively in C/C++, and you must understand digital logic to reason about the hardware it controls.",
+          "prerequisites": [],
+          "actions": [
+            "Master C programming: pointers, memory management, bitwise operations, structs.",
+            "Study digital electronics: logic gates, flip-flops, timers, ADC/DAC basics.",
+            "Learn to read microcontroller datasheets and basic circuit diagrams."
+          ],
+          "resources": [
+            { "title": "Beej's Guide to C Programming", "url": "https://beej.us/guide/bgc/", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Microcontroller Programming & Communication Protocols",
+          "skill_name": "Digital Electronics & Microcontrollers",
+          "estimated_time": "10-14 weeks",
+          "why": "Hands-on register-level programming and protocol implementation is the daily reality of firmware work.",
+          "prerequisites": ["C Programming"],
+          "actions": [
+            "Program microcontrollers (STM32, ESP32, or Arduino-based AVR) at the register level.",
+            "Implement UART, SPI, and I2C communication with sensors and peripherals.",
+            "Learn interrupt handling and basic power management techniques."
+          ],
+          "resources": [
+            { "title": "STM32 Official Documentation & HAL Examples", "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html", "resource_type": "doc", "estimated_minutes": 300 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "RTOS Project & Hardware Debugging Capstone",
+          "skill_name": "RTOS & Embedded Protocols",
+          "estimated_time": "10-12 weeks",
+          "why": "A working multi-tasking embedded project on real hardware, debugged with proper tools, is the clearest hiring signal in this field.",
+          "prerequisites": ["Digital Electronics & Microcontrollers"],
+          "actions": [
+            "Build a project using FreeRTOS with multiple tasks, queues, and semaphores.",
+            "Debug using a logic analyzer or oscilloscope to trace signal-level issues.",
+            "Document the full hardware-software architecture with schematics and code comments."
+          ],
+          "resources": [
+            { "title": "FreeRTOS Documentation", "url": "https://www.freertos.org/Documentation/RTOS_book.html", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "PCB Basics & Interview Readiness",
+          "skill_name": "PCB & Hardware Debugging",
+          "estimated_time": "6-8 weeks",
+          "why": "Employers value candidates who can bridge firmware and hardware, understanding schematic and PCB-level constraints.",
+          "prerequisites": ["RTOS & Embedded Protocols"],
+          "actions": [
+            "Learn PCB design basics using KiCad and design a simple breakout board.",
+            "Practice embedded-specific interview questions (memory-mapped I/O, volatile keyword, ISR safety).",
+            "Review real-time constraints and deterministic scheduling concepts for interviews."
+          ],
+          "resources": [
+            { "title": "KiCad Documentation", "url": "https://docs.kicad.org/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "blockchain-smart-contract-developer",
+    "name": "Blockchain & Smart Contract Developer",
+    "sector": "Technology",
+    "description": "Builds decentralized applications and smart contracts on blockchain platforms, handling on-chain logic and security.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA",
+    "typical_progression": "Junior Blockchain Developer → Smart Contract Engineer → Senior Blockchain Engineer → Protocol Architect",
+    "industry_sectors": "DeFi, Web3 Startups, Crypto Exchanges, Enterprise Blockchain",
+    "government_opportunities": "Limited; RBI/NPCI CBDC pilot-linked projects occasionally hire blockchain expertise",
+    "higher_study_routes": "M.Tech in CS with cryptography focus, specialized Web3 bootcamps",
+    "skill_building_timeline": "10-14 months dedicated practice",
+    "skills": [
+      { "name": "Programming Fundamentals", "priority": "core" },
+      { "name": "Blockchain Fundamentals", "priority": "core" },
+      { "name": "Solidity & Smart Contracts", "priority": "core" },
+      { "name": "Smart Contract Security", "priority": "core" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.92,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Programming & Blockchain Fundamentals",
+          "skill_name": "Blockchain Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Smart contract code that mishandles state can lose real money instantly, so blockchain mental models must be solid before writing contracts.",
+          "prerequisites": [],
+          "actions": [
+            "Learn JavaScript/TypeScript fundamentals as the tooling ecosystem base.",
+            "Study how blockchains work: consensus mechanisms, blocks, gas, wallets, transactions.",
+            "Understand the Ethereum Virtual Machine (EVM) execution model at a conceptual level."
+          ],
+          "resources": [
+            { "title": "Ethereum.org: Learn", "url": "https://ethereum.org/en/learn/", "resource_type": "doc", "estimated_minutes": 240 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Solidity Development & Dev Tooling",
+          "skill_name": "Solidity & Smart Contracts",
+          "estimated_time": "10-12 weeks",
+          "why": "Solidity is the dominant smart contract language, and mastering the standard dev toolchain is required to ship anything real.",
+          "prerequisites": ["Blockchain Fundamentals"],
+          "actions": [
+            "Write and deploy smart contracts in Solidity using Hardhat or Foundry.",
+            "Implement standard token contracts (ERC-20, ERC-721) and understand their specifications.",
+            "Build a frontend that interacts with contracts using ethers.js or viem."
+          ],
+          "resources": [
+            { "title": "CryptoZombies: Learn Solidity", "url": "https://cryptozombies.io/", "resource_type": "course", "estimated_minutes": 300 },
+            { "title": "Solidity Official Documentation", "url": "https://docs.soliditylang.org/en/latest/", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "DApp Capstone & Security Auditing",
+          "skill_name": "Smart Contract Security",
+          "estimated_time": "8-10 weeks",
+          "why": "Security is the single highest-leverage skill in this field — one overlooked bug can drain an entire protocol.",
+          "prerequisites": ["Solidity & Smart Contracts"],
+          "actions": [
+            "Build a complete DApp (e.g. a simple lending protocol or DAO voting system) with tests.",
+            "Study common vulnerabilities: reentrancy, integer overflow, access control flaws, oracle manipulation.",
+            "Practice auditing intentionally vulnerable contracts (Ethernaut, Damn Vulnerable DeFi)."
+          ],
+          "resources": [
+            { "title": "Ethernaut: Web3/Solidity CTF", "url": "https://ethernaut.openzeppelin.com/", "resource_type": "project", "estimated_minutes": 300 },
+            { "title": "OpenZeppelin Contracts Documentation", "url": "https://docs.openzeppelin.com/contracts/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Advanced Protocol Concepts & Interview Prep",
+          "skill_name": "Programming Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Web3 hiring assesses depth in gas optimization, protocol design trade-offs, and awareness of the fast-moving security landscape.",
+          "prerequisites": ["Smart Contract Security"],
+          "actions": [
+            "Study gas optimization techniques and Layer 2 scaling concepts (rollups, sidechains).",
+            "Contribute to an open-source Web3 protocol repository.",
+            "Prepare a portfolio showcasing audited/tested contracts with clear documentation."
+          ],
+          "resources": [
+            { "title": "Solidity by Example", "url": "https://solidity-by-example.org/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qa-automation-test-engineer",
+    "name": "QA Automation & Test Engineer",
+    "sector": "Technology",
+    "description": "Designs and maintains automated test suites and quality processes that catch bugs before they reach production.",
+    "recommended_subjects": "Mathematics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science/IT, BCA, B.Sc Computer Science",
+    "typical_progression": "Manual QA Tester → QA Automation Engineer → Senior SDET → QA Engineering Manager",
+    "industry_sectors": "SaaS, E-Commerce, Fintech, IT Services, Product Startups",
+    "government_opportunities": "NIC and PSU software testing units",
+    "higher_study_routes": "M.Tech in CS (optional); ISTQB certification widely valued",
+    "skill_building_timeline": "7-10 months dedicated practice",
+    "skills": [
+      { "name": "Testing Fundamentals", "priority": "core" },
+      { "name": "Programming for Automation", "priority": "core" },
+      { "name": "Test Automation Frameworks", "priority": "core" },
+      { "name": "API & Performance Testing", "priority": "supporting" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.95,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Testing Fundamentals & Manual QA",
+          "skill_name": "Testing Fundamentals",
+          "estimated_time": "5-6 weeks",
+          "why": "Understanding test case design, bug lifecycles, and QA processes manually is necessary before automating any of it.",
+          "prerequisites": [],
+          "actions": [
+            "Learn test case design techniques: equivalence partitioning, boundary value analysis.",
+            "Practice manual testing of a real web application and log bugs formally in a tracker (Jira).",
+            "Study the software testing lifecycle and different testing types (unit, integration, regression, smoke)."
+          ],
+          "resources": [
+            { "title": "ISTQB Foundation Level Syllabus (free)", "url": "https://www.istqb.org/certifications/certified-tester-foundation-level", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Programming & Automation Frameworks",
+          "skill_name": "Programming for Automation",
+          "estimated_time": "8-10 weeks",
+          "why": "Automation engineers must write real code — Selenium/Playwright scripts are software, not just click-recordings.",
+          "prerequisites": ["Testing Fundamentals"],
+          "actions": [
+            "Learn Python or Java fundamentals for writing test scripts.",
+            "Build automated UI test suites with Selenium or Playwright.",
+            "Structure tests using the Page Object Model and a test runner (pytest/TestNG)."
+          ],
+          "resources": [
+            { "title": "Playwright Documentation", "url": "https://playwright.dev/docs/intro", "resource_type": "doc", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "End-to-End Automation Suite & CI Integration",
+          "skill_name": "Test Automation Frameworks",
+          "estimated_time": "8-9 weeks",
+          "why": "A test suite that runs automatically in CI on every commit is the concrete proof-of-work signal employers look for.",
+          "prerequisites": ["Programming for Automation"],
+          "actions": [
+            "Build a full regression suite for an open-source or demo application.",
+            "Integrate the suite into a CI pipeline (GitHub Actions) so it runs on every push.",
+            "Add API test coverage using Postman/Newman or RestAssured."
+          ],
+          "resources": [
+            { "title": "Postman Learning Center", "url": "https://learning.postman.com/", "resource_type": "doc", "estimated_minutes": 150 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Performance Testing & Interview Readiness",
+          "skill_name": "API & Performance Testing",
+          "estimated_time": "5-6 weeks",
+          "why": "Senior QA roles expect comfort with load testing and the ability to reason about testing strategy trade-offs, not just tool usage.",
+          "prerequisites": ["Test Automation Frameworks"],
+          "actions": [
+            "Learn load/performance testing basics using JMeter or k6.",
+            "Study test strategy design for interviews (how would you test X feature end-to-end).",
+            "Prepare for ISTQB certification if not already completed."
+          ],
+          "resources": [
+            { "title": "k6 Documentation", "url": "https://grafana.com/docs/k6/latest/", "resource_type": "doc", "estimated_minutes": 120 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "game-developer",
+    "name": "Game Developer (Unity/Unreal)",
+    "sector": "Technology",
+    "description": "Builds interactive games and simulations, combining programming, real-time rendering, and game design principles.",
+    "recommended_subjects": "Mathematics, Physics, Computer Science",
+    "common_entrance_exams": "JEE Main, State CETs, CUET",
+    "relevant_degrees": "B.Tech/B.E. Computer Science, B.Sc Game Development, specialized game design diplomas",
+    "typical_progression": "Junior Game Developer → Gameplay Programmer → Senior Game Engineer → Technical Director / Studio Lead",
+    "industry_sectors": "Gaming Studios, Mobile Gaming, AR/VR, Simulation & Training Tech",
+    "government_opportunities": "Limited direct roles; some defence/aerospace simulation contracts",
+    "higher_study_routes": "M.Sc/M.Tech in Game Development or Computer Graphics",
+    "skill_building_timeline": "12-16 months dedicated practice",
+    "skills": [
+      { "name": "Programming Fundamentals", "priority": "core" },
+      { "name": "Game Engine Proficiency", "priority": "core" },
+      { "name": "Game Design Principles", "priority": "supporting" },
+      { "name": "3D Math & Physics", "priority": "core" }
+    ],
+    "roadmap": {
+      "version": 1,
+      "confidence_score": 0.93,
+      "milestones": [
+        {
+          "order_index": 1,
+          "phase": "Foundations",
+          "stage_key": "ug",
+          "title": "Programming, 3D Math & Game Design Basics",
+          "skill_name": "Programming Fundamentals",
+          "estimated_time": "6-8 weeks",
+          "why": "Game programming leans heavily on vector/matrix math and OOP patterns that must be comfortable before touching an engine.",
+          "prerequisites": [],
+          "actions": [
+            "Learn C# (for Unity) or C++ (for Unreal) fundamentals with an OOP focus.",
+            "Study vectors, matrices, and basic physics (collision, gravity, forces) as applied to games.",
+            "Play and deconstruct 3-5 games analytically to understand core game design loops."
+          ],
+          "resources": [
+            { "title": "Unity Learn: Junior Programmer Pathway", "url": "https://learn.unity.com/pathway/junior-programmer", "resource_type": "course", "estimated_minutes": 500 }
+          ]
+        },
+        {
+          "order_index": 2,
+          "phase": "Core Tooling",
+          "stage_key": "ug",
+          "title": "Engine Proficiency & Gameplay Systems",
+          "skill_name": "Game Engine Proficiency",
+          "estimated_time": "12-14 weeks",
+          "why": "Shipping games requires fluency with an engine's scene graph, physics, animation, and scripting systems, not just the language.",
+          "prerequisites": ["Programming Fundamentals"],
+          "actions": [
+            "Build small complete games in Unity (C#) or Unreal (C++/Blueprints) covering movement, combat, and UI.",
+            "Learn animation state machines, particle systems, and basic shader usage.",
+            "Implement save/load systems and simple AI (state machines, pathfinding)."
+          ],
+          "resources": [
+            { "title": "Unreal Engine Learning Library", "url": "https://dev.epicgames.com/community/unreal-engine/learning", "resource_type": "course", "estimated_minutes": 500 }
+          ]
+        },
+        {
+          "order_index": 3,
+          "phase": "Proof of Work",
+          "stage_key": "ug",
+          "title": "Complete Game Capstone & Polish",
+          "skill_name": "3D Math & Physics",
+          "estimated_time": "10-12 weeks",
+          "why": "A single small but fully polished, playable game demonstrates shippable craft far better than several unfinished prototypes.",
+          "prerequisites": ["Game Engine Proficiency"],
+          "actions": [
+            "Design and build one complete game (2D or 3D) from concept to polished, bug-free build.",
+            "Playtest with real users and iterate on feel, difficulty, and UI feedback.",
+            "Package and publish the build (itch.io, Google Play, or a game jam submission)."
+          ],
+          "resources": [
+            { "title": "itch.io: Publish Your Game", "url": "https://itch.io/game-development", "resource_type": "project", "estimated_minutes": 200 }
+          ]
+        },
+        {
+          "order_index": 4,
+          "phase": "Industry Entry",
+          "stage_key": "professional",
+          "title": "Portfolio Reel & Studio Interview Prep",
+          "skill_name": "Game Design Principles",
+          "estimated_time": "6-8 weeks",
+          "why": "Game studio hiring is heavily portfolio-driven; a strong reel and understanding of production pipelines matter most.",
+          "prerequisites": ["3D Math & Physics"],
+          "actions": [
+            "Build a portfolio site or reel showcasing 2-3 best projects with gameplay clips.",
+            "Study game production pipelines and how programmers collaborate with artists/designers.",
+            "Practice technical interview questions on data structures relevant to games (spatial partitioning, object pooling)."
+          ],
+          "resources": [
+            { "title": "Game Programming Patterns (free online)", "url": "https://gameprogrammingpatterns.com/contents.html", "resource_type": "doc", "estimated_minutes": 250 }
+          ]
+        }
+      ]
+    }
+  }
+]

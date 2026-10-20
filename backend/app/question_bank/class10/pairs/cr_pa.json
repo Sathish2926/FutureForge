@@ -1,0 +1,109 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "cr_pa_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Are you more excited by designing how something should look, or physically making/building it yourself?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Designing how it should look",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Physically making/building it",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_pa_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather sketch/plan a product, or actually construct/assemble a working version of it?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Sketch/plan it",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Construct/assemble it",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_pa_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather enter an art/design competition, or a robotics/making/craft competition?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Art/design competition",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Robotics/making/craft competition",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_pa_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Are you more drawn to the creative-planning stage of a project, or the hands-on execution stage?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Creative-planning stage",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Hands-on execution stage",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

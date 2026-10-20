@@ -1,0 +1,109 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "hu_pa_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "HUMANITIES_SOCIAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather spend years studying to argue cases/shape policy, or start building real hands-on skills sooner?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Study to argue/shape policy",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Build hands-on skills sooner",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "hu_pa_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "HUMANITIES_SOCIAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Are you more interested in debating how something should work, or building/fixing something that works right now?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Debating how it should work",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Building/fixing it now",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "hu_pa_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "HUMANITIES_SOCIAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather intern at a law office/NGO, or in a hands-on trade (electronics, mechanical, culinary, technical crafts)?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Law office/NGO",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "A hands-on trade",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "hu_pa_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "HUMANITIES_SOCIAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Do you see more value in a longer formal-education path, or a shorter, skills-first path into working life?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Longer formal-education path",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.7
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Shorter, skills-first path",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

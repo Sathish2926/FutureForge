@@ -1,0 +1,93 @@
+rule_id,scholarship_id,rule_group,condition_type,field_name,operator,value,logical_operator,source_text,source_url
+93,SCH_0001,1,MANDATORY,gender,=,Female,AND,Exclusively for female students,https://www.aicte-india.org/schemes/students-development-schemes/Pragati
+94,SCH_0001,1,MANDATORY,annual_income,<=,800000,AND,Annual family income not exceeding Rs. 8 Lakh,https://www.aicte-india.org/schemes/students-development-schemes/Pragati
+95,SCH_0001,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate",AND,First year Technical Degree / Lateral entry in AICTE approved institution,https://www.aicte-india.org/schemes/students-development-schemes/Pragati
+96,SCH_0001,1,MANDATORY,institution_type,=,AICTE Approved,AND,Institution must be recognized and approved by AICTE,https://www.aicte-india.org/schemes/students-development-schemes/Pragati
+97,SCH_0002,1,MANDATORY,disability,=,True,AND,Candidate must have at least 40% benchmark disability,https://www.aicte-india.org/schemes/students-development-schemes/Saksham
+98,SCH_0002,1,MANDATORY,annual_income,<=,800000,AND,Annual family income not exceeding Rs. 8 Lakh,https://www.aicte-india.org/schemes/students-development-schemes/Saksham
+99,SCH_0002,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate",AND,Enrolled in 1st year of technical degree or lateral entry,https://www.aicte-india.org/schemes/students-development-schemes/Saksham
+100,SCH_0002,1,MANDATORY,institution_type,=,AICTE Approved,AND,AICTE approved institution,https://www.aicte-india.org/schemes/students-development-schemes/Saksham
+101,SCH_0003,1,MANDATORY,special_category,IN,"Orphan,COVID_Deceased_Parents,Martyr_Ward",AND,Must be orphan or ward of COVID deceased or Armed Forces martyr,https://www.aicte-india.org/schemes/students-development-schemes/Swanath
+102,SCH_0003,1,MANDATORY,annual_income,<=,800000,AND,Annual family income not exceeding Rs. 8 Lakh,https://www.aicte-india.org/schemes/students-development-schemes/Swanath
+103,SCH_0003,1,MANDATORY,institution_type,=,AICTE Approved,AND,AICTE approved institution,https://www.aicte-india.org/schemes/students-development-schemes/Swanath
+104,SCH_0004,1,MANDATORY,entrance_exam,IN,"GATE,CEED",AND,Must have valid GATE or CEED scorecard,https://www.aicte-india.org/schemes/students-development-schemes/PG-Scholarship-Scheme
+105,SCH_0004,1,MANDATORY,education_level,=,Postgraduate,AND,Admitted to full-time regular PG programme in AICTE approved institution,https://www.aicte-india.org/schemes/students-development-schemes/PG-Scholarship-Scheme
+106,SCH_0005,1,MANDATORY,gender,=,Female,AND,Only girl child in the family,https://www.ugc.gov.in/page/Single-Girl-Child-Scholarship.aspx
+107,SCH_0005,1,MANDATORY,family_sibling_status,IN,"Only_Child,Twin_Daughters",AND,Single girl child or twin/fraternal daughters,https://www.ugc.gov.in/page/Single-Girl-Child-Scholarship.aspx
+108,SCH_0005,1,MANDATORY,education_level,=,Postgraduate,AND,Enrolled in 1st year regular Master degree in recognized university,https://www.ugc.gov.in/page/Single-Girl-Child-Scholarship.aspx
+109,SCH_0005,1,MANDATORY,age,<=,30,AND,Age must not exceed 30 years,https://www.ugc.gov.in/page/Single-Girl-Child-Scholarship.aspx
+110,SCH_0006,1,MANDATORY,domicile_state,IN,"Arunachal Pradesh,Assam,Manipur,Meghalaya,Mizoram,Nagaland,Sikkim,Tripura",AND,Domicile of North Eastern Region,https://www.ugc.gov.in/page/Ishan-Uday.aspx
+111,SCH_0006,1,MANDATORY,annual_income,<=,450000,AND,Parental income from all sources must not exceed Rs. 4.5 Lakh,https://www.ugc.gov.in/page/Ishan-Uday.aspx
+112,SCH_0006,1,MANDATORY,education_level,=,Undergraduate,AND,Admitted to 1st year of regular UG degree programme,https://www.ugc.gov.in/page/Ishan-Uday.aspx
+113,SCH_0007,1,MANDATORY,university_rank,IN,"1,2",AND,1st or 2nd Rank in University at UG level,https://www.ugc.gov.in/page/PG-Scholarship-for-University-Rank-Holders.aspx
+114,SCH_0007,1,MANDATORY,minimum_percentage,>=,60,AND,Minimum 60% aggregate in graduation,https://www.ugc.gov.in/page/PG-Scholarship-for-University-Rank-Holders.aspx
+115,SCH_0007,1,MANDATORY,education_level,=,Postgraduate,AND,Enrolled in regular Master degree in recognized university,https://www.ugc.gov.in/page/PG-Scholarship-for-University-Rank-Holders.aspx
+116,SCH_0007,1,MANDATORY,age,<=,30,AND,Age up to 30 years at admission,https://www.ugc.gov.in/page/PG-Scholarship-for-University-Rank-Holders.aspx
+117,SCH_0008,1,MANDATORY,annual_income,<=,450000,AND,Gross family income not exceeding Rs. 4.5 Lakh,https://www.education.gov.in/scholarships-education-loan-0
+118,SCH_0008,1,MANDATORY,board_percentile,>=,80,AND,Above 80th percentile in relevant board stream in Class 12,https://www.education.gov.in/scholarships-education-loan-0
+119,SCH_0008,1,MANDATORY,study_mode,=,Regular,AND,Pursuing regular full-time course,https://www.education.gov.in/scholarships-education-loan-0
+120,SCH_0009,1,MANDATORY,category,=,SC,AND,Belonging to Scheduled Caste community,https://socialjustice.gov.in/schemes/31
+121,SCH_0009,1,MANDATORY,annual_income,<=,800000,AND,Total family income from all sources not exceeding Rs. 8.0 Lakh,https://socialjustice.gov.in/schemes/31
+122,SCH_0009,1,MANDATORY,institution_status,=,MoSJE Notified Institution,AND,Admitted to notified premier institution,https://socialjustice.gov.in/schemes/31
+123,SCH_0010,1,MANDATORY,category,=,SC,AND,Scheduled Caste category,https://socialjustice.gov.in/schemes/26
+124,SCH_0010,1,MANDATORY,annual_income,<=,250000,AND,Parental annual income not exceeding Rs. 2.50 Lakh,https://socialjustice.gov.in/schemes/26
+125,SCH_0010,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate,Diploma",AND,Enrolled in post-matric studies,https://socialjustice.gov.in/schemes/26
+126,SCH_0011,1,MANDATORY,category,IN,"OBC,EBC,DNT",AND,"Belonging to OBC, EBC or DNT/NT categories",https://socialjustice.gov.in/schemes/yasasvi
+127,SCH_0011,1,MANDATORY,annual_income,<=,250000,AND,Annual income ceiling of Rs. 2.50 Lakh,https://socialjustice.gov.in/schemes/yasasvi
+128,SCH_0011,1,MANDATORY,education_level,=,Undergraduate,AND,Undergraduate studies in notified institutions,https://socialjustice.gov.in/schemes/yasasvi
+129,SCH_0012,1,MANDATORY,category,=,ST,AND,Scheduled Tribe category,https://tribal.nic.in/NFST.aspx
+130,SCH_0012,1,MANDATORY,annual_income,<=,600000,AND,Total family income from all sources not exceeding Rs. 6.0 Lakh,https://tribal.nic.in/NFST.aspx
+131,SCH_0012,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate",AND,Admitted to notified premier institution,https://tribal.nic.in/NFST.aspx
+132,SCH_0013,1,MANDATORY,religion,IN,"Muslim,Christian,Sikh,Buddhist,Jain,Parsi",AND,Belonging to notified minority communities,https://www.minorityaffairs.gov.in/schemes-programmes/merit-cum-means-scholarship-scheme
+133,SCH_0013,1,MANDATORY,annual_income,<=,250000,AND,Annual family income not exceeding Rs. 2.50 Lakh,https://www.minorityaffairs.gov.in/schemes-programmes/merit-cum-means-scholarship-scheme
+134,SCH_0013,1,MANDATORY,minimum_percentage,>=,50,AND,At least 50% marks in previous qualifying exam,https://www.minorityaffairs.gov.in/schemes-programmes/merit-cum-means-scholarship-scheme
+135,SCH_0014,1,MANDATORY,disability,=,True,AND,Persons with benchmark disability not less than 40%,https://disabilityaffairs.gov.in/content/page/scholarships.php
+136,SCH_0014,1,MANDATORY,annual_income,<=,600000,AND,Annual family income not exceeding Rs. 6.0 Lakh,https://disabilityaffairs.gov.in/content/page/scholarships.php
+137,SCH_0014,1,MANDATORY,institution_status,=,DEPwD Notified Institution,AND,Admitted to notified premier institution,https://disabilityaffairs.gov.in/content/page/scholarships.php
+138,SCH_0015,1,MANDATORY,parental_occupation,IN,"Ex-Servicemen,Ex-Coast_Guard",AND,Dependent ward of Ex-Servicemen or Ex-Coast Guard personnel,https://ksb.gov.in/prime-ministers-scholarship-scheme-pmss.htm
+139,SCH_0015,1,MANDATORY,minimum_percentage,>=,60,AND,Minimum 60% in Class 12 or qualifying exam,https://ksb.gov.in/prime-ministers-scholarship-scheme-pmss.htm
+140,SCH_0015,1,MANDATORY,course_type,=,Professional Degree,AND,Enrolled in recognized technical or professional degree course,https://ksb.gov.in/prime-ministers-scholarship-scheme-pmss.htm
+141,SCH_0016,1,MANDATORY,state,=,Tamil Nadu,AND,Resident of Tamil Nadu,https://www.tn.gov.in/scheme/data_view/68574
+142,SCH_0016,1,MANDATORY,gender,=,Female,AND,Exclusively for female students,https://www.tn.gov.in/scheme/data_view/68574
+143,SCH_0016,1,MANDATORY,schooling_type,=,TN_Govt_School_6_to_12,AND,Studied Class 6 to 12 in Tamil Nadu Government schools,https://www.tn.gov.in/scheme/data_view/68574
+144,SCH_0016,1,MANDATORY,education_level,IN,"Undergraduate,Diploma",AND,Enrolled in higher education degree or diploma,https://www.tn.gov.in/scheme/data_view/68574
+145,SCH_0017,1,MANDATORY,state,=,Tamil Nadu,AND,Resident of Tamil Nadu,https://www.tn.gov.in/department/30
+146,SCH_0017,1,MANDATORY,gender,=,Male,AND,Exclusively for male students,https://www.tn.gov.in/department/30
+147,SCH_0017,1,MANDATORY,schooling_type,=,TN_Govt_School_6_to_12,AND,Studied Class 6 to 12 in Tamil Nadu Government schools,https://www.tn.gov.in/department/30
+148,SCH_0017,1,MANDATORY,education_level,IN,"Undergraduate,Diploma",AND,Enrolled in higher education degree or diploma,https://www.tn.gov.in/department/30
+149,SCH_0018,1,MANDATORY,state,=,Tamil Nadu,AND,Domicile of Tamil Nadu,https://tn.gov.in/department/1
+150,SCH_0018,1,MANDATORY,category,IN,"SC,ST,SCC",AND,"Scheduled Caste, Scheduled Tribe, or Converted Christian SC",https://tn.gov.in/department/1
+151,SCH_0018,1,MANDATORY,annual_income,<=,250000,AND,Annual family income not exceeding Rs. 2.50 Lakh,https://tn.gov.in/department/1
+152,SCH_0019,1,MANDATORY,state,=,Tamil Nadu,AND,Resident of Tamil Nadu,https://www.tn.gov.in/department/3
+153,SCH_0019,1,MANDATORY,category,IN,"BC,MBC,DNC",AND,"Belonging to BC, MBC or DNC community",https://www.tn.gov.in/department/3
+154,SCH_0019,1,MANDATORY,annual_income,<=,250000,AND,Annual family income not exceeding Rs. 2.50 Lakh (exempt for First Generation Graduates in 3-yr UG),https://www.tn.gov.in/department/3
+155,SCH_0020,1,MANDATORY,state,=,Tamil Nadu,AND,Domicile of Tamil Nadu,https://www.tndte.gov.in/
+156,SCH_0020,1,MANDATORY,first_graduate,=,True,AND,First graduate in the family verified by Tahsildar,https://www.tndte.gov.in/
+157,SCH_0020,1,MANDATORY,admission_quota,=,TNEA_Govt_Quota,AND,Admitted through TNEA single window counseling,https://www.tndte.gov.in/
+158,SCH_0020,1,MANDATORY,course,IN,"BTech,BE,BArch",AND,Professional engineering degree,https://www.tndte.gov.in/
+159,SCH_0021,1,MANDATORY,education_level,=,Undergraduate,AND,First year full-time regular undergraduate degree,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+160,SCH_0021,1,MANDATORY,minimum_percentage,>=,60,AND,Minimum 60% in Class 12 board examination,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+161,SCH_0021,1,MANDATORY,annual_income,<=,1500000,AND,Household annual income not exceeding Rs. 15 Lakh,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+162,SCH_0022,1,MANDATORY,education_level,=,Postgraduate,AND,First year full-time regular Master degree in eligible technology disciplines,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+163,SCH_0022,1,MANDATORY,minimum_cgpa,>=,7.5,OR,UG CGPA >= 7.5 or GATE Score >= 550,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+164,SCH_0022,1,MANDATORY,gate_score,>=,550,OR,GATE score between 550 and 1000,https://www.reliancefoundation.org/our-work/education/reliance-foundation-scholarships
+165,SCH_0023,1,MANDATORY,gender,=,Female,AND,Exclusively for female students,https://www.infosys.com/infosys-foundation.html
+166,SCH_0023,1,MANDATORY,education_level,=,Undergraduate,AND,First year 4-year STEM undergraduate course,https://www.infosys.com/infosys-foundation.html
+167,SCH_0023,1,MANDATORY,annual_income,<=,800000,AND,Annual family income not exceeding Rs. 8 Lakh,https://www.infosys.com/infosys-foundation.html
+168,SCH_0023,1,MANDATORY,institution_type,=,NIRF Ranked,AND,Enrolled in NIRF accredited institution,https://www.infosys.com/infosys-foundation.html
+169,SCH_0024,1,MANDATORY,education_domain,=,Medical,AND,"Medical, Healthcare or Allied Health degree",https://www.tatatrusts.org/our-work/education
+170,SCH_0024,1,MANDATORY,minimum_percentage,>=,60,AND,Minimum 60% marks in previous qualifying exam,https://www.tatatrusts.org/our-work/education
+171,SCH_0024,1,MANDATORY,annual_income,<=,600000,AND,Family income not exceeding Rs. 6.0 Lakh,https://www.tatatrusts.org/our-work/education
+172,SCH_0025,1,MANDATORY,minimum_percentage,>=,60,AND,Minimum 60% marks in Class 10 or 12,https://licindia.in/golden-jubilee-foundation
+173,SCH_0025,1,MANDATORY,annual_income,<=,250000,AND,Annual family income not exceeding Rs. 2.50 Lakh,https://licindia.in/golden-jubilee-foundation
+174,SCH_0025,1,MANDATORY,education_level,IN,"Undergraduate,Diploma",AND,Enrolled in regular graduation or diploma course,https://licindia.in/golden-jubilee-foundation
+175,SCH_0026,1,MANDATORY,gender,=,Female,AND,Exclusively for meritorious girl students,https://kotakeducation.org/kotak-kanya-scholarship/
+176,SCH_0026,1,MANDATORY,minimum_percentage,>=,85,AND,Scored 85% or more in Class 12 board examination,https://kotakeducation.org/kotak-kanya-scholarship/
+177,SCH_0026,1,MANDATORY,annual_income,<=,600000,AND,Annual family income not exceeding Rs. 6.0 Lakh,https://kotakeducation.org/kotak-kanya-scholarship/
+178,SCH_0026,1,MANDATORY,course_type,=,Professional Graduation,AND,"Admitted to 1st year professional degree (Engineering, MBBS, Law, etc.)",https://kotakeducation.org/kotak-kanya-scholarship/
+179,SCH_0027,1,MANDATORY,minimum_percentage,>=,55,AND,Passed previous qualifying exam with at least 55% marks,https://www.hdfcbank.com/personal/about-us/corporate-social-responsibility/parivartan
+180,SCH_0027,1,MANDATORY,annual_income,<=,250000,AND,Annual family income not exceeding Rs. 2.50 Lakh,https://www.hdfcbank.com/personal/about-us/corporate-social-responsibility/parivartan
+181,SCH_0027,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate,Diploma",AND,Enrolled in recognized undergraduate or postgraduate studies,https://www.hdfcbank.com/personal/about-us/corporate-social-responsibility/parivartan
+182,SCH_0028,1,MANDATORY,minimum_percentage,>=,60,AND,"Minimum 65% for boys, 60% for girls",https://www.sitaramjindalfoundation.org/scholarships.php
+183,SCH_0028,1,MANDATORY,annual_income,<=,400000,AND,Family income not exceeding Rs. 4.0 Lakh,https://www.sitaramjindalfoundation.org/scholarships.php
+184,SCH_0028,1,MANDATORY,education_level,IN,"Undergraduate,Postgraduate,Diploma",AND,Regular full-time student,https://www.sitaramjindalfoundation.org/scholarships.php

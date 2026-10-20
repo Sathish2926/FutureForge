@@ -1,0 +1,565 @@
+{
+  "stage": "class10",
+  "domains": [
+    "MATH_LOGICAL",
+    "LIFE_SCIENCES_CARE",
+    "HUMANITIES_SOCIAL",
+    "BUSINESS_COMMERCE",
+    "CREATIVE_VISUAL",
+    "PRACTICAL_APPLIED"
+  ],
+
+  "universal": [
+    {
+      "question_id": "u1",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "How would you rather spend a free Saturday?",
+      "options": [
+        {"option_id": "u1a", "label": "Building, assembling, or fixing something physical", "domain_weights": {"PRACTICAL_APPLIED": 0.7, "MATH_LOGICAL": 0.2}},
+        {"option_id": "u1b", "label": "Reading about how businesses or people make money", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+        {"option_id": "u1c", "label": "Watching a documentary about space, medicine, or the body", "domain_weights": {"LIFE_SCIENCES_CARE": 0.7, "MATH_LOGICAL": 0.2}},
+        {"option_id": "u1d", "label": "Sketching, editing videos, or designing something", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+        {"option_id": "u1e", "label": "Debating a current event or reading about history/society", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}},
+        {"option_id": "u1f", "label": "Solving puzzles, coding, or playing strategy games", "domain_weights": {"MATH_LOGICAL": 0.8}}
+      ]
+    },
+    {
+      "question_id": "u2",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "In class, which feeling do you enjoy most?",
+      "options": [
+        {"option_id": "u2a", "label": "The moment a math problem finally clicks", "domain_weights": {"MATH_LOGICAL": 0.9}},
+        {"option_id": "u2b", "label": "Learning why something works biologically", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+        {"option_id": "u2c", "label": "Discussing why something happened in history or society", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}},
+        {"option_id": "u2d", "label": "Understanding how money, trade, or a business decision works", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+        {"option_id": "u2e", "label": "Making something look or sound better (art, presentation, design)", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+      ]
+    },
+    {
+      "question_id": "u3",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "If you had to lead a school project, which role would you want?",
+      "options": [
+        {"option_id": "u3a", "label": "The one figuring out the numbers/budget", "domain_weights": {"BUSINESS_COMMERCE": 0.7, "MATH_LOGICAL": 0.2}},
+        {"option_id": "u3b", "label": "The one designing how it looks/feels", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+        {"option_id": "u3c", "label": "The one researching and writing the content", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}},
+        {"option_id": "u3d", "label": "The one building/testing the actual thing", "domain_weights": {"PRACTICAL_APPLIED": 0.7, "MATH_LOGICAL": 0.2}},
+        {"option_id": "u3e", "label": "The one explaining the health/science angle", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}}
+      ]
+    },
+    {
+      "question_id": "u4",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "Which of these topics would you click on first?",
+      "options": [
+        {"option_id": "u4a", "label": "\"How AI is changing jobs\"", "domain_weights": {"MATH_LOGICAL": 0.8}},
+        {"option_id": "u4b", "label": "\"Why the stock market crashed\"", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+        {"option_id": "u4c", "label": "\"New treatment discovered for a disease\"", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+        {"option_id": "u4d", "label": "\"The history behind a major conflict\"", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}},
+        {"option_id": "u4e", "label": "\"How a famous building/product was designed\"", "domain_weights": {"CREATIVE_VISUAL": 0.7, "PRACTICAL_APPLIED": 0.2}}
+      ]
+    },
+    {
+      "question_id": "u5",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "Which subject do you feel most confident in right now?",
+      "options": [
+        {"option_id": "u5a", "label": "Math", "domain_weights": {"MATH_LOGICAL": 0.5}, "meta_flag": "MATH_HIGH_CONFIDENCE"},
+        {"option_id": "u5b", "label": "Science (Biology-heavy)", "domain_weights": {"LIFE_SCIENCES_CARE": 0.5}, "meta_flag": "LS_HIGH_CONFIDENCE"},
+        {"option_id": "u5c", "label": "Social Science / History / Civics", "domain_weights": {"HUMANITIES_SOCIAL": 0.5}, "meta_flag": "HU_HIGH_CONFIDENCE"},
+        {"option_id": "u5d", "label": "None strongly / it varies", "domain_weights": {}, "meta_flag": "LOW_CONFIDENCE_SIGNAL"}
+      ]
+    }
+  ],
+
+  "pairs": {
+    "ML_LS": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "ml_ls_1", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "Are you more drawn to how machines/systems work, or how living things work?", "options": [
+          {"option_id": "a", "label": "How machines/systems work", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "How living things work", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}}
+        ]},
+        {"question_id": "ml_ls_2", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "Would you rather build something that solves a problem, or understand/treat something that's broken?", "options": [
+          {"option_id": "a", "label": "Build something that solves a problem", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Understand or treat something that's broken", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}}
+        ]},
+        {"question_id": "ml_ls_3", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "Which lab excites you more: chemicals/physics, or biology/medicine?", "options": [
+          {"option_id": "a", "label": "Chemicals/physics lab", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Biology/medicine lab", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}}
+        ]},
+        {"question_id": "ml_ls_4", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "If a family member were ill, are you more interested in how the treatment was engineered, or how it works in the body?", "options": [
+          {"option_id": "a", "label": "How the treatment was engineered", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "How it works in the body", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}}
+        ]},
+        {"question_id": "ml_ls_5", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "Would you rather design a medical device, or research a new treatment?", "options": [
+          {"option_id": "a", "label": "Design a medical device", "domain_weights": {"MATH_LOGICAL": 0.7, "LIFE_SCIENCES_CARE": 0.2}},
+          {"option_id": "b", "label": "Research a new treatment", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}}
+        ]},
+        {"question_id": "ml_ls_6", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "LIFE_SCIENCES_CARE"], "prompt": "Would you rather crack a physics problem set, or memorize and apply biological processes?", "options": [
+          {"option_id": "a", "label": "Crack a physics problem set", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Study and apply biological processes", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}}
+        ]}
+      ]
+    },
+
+    "ML_BC": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "ml_bc_1", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "Would you rather solve an equation with one correct answer, or figure out a real-world tradeoff with no single correct answer?", "options": [
+          {"option_id": "a", "label": "Equation, one right answer", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Real-world tradeoff", "domain_weights": {"BUSINESS_COMMERCE": 0.9}}
+        ]},
+        {"question_id": "ml_bc_2", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "Are you more curious about why a formula works, or what it's worth in the real world (pricing, profit, growth)?", "options": [
+          {"option_id": "a", "label": "Why it works", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "What it's worth", "domain_weights": {"BUSINESS_COMMERCE": 0.9}}
+        ]},
+        {"question_id": "ml_bc_3", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "Would you enjoy a stock market simulation game or a coding/robotics competition more?", "options": [
+          {"option_id": "a", "label": "Stock market simulation", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "Coding/robotics competition", "domain_weights": {"MATH_LOGICAL": 0.8}}
+        ]},
+        {"question_id": "ml_bc_4", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "At 25, are you closer to \"working on a technical product\" or \"running/growing a business\"?", "options": [
+          {"option_id": "a", "label": "Working on a technical product", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Running/growing a business", "domain_weights": {"BUSINESS_COMMERCE": 0.8}}
+        ]},
+        {"question_id": "ml_bc_5", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "Would you rather optimize an algorithm, or optimize a business's profit margin?", "options": [
+          {"option_id": "a", "label": "Optimize an algorithm", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Optimize a profit margin", "domain_weights": {"BUSINESS_COMMERCE": 0.9}}
+        ]},
+        {"question_id": "ml_bc_6", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "BUSINESS_COMMERCE"], "prompt": "Would you rather present a technical solution, or pitch a business idea?", "options": [
+          {"option_id": "a", "label": "Present a technical solution", "domain_weights": {"MATH_LOGICAL": 0.7, "PRACTICAL_APPLIED": 0.1}},
+          {"option_id": "b", "label": "Pitch a business idea", "domain_weights": {"BUSINESS_COMMERCE": 0.8}}
+        ]}
+      ]
+    },
+
+    "ML_PA": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "ml_pa_1", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory", "engineering-applied"], "domain_pair": ["MATH_LOGICAL", "PRACTICAL_APPLIED"], "prompt": "Do you prefer understanding a concept deeply on paper, or actually building/testing a working version of it?", "options": [
+          {"option_id": "a", "label": "Understand it deeply on paper", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Build/test a working version", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "ml_pa_2", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing", "engineering-applied"], "domain_pair": ["MATH_LOGICAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather win a math/physics olympiad, or a robotics/making competition?", "options": [
+          {"option_id": "a", "label": "Math/physics olympiad", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Robotics/making competition", "domain_weights": {"PRACTICAL_APPLIED": 0.8, "MATH_LOGICAL": 0.1}}
+        ]},
+        {"question_id": "ml_pa_3", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "PRACTICAL_APPLIED"], "prompt": "When stuck on a problem, do you like reasoning it out theoretically, or trying things hands-on until something works?", "options": [
+          {"option_id": "a", "label": "Reason it out theoretically", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Try hands-on until it works", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "ml_pa_4", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather derive a formula from scratch, or take apart and rebuild a machine?", "options": [
+          {"option_id": "a", "label": "Derive a formula from scratch", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Take apart and rebuild a machine", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "ml_pa_5", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "PRACTICAL_APPLIED"], "prompt": "Do you enjoy a subject more when it stays abstract, or once it becomes something you can touch/use?", "options": [
+          {"option_id": "a", "label": "Stays abstract", "domain_weights": {"MATH_LOGICAL": 0.7}},
+          {"option_id": "b", "label": "Becomes something you can touch/use", "domain_weights": {"PRACTICAL_APPLIED": 0.7}}
+        ]}
+      ]
+    },
+
+    "LS_PA": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "ls_pa_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "PRACTICAL_APPLIED"], "prompt": "Are you more drawn to research/understanding disease, or hands-on patient care?", "options": [
+          {"option_id": "a", "label": "Research/understanding disease", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Hands-on patient care", "domain_weights": {"PRACTICAL_APPLIED": 0.8, "LIFE_SCIENCES_CARE": 0.2}}
+        ]},
+        {"question_id": "ls_pa_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "PRACTICAL_APPLIED"], "prompt": "Would a longer path (many years of medicine/research) bother you, or are you looking for a quicker, hands-on path into healthcare?", "options": [
+          {"option_id": "a", "label": "Longer path is fine", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Prefer a quicker, hands-on path", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "ls_pa_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "PRACTICAL_APPLIED"], "prompt": "Would you rather run lab experiments, or practice a hands-on medical/technical skill (like first aid or a physical therapy technique)?", "options": [
+          {"option_id": "a", "label": "Run lab experiments", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Practice a hands-on skill", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "ls_pa_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "PRACTICAL_APPLIED"], "prompt": "Do you picture yourself more in a research lab, or a clinic/ward doing direct hands-on work?", "options": [
+          {"option_id": "a", "label": "Research lab", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Clinic/ward, hands-on work", "domain_weights": {"PRACTICAL_APPLIED": 0.7, "LIFE_SCIENCES_CARE": 0.2}}
+        ]}
+      ]
+    },
+
+    "BC_HU": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "bc_hu_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Are you more interested in how a company is run, or how society/government/culture works?", "options": [
+          {"option_id": "a", "label": "How a company is run", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "How society/government/culture works", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "bc_hu_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Would you rather read about a company's rise and fall, or a political/historical movement?", "options": [
+          {"option_id": "a", "label": "A company's rise and fall", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "A political/historical movement", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "bc_hu_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Do you see yourself more in a corporate/business setting, or in law, public policy, or journalism?", "options": [
+          {"option_id": "a", "label": "Corporate/business setting", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Law, public policy, or journalism", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "bc_hu_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Would you rather negotiate a business deal, or argue a case/position?", "options": [
+          {"option_id": "a", "label": "Negotiate a business deal", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "Argue a case/position", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "bc_hu_5", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Are you more excited by a stock pitch competition, or a Model UN/debate competition?", "options": [
+          {"option_id": "a", "label": "Stock pitch competition", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Model UN/debate competition", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "bc_hu_6", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "HUMANITIES_SOCIAL"], "prompt": "Would you rather study a market trend, or a social/cultural trend?", "options": [
+          {"option_id": "a", "label": "A market trend", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "A social/cultural trend", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]}
+      ]
+    },
+
+    "CR_HU": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "cr_hu_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "HUMANITIES_SOCIAL"], "prompt": "Would you rather express an idea visually (design, film, art), or in writing/speech (essays, debate)?", "options": [
+          {"option_id": "a", "label": "Visually", "domain_weights": {"CREATIVE_VISUAL": 0.9}},
+          {"option_id": "b", "label": "In writing/speech", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "cr_hu_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "HUMANITIES_SOCIAL"], "prompt": "Are you more interested in how something looks and feels, or in what it means and why it matters?", "options": [
+          {"option_id": "a", "label": "How it looks and feels", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+          {"option_id": "b", "label": "What it means and why", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "cr_hu_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "HUMANITIES_SOCIAL"], "prompt": "Could you see yourself in a design portfolio review, or a moot court/debate competition?", "options": [
+          {"option_id": "a", "label": "Design portfolio review", "domain_weights": {"CREATIVE_VISUAL": 0.9}},
+          {"option_id": "b", "label": "Moot court/debate competition", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "cr_hu_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "HUMANITIES_SOCIAL"], "prompt": "Would you rather illustrate a story, or write one?", "options": [
+          {"option_id": "a", "label": "Illustrate it", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+          {"option_id": "b", "label": "Write it", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "cr_hu_5", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "HUMANITIES_SOCIAL"], "prompt": "Would you rather design a campaign's poster, or write its message/script?", "options": [
+          {"option_id": "a", "label": "Design the poster", "domain_weights": {"CREATIVE_VISUAL": 0.9}},
+          {"option_id": "b", "label": "Write the message/script", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]}
+      ]
+    },
+
+    "ML_CR": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "ml_cr_1", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "When you imagine building an app, are you more excited by making it work correctly, or making it look and feel good to use?", "options": [
+          {"option_id": "a", "label": "Making it work correctly", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Making it look and feel good", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "ml_cr_2", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "Would you rather win a coding competition, or a design/art competition?", "options": [
+          {"option_id": "a", "label": "Coding competition", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Design/art competition", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "ml_cr_3", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "Are you more drawn to solving a logic puzzle, or arranging/composing something visually until it feels right?", "options": [
+          {"option_id": "a", "label": "Solving a logic puzzle", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Composing something visually", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "ml_cr_4", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "On a website, do you first notice if it's fast and functional, or if it's beautifully designed?", "options": [
+          {"option_id": "a", "label": "Fast and functional", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Beautifully designed", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "ml_cr_5", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "Would you rather code a game's mechanics, or design its characters/world?", "options": [
+          {"option_id": "a", "label": "Code the mechanics", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Design characters/world", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "ml_cr_6", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "Given a free afternoon with a computer, would you tinker with a small program, or edit/design something visual?", "options": [
+          {"option_id": "a", "label": "Tinker with a small program", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Edit/design something visual", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "ml_cr_7", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "CREATIVE_VISUAL"], "prompt": "Would you rather build a working prototype with an ugly interface, or a beautiful interface that barely works?", "options": [
+          {"option_id": "a", "label": "Working prototype, ugly interface", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Beautiful interface, barely works", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]}
+      ]
+    },
+
+    "BC_CR": {
+      "depth": "full",
+      "questions": [
+        {"question_id": "bc_cr_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "Are you more excited by growing a business's numbers, or shaping how it looks and feels to customers?", "options": [
+          {"option_id": "a", "label": "Growing the numbers", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Shaping how it looks and feels", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "bc_cr_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "Would you rather analyze why a product is selling well, or design what makes people want to buy it?", "options": [
+          {"option_id": "a", "label": "Analyze why it's selling", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Design what makes people buy it", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "bc_cr_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "Would you rather run a school event's budget, or design its posters/branding/theme?", "options": [
+          {"option_id": "a", "label": "Run the budget", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "Design posters/branding/theme", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "bc_cr_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "If you started a small business, would you be more excited about strategy/finances, or branding/product design?", "options": [
+          {"option_id": "a", "label": "Strategy/finances", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Branding/product design", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "bc_cr_5", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "Are you more drawn to reading about a company's growth strategy, or a designer's creative process?", "options": [
+          {"option_id": "a", "label": "Growth strategy", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "A designer's creative process", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "bc_cr_6", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "CREATIVE_VISUAL"], "prompt": "Would you rather pitch investors on numbers, or pitch them on a product's look and story?", "options": [
+          {"option_id": "a", "label": "Pitch on numbers", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Pitch on look and story", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]}
+      ]
+    },
+
+    "ML_HU": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "ml_hu_1", "stage": "class10", "tier": "narrowing", "flavor_tags": ["engineering-applied"], "domain_pair": ["MATH_LOGICAL", "HUMANITIES_SOCIAL"], "prompt": "Would you rather build a system that solves a technical problem, or argue a position that changes how people think?", "options": [
+          {"option_id": "a", "label": "Build a technical system", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Argue a position", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "ml_hu_2", "stage": "class10", "tier": "narrowing", "flavor_tags": ["pure-theory"], "domain_pair": ["MATH_LOGICAL", "HUMANITIES_SOCIAL"], "prompt": "Are you more interested in how something was made to work, or whether it's fair/right that it works that way?", "options": [
+          {"option_id": "a", "label": "How it was made to work", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "Whether it's fair/right", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "ml_hu_3", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "HUMANITIES_SOCIAL"], "prompt": "Would you rather join a coding/robotics team, or a Model UN/debate team?", "options": [
+          {"option_id": "a", "label": "Coding/robotics team", "domain_weights": {"MATH_LOGICAL": 0.9}},
+          {"option_id": "b", "label": "Model UN/debate team", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "ml_hu_4", "stage": "class10", "tier": "narrowing", "flavor_tags": ["computing"], "domain_pair": ["MATH_LOGICAL", "HUMANITIES_SOCIAL"], "prompt": "Reading about a new AI tool, are you more curious about how it was built, or the ethical/social debate around it?", "options": [
+          {"option_id": "a", "label": "How it was built", "domain_weights": {"MATH_LOGICAL": 0.8}},
+          {"option_id": "b", "label": "The ethical/social debate", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]}
+      ]
+    },
+
+    "LS_HU": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "ls_hu_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "HUMANITIES_SOCIAL"], "prompt": "Are you more drawn to treating a physical illness, or understanding why someone feels or behaves a certain way?", "options": [
+          {"option_id": "a", "label": "Treating a physical illness", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Understanding feelings/behavior", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "ls_hu_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "HUMANITIES_SOCIAL"], "prompt": "Would you rather study how the body heals, or how a community deals with a crisis?", "options": [
+          {"option_id": "a", "label": "How the body heals", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "How a community deals with crisis", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]},
+        {"question_id": "ls_hu_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "HUMANITIES_SOCIAL"], "prompt": "For volunteering, would you pick a health camp, or a counseling/support helpline?", "options": [
+          {"option_id": "a", "label": "Health camp", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Counseling/support helpline", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}}
+        ]},
+        {"question_id": "ls_hu_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "HUMANITIES_SOCIAL"], "prompt": "Would you rather read about a medical breakthrough, or a social movement that changed how people are treated?", "options": [
+          {"option_id": "a", "label": "A medical breakthrough", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "A social movement", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}}
+        ]}
+      ]
+    },
+
+    "LS_BC": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "ls_bc_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "BUSINESS_COMMERCE"], "prompt": "Are you more interested in discovering/delivering a treatment, or how a hospital/health company is run and funded?", "options": [
+          {"option_id": "a", "label": "Discovering/delivering treatment", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "How it's run and funded", "domain_weights": {"BUSINESS_COMMERCE": 0.9}}
+        ]},
+        {"question_id": "ls_bc_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "BUSINESS_COMMERCE"], "prompt": "Would you rather work directly with patients, or on the business side of a healthcare/biotech company?", "options": [
+          {"option_id": "a", "label": "Work directly with patients", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "The business side", "domain_weights": {"BUSINESS_COMMERCE": 0.9}}
+        ]},
+        {"question_id": "ls_bc_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "BUSINESS_COMMERCE"], "prompt": "Reading about a new drug, are you more curious how it works in the body, or how much it costs and who can access it?", "options": [
+          {"option_id": "a", "label": "How it works in the body", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Cost and access", "domain_weights": {"BUSINESS_COMMERCE": 0.8}}
+        ]},
+        {"question_id": "ls_bc_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "BUSINESS_COMMERCE"], "prompt": "For a science fair project, would you research a biology topic, or analyze healthcare costs/access?", "options": [
+          {"option_id": "a", "label": "A biology topic", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Healthcare costs/access", "domain_weights": {"BUSINESS_COMMERCE": 0.8}}
+        ]}
+      ]
+    },
+
+    "HU_PA": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "hu_pa_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["HUMANITIES_SOCIAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather spend years studying to argue cases/shape policy, or start building real hands-on skills sooner?", "options": [
+          {"option_id": "a", "label": "Study to argue/shape policy", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}},
+          {"option_id": "b", "label": "Build hands-on skills sooner", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "hu_pa_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["HUMANITIES_SOCIAL", "PRACTICAL_APPLIED"], "prompt": "Are you more interested in debating how something should work, or building/fixing something that works right now?", "options": [
+          {"option_id": "a", "label": "Debating how it should work", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}},
+          {"option_id": "b", "label": "Building/fixing it now", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "hu_pa_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["HUMANITIES_SOCIAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather intern at a law office/NGO, or in a hands-on trade (electronics, mechanical, culinary, technical crafts)?", "options": [
+          {"option_id": "a", "label": "Law office/NGO", "domain_weights": {"HUMANITIES_SOCIAL": 0.9}},
+          {"option_id": "b", "label": "A hands-on trade", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "hu_pa_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["HUMANITIES_SOCIAL", "PRACTICAL_APPLIED"], "prompt": "Do you see more value in a longer formal-education path, or a shorter, skills-first path into working life?", "options": [
+          {"option_id": "a", "label": "Longer formal-education path", "domain_weights": {"HUMANITIES_SOCIAL": 0.7}},
+          {"option_id": "b", "label": "Shorter, skills-first path", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]}
+      ]
+    },
+
+    "BC_PA": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "bc_pa_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "PRACTICAL_APPLIED"], "prompt": "Would you rather manage/run something, or actually make/build the thing being sold?", "options": [
+          {"option_id": "a", "label": "Manage/run it", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Make/build it", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "bc_pa_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "PRACTICAL_APPLIED"], "prompt": "Are you more interested in a business's strategy, or mastering a specific hands-on craft/trade?", "options": [
+          {"option_id": "a", "label": "Business strategy", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "Mastering a craft/trade", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "bc_pa_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "PRACTICAL_APPLIED"], "prompt": "Would you rather negotiate a deal, or complete a hands-on project (repair, build, craft) start to finish?", "options": [
+          {"option_id": "a", "label": "Negotiate a deal", "domain_weights": {"BUSINESS_COMMERCE": 0.9}},
+          {"option_id": "b", "label": "Complete a hands-on project", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "bc_pa_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["BUSINESS_COMMERCE", "PRACTICAL_APPLIED"], "prompt": "Do you see yourself more behind a business plan, or behind actual hands-on work in a trade you enjoy?", "options": [
+          {"option_id": "a", "label": "Behind a business plan", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+          {"option_id": "b", "label": "Hands-on work in a trade", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]}
+      ]
+    },
+
+    "CR_PA": {
+      "depth": "thin",
+      "questions": [
+        {"question_id": "cr_pa_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "PRACTICAL_APPLIED"], "prompt": "Are you more excited by designing how something should look, or physically making/building it yourself?", "options": [
+          {"option_id": "a", "label": "Designing how it should look", "domain_weights": {"CREATIVE_VISUAL": 0.9}},
+          {"option_id": "b", "label": "Physically making/building it", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "cr_pa_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather sketch/plan a product, or actually construct/assemble a working version of it?", "options": [
+          {"option_id": "a", "label": "Sketch/plan it", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+          {"option_id": "b", "label": "Construct/assemble it", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]},
+        {"question_id": "cr_pa_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "PRACTICAL_APPLIED"], "prompt": "Would you rather enter an art/design competition, or a robotics/making/craft competition?", "options": [
+          {"option_id": "a", "label": "Art/design competition", "domain_weights": {"CREATIVE_VISUAL": 0.9}},
+          {"option_id": "b", "label": "Robotics/making/craft competition", "domain_weights": {"PRACTICAL_APPLIED": 0.9}}
+        ]},
+        {"question_id": "cr_pa_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["CREATIVE_VISUAL", "PRACTICAL_APPLIED"], "prompt": "Are you more drawn to the creative-planning stage of a project, or the hands-on execution stage?", "options": [
+          {"option_id": "a", "label": "Creative-planning stage", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+          {"option_id": "b", "label": "Hands-on execution stage", "domain_weights": {"PRACTICAL_APPLIED": 0.8}}
+        ]}
+      ]
+    },
+
+    "LS_CR": {
+      "depth": "thinnest",
+      "questions": [
+        {"question_id": "ls_cr_1", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "CREATIVE_VISUAL"], "prompt": "Are you more interested in understanding how the body works, or visually representing/explaining how it works?", "options": [
+          {"option_id": "a", "label": "Understanding how it works", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Visually representing it", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]},
+        {"question_id": "ls_cr_2", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "CREATIVE_VISUAL"], "prompt": "Would you rather diagnose what's wrong, or design a diagram/model that explains it clearly to others?", "options": [
+          {"option_id": "a", "label": "Diagnose what's wrong", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Design a clear diagram/model", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "ls_cr_3", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "CREATIVE_VISUAL"], "prompt": "For a biology project, would you rather write the research, or design the visual presentation/model?", "options": [
+          {"option_id": "a", "label": "Write the research", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+          {"option_id": "b", "label": "Design the visual presentation", "domain_weights": {"CREATIVE_VISUAL": 0.8}}
+        ]},
+        {"question_id": "ls_cr_4", "stage": "class10", "tier": "narrowing", "domain_pair": ["LIFE_SCIENCES_CARE", "CREATIVE_VISUAL"], "prompt": "Are you more drawn to a career centered on treatment, or one centered on visual/creative science communication (medical illustration, exhibit design)?", "options": [
+          {"option_id": "a", "label": "Centered on treatment", "domain_weights": {"LIFE_SCIENCES_CARE": 0.9}},
+          {"option_id": "b", "label": "Visual science communication", "domain_weights": {"CREATIVE_VISUAL": 0.9}}
+        ]}
+      ]
+    }
+  },
+
+  "cross_check_template": {
+    "note": "One question per domain, re-testing the ORIGINAL Phase-1 top domain in a fresh concrete frame after narrowing. Selector picks the entry matching whichever domain was #1 after Phase 1.",
+    "by_domain": {
+      "MATH_LOGICAL": {"question_id": "cc_ml", "stage": "class10", "tier": "cross_check", "prompt": "A friend is stuck on a tricky logic puzzle during lunch — do you get pulled in to help, or walk past it?", "options": [
+        {"option_id": "a", "label": "Get pulled in to help", "domain_weights": {"MATH_LOGICAL": 0.9}},
+        {"option_id": "b", "label": "Walk past it", "domain_weights": {}}
+      ]},
+      "LIFE_SCIENCES_CARE": {"question_id": "cc_ls", "stage": "class10", "tier": "cross_check", "prompt": "A classmate faints during PE — are you the one who instinctively rushes to check on them, or do you hang back and let others handle it?", "options": [
+        {"option_id": "a", "label": "Rush to check on them", "domain_weights": {"LIFE_SCIENCES_CARE": 0.8}},
+        {"option_id": "b", "label": "Hang back", "domain_weights": {}}
+      ]},
+      "HUMANITIES_SOCIAL": {"question_id": "cc_hu", "stage": "class10", "tier": "cross_check", "prompt": "A heated debate breaks out in class about a current event — do you jump in with an opinion, or stay quiet and observe?", "options": [
+        {"option_id": "a", "label": "Jump in with an opinion", "domain_weights": {"HUMANITIES_SOCIAL": 0.8}},
+        {"option_id": "b", "label": "Stay quiet and observe", "domain_weights": {}}
+      ]},
+      "BUSINESS_COMMERCE": {"question_id": "cc_bc", "stage": "class10", "tier": "cross_check", "prompt": "Your class is planning a fundraiser — do you volunteer to handle the budget/pricing, or a different task entirely?", "options": [
+        {"option_id": "a", "label": "Volunteer for budget/pricing", "domain_weights": {"BUSINESS_COMMERCE": 0.8}},
+        {"option_id": "b", "label": "A different task", "domain_weights": {}}
+      ]},
+      "CREATIVE_VISUAL": {"question_id": "cc_cr", "stage": "class10", "tier": "cross_check", "prompt": "Your class needs a poster for an event by tomorrow — are you the one who offers to design it, or do you leave it to someone else?", "options": [
+        {"option_id": "a", "label": "Offer to design it", "domain_weights": {"CREATIVE_VISUAL": 0.8}},
+        {"option_id": "b", "label": "Leave it to someone else", "domain_weights": {}}
+      ]},
+      "PRACTICAL_APPLIED": {"question_id": "cc_pa", "stage": "class10", "tier": "cross_check", "prompt": "A projector stops working right before class — do you get up to try fixing it, or wait for someone else to?", "options": [
+        {"option_id": "a", "label": "Get up to try fixing it", "domain_weights": {"PRACTICAL_APPLIED": 0.8}},
+        {"option_id": "b", "label": "Wait for someone else", "domain_weights": {}}
+      ]}
+    }
+  },
+
+  "visible_verification_tiebreaker_template": {
+    "note": "Generic Phase-3 tiebreaker between current top-2 domains. Selector fills {A} and {B} with domain-appropriate concrete nouns (e.g. clubs, competitions) at runtime from a small phrase table below.",
+    "prompt_template": "One free elective period today — do you join the {A} club or the {B} club?",
+    "domain_club_names": {
+      "MATH_LOGICAL": "coding/robotics",
+      "LIFE_SCIENCES_CARE": "health & biology",
+      "HUMANITIES_SOCIAL": "debate/Model UN",
+      "BUSINESS_COMMERCE": "young entrepreneurs",
+      "CREATIVE_VISUAL": "art & design",
+      "PRACTICAL_APPLIED": "maker/workshop"
+    }
+  },
+
+  "phase1_5_tiebreaker_template": {
+    "note": "Used when domains #2 and #3 from Phase 1 are within threshold of each other. Filled dynamically from domain_club_names or domain top-scoring Phase-1 option label.",
+    "prompt_template": "Which interests you more right now: {optionB} or {optionC}?"
+  },
+
+  "hidden_verification_commitment_questions": {
+    "note": "One reusable 'forced real-world commitment' question per domain, used in Phase 4. The selector pairs the top eligible domain against its current #2 domain and fills both sides.",
+    "prompt_template": "If you had to pick one elective for the rest of the year — {A} or {B} — which would you actually pick?",
+    "domain_elective_names": {
+      "MATH_LOGICAL": "Advanced Math Problem-Solving",
+      "LIFE_SCIENCES_CARE": "Applied Biology & Health Sciences",
+      "HUMANITIES_SOCIAL": "Debate & Public Policy",
+      "BUSINESS_COMMERCE": "Applied Business Case Studies",
+      "CREATIVE_VISUAL": "Studio Art & Design",
+      "PRACTICAL_APPLIED": "Applied Workshop & Making"
+    },
+    "secondary_commitment_prompt_template": "A new club is starting — {A} Club or {B} Club — which do you sign up for?",
+    "domain_club_long_names": {
+      "MATH_LOGICAL": "Math & Logic Puzzle Society",
+      "LIFE_SCIENCES_CARE": "Health & Biology Circle",
+      "HUMANITIES_SOCIAL": "Debate & Policy Forum",
+      "BUSINESS_COMMERCE": "Young Entrepreneurs",
+      "CREATIVE_VISUAL": "Art & Design Collective",
+      "PRACTICAL_APPLIED": "Makers Workshop"
+    }
+  },
+
+  "contradiction_pattern_templates": {
+    "confidence_gap": {
+      "trigger": "high domain score AND meta_flag for that domain absent/low from u5 AND no strong narrowing reinforcement yet",
+      "prompt_template": "You've shown a lot of interest in {domain_label}, but rated your confidence in it lower. Which feels more true: you enjoy it but don't feel confident yet, or you like the idea of it more than the actual coursework?",
+      "options": [
+        {"option_id": "a", "label": "Enjoy it, just not confident yet", "effect": "keep_lean_flag_confidence_gap"},
+        {"option_id": "b", "label": "Like the idea more than the coursework", "effect": "downweight_domain"}
+      ]
+    },
+    "flat_profile": {
+      "trigger": "no domain meaningfully ahead after Phase 1",
+      "prompt_template": "A few different areas seem to interest you fairly equally — which would you be most disappointed to not explore at all: technology, business, healthcare, arts, or social sciences?",
+      "options": [
+        {"option_id": "a", "label": "Technology", "domain_weights": {"MATH_LOGICAL": 0.4}},
+        {"option_id": "b", "label": "Business", "domain_weights": {"BUSINESS_COMMERCE": 0.4}},
+        {"option_id": "c", "label": "Healthcare", "domain_weights": {"LIFE_SCIENCES_CARE": 0.4}},
+        {"option_id": "d", "label": "Arts", "domain_weights": {"CREATIVE_VISUAL": 0.4}},
+        {"option_id": "e", "label": "Social sciences", "domain_weights": {"HUMANITIES_SOCIAL": 0.4}}
+      ],
+      "note": "Weighted lower than normal answers; also sets profile_status = broad_exploratory."
+    }
+  },
+
+  "config": {
+    "MIN_VISIBLE_QUESTIONS": 13,
+    "MAX_VISIBLE_QUESTIONS": 17,
+    "NARROWING_GAP_THRESHOLD": 2.0,
+    "PHASE1_5_TIE_MARGIN_PCT": 0.18,
+    "HIDDEN_VERIFICATION_CONFIDENCE_THRESHOLD": 0.90,
+    "HIDDEN_VERIFICATION_MAX_DOMAINS_AUDITED": 2
+  }
+}

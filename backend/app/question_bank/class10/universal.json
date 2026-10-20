@@ -1,0 +1,227 @@
+{
+  "stage": "class10",
+  "universal": [
+    {
+      "question_id": "u1",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "How would you rather spend a free Saturday?",
+      "options": [
+        {
+          "option_id": "u1a",
+          "label": "Building, assembling, or fixing something physical",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.7,
+            "MATH_LOGICAL": 0.2
+          }
+        },
+        {
+          "option_id": "u1b",
+          "label": "Reading about how businesses or people make money",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "u1c",
+          "label": "Watching a documentary about space, medicine, or the body",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.7,
+            "MATH_LOGICAL": 0.2
+          }
+        },
+        {
+          "option_id": "u1d",
+          "label": "Sketching, editing videos, or designing something",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "u1e",
+          "label": "Debating a current event or reading about history/society",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        },
+        {
+          "option_id": "u1f",
+          "label": "Solving puzzles, coding, or playing strategy games",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "u2",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "In class, which feeling do you enjoy most?",
+      "options": [
+        {
+          "option_id": "u2a",
+          "label": "The moment a math problem finally clicks",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "u2b",
+          "label": "Learning why something works biologically",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "u2c",
+          "label": "Discussing why something happened in history or society",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        },
+        {
+          "option_id": "u2d",
+          "label": "Understanding how money, trade, or a business decision works",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "u2e",
+          "label": "Making something look or sound better (art, presentation, design)",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "u3",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "If you had to lead a school project, which role would you want?",
+      "options": [
+        {
+          "option_id": "u3a",
+          "label": "The one figuring out the numbers/budget",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.7,
+            "MATH_LOGICAL": 0.2
+          }
+        },
+        {
+          "option_id": "u3b",
+          "label": "The one designing how it looks/feels",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "u3c",
+          "label": "The one researching and writing the content",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        },
+        {
+          "option_id": "u3d",
+          "label": "The one building/testing the actual thing",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.7,
+            "MATH_LOGICAL": 0.2
+          }
+        },
+        {
+          "option_id": "u3e",
+          "label": "The one explaining the health/science angle",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "u4",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "Which of these topics would you click on first?",
+      "options": [
+        {
+          "option_id": "u4a",
+          "label": "\"How AI is changing jobs\"",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "u4b",
+          "label": "\"Why the stock market crashed\"",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "u4c",
+          "label": "\"New treatment discovered for a disease\"",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "u4d",
+          "label": "\"The history behind a major conflict\"",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        },
+        {
+          "option_id": "u4e",
+          "label": "\"How a famous building/product was designed\"",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.7,
+            "PRACTICAL_APPLIED": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "u5",
+      "stage": "class10",
+      "tier": "universal",
+      "prompt": "Which subject do you feel most confident in right now?",
+      "options": [
+        {
+          "option_id": "u5a",
+          "label": "Math",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.5
+          },
+          "meta_flag": "MATH_HIGH_CONFIDENCE"
+        },
+        {
+          "option_id": "u5b",
+          "label": "Science (Biology-heavy)",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.5
+          },
+          "meta_flag": "LS_HIGH_CONFIDENCE"
+        },
+        {
+          "option_id": "u5c",
+          "label": "Social Science / History / Civics",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.5
+          },
+          "meta_flag": "HU_HIGH_CONFIDENCE"
+        },
+        {
+          "option_id": "u5d",
+          "label": "None strongly / it varies",
+          "domain_weights": {},
+          "meta_flag": "LOW_CONFIDENCE_SIGNAL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "ls_hu_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Are you more drawn to treating a physical illness, or understanding why someone feels or behaves a certain way?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Treating a physical illness",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Understanding feelings/behavior",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_hu_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather study how the body heals, or how a community deals with a crisis?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How the body heals",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "How a community deals with crisis",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_hu_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "For volunteering, would you pick a health camp, or a counseling/support helpline?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Health camp",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Counseling/support helpline",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_hu_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather read about a medical breakthrough, or a social movement that changed how people are treated?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "A medical breakthrough",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "A social movement",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

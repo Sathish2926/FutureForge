@@ -1,0 +1,39 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+*.log
+
+# Node & Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files with sensitive keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Database backup files (large binaries)
+/careerpath.db
+careerpath_backup_*.db
+careerpath_before_*.db
+*.sqlite-journal
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

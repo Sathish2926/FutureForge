@@ -1,0 +1,260 @@
+{
+  "id": 2,
+  "career_name": "Ias Officer",
+  "career_slug": "ias-officer-6384",
+  "sector": "Government & Civil Services",
+  "version": 1,
+  "is_user_generated": true,
+  "needs_verification": true,
+  "is_ambiguous": false,
+  "clarification_reason": null,
+  "clarification_suggestions": [],
+  "confidence_score": 0.9,
+  "skill_gap_summary": {
+    "known": [],
+    "gaps": [
+      {
+        "skill": "Deepen core skills for government administration and civil service",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Complete an internship or supervised practice",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Check the next entry or specialization route",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Prepare the first serious application or portfolio",
+        "priority": "high",
+        "gap_level": "missing"
+      }
+    ]
+  },
+  "completion_percent": 0,
+  "steps": [
+    {
+      "id": 5,
+      "order_index": 0,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Deepen core skills for government administration and civil service",
+      "title": "Deepen core skills for government administration and civil service",
+      "description": "Finish one course/project that strengthens answer writing, mock tests, issue analysis, and interview practice.; Keep a running list of what recruiters or supervisors actually ask for.; Keep one eye on internships and one eye on the next academic step.",
+      "why": "Use your degree years to turn theory into practical ability in government administration and civil service.",
+      "estimated_time": "1 semester",
+      "skill_name": "Deepen",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "reading, writing, current affairs, and structured reasoning"
+      ],
+      "actions": [
+        "Finish one course/project that strengthens answer writing, mock tests, issue analysis, and interview practice.",
+        "Keep a running list of what recruiters or supervisors actually ask for.",
+        "Keep one eye on internships and one eye on the next academic step."
+      ],
+      "resources": [
+        {
+          "id": 9,
+          "title": "official exam notifications, government recruitment pages, and service allotment notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 10,
+          "title": "the current syllabus, eligibility, and schedule on the official notification",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 10,
+          "title": "Finish one course/project that strengthens answer writing, mock tests, issue analysis, and interview practice.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 11,
+          "title": "Keep a running list of what recruiters or supervisors actually ask for.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 12,
+          "title": "Keep one eye on internships and one eye on the next academic step.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 6,
+      "order_index": 1,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Complete an internship or supervised practice",
+      "title": "Complete an internship or supervised practice",
+      "description": "Apply for internships, labs, studios, apprenticeships, or field work tied to government administration and civil service.; Record what you learned and what you still need to learn.",
+      "why": "Try the work in a real environment so you can judge fit and improve faster.",
+      "estimated_time": "4-12 weeks",
+      "skill_name": "Complete",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "A basic handle on the subject or tooling."
+      ],
+      "actions": [
+        "Apply for internships, labs, studios, apprenticeships, or field work tied to government administration and civil service.",
+        "Record what you learned and what you still need to learn."
+      ],
+      "resources": [
+        {
+          "id": 11,
+          "title": "official exam notifications, government recruitment pages, and service allotment notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 12,
+          "title": "Internship / lab / studio page",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 13,
+          "title": "Apply for internships, labs, studios, apprenticeships, or field work tied to government administration and civil service.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 14,
+          "title": "Record what you learned and what you still need to learn.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 7,
+      "order_index": 2,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Check the next entry or specialization route",
+      "title": "Check the next entry or specialization route",
+      "description": "Review the current official route into government administration and civil service and save the syllabus or program requirements.; Compare direct entry with one higher-study route.",
+      "why": "Use the official notices to see whether your next move is an exam, application, or specialization choice.",
+      "estimated_time": "1-2 weeks",
+      "skill_name": "Check",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "An internship or project record for government administration and civil service has started."
+      ],
+      "actions": [
+        "Review the current official route into government administration and civil service and save the syllabus or program requirements.",
+        "Compare direct entry with one higher-study route."
+      ],
+      "resources": [
+        {
+          "id": 13,
+          "title": "official exam notifications, government recruitment pages, and service allotment notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 14,
+          "title": "the current syllabus, eligibility, and schedule on the official notification",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 15,
+          "title": "Review the current official route into government administration and civil service and save the syllabus or program requirements.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 16,
+          "title": "Compare direct entry with one higher-study route.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 8,
+      "order_index": 3,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Prepare the first serious application or portfolio",
+      "title": "Prepare the first serious application or portfolio",
+      "description": "Prepare the first application, test, or portfolio for training, allotment, and early public-administration responsibilities.; Ask one mentor to review it before you submit.",
+      "why": "Turn your coursework and practice into a first real application for government administration and civil service.",
+      "estimated_time": "2-4 weeks",
+      "skill_name": "Prepare",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "A project and internship record are on hand."
+      ],
+      "actions": [
+        "Prepare the first application, test, or portfolio for training, allotment, and early public-administration responsibilities.",
+        "Ask one mentor to review it before you submit."
+      ],
+      "resources": [
+        {
+          "id": 15,
+          "title": "Portfolio / CV / application draft",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 16,
+          "title": "official exam notifications, government recruitment pages, and service allotment notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 17,
+          "title": "Prepare the first application, test, or portfolio for training, allotment, and early public-administration responsibilities.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 18,
+          "title": "Ask one mentor to review it before you submit.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "bc_pa_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather manage/run something, or actually make/build the thing being sold?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Manage/run it",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Make/build it",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_pa_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Are you more interested in a business's strategy, or mastering a specific hands-on craft/trade?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Business strategy",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Mastering a craft/trade",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_pa_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather negotiate a deal, or complete a hands-on project (repair, build, craft) start to finish?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Negotiate a deal",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Complete a hands-on project",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_pa_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Do you see yourself more behind a business plan, or behind actual hands-on work in a trade you enjoy?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Behind a business plan",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Hands-on work in a trade",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

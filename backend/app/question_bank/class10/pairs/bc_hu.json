@@ -1,0 +1,161 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "bc_hu_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Are you more interested in how a company is run, or how society/government/culture works?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How a company is run",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "How society/government/culture works",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_hu_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather read about a company's rise and fall, or a political/historical movement?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "A company's rise and fall",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "A political/historical movement",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_hu_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Do you see yourself more in a corporate/business setting, or in law, public policy, or journalism?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Corporate/business setting",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Law, public policy, or journalism",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_hu_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather negotiate a business deal, or argue a case/position?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Negotiate a business deal",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Argue a case/position",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_hu_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Are you more excited by a stock pitch competition, or a Model UN/debate competition?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Stock pitch competition",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Model UN/debate competition",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_hu_6",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather study a market trend, or a social/cultural trend?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "A market trend",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "A social/cultural trend",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "cross_check_template": {
+    "note": "One question per domain, re-testing the ORIGINAL Phase-1 top domain in a fresh concrete frame after narrowing. Selector picks the entry matching whichever domain was #1 after Phase 1.",
+    "by_domain": {
+      "MATH_LOGICAL": {
+        "question_id": "cc_ml",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "A friend is stuck on a tricky logic puzzle during lunch \u2014 do you get pulled in to help, or walk past it?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Get pulled in to help",
+            "domain_weights": {
+              "MATH_LOGICAL": 0.9
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "Walk past it",
+            "domain_weights": {}
+          }
+        ]
+      },
+      "LIFE_SCIENCES_CARE": {
+        "question_id": "cc_ls",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "A classmate faints during PE \u2014 are you the one who instinctively rushes to check on them, or do you hang back and let others handle it?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Rush to check on them",
+            "domain_weights": {
+              "LIFE_SCIENCES_CARE": 0.8
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "Hang back",
+            "domain_weights": {}
+          }
+        ]
+      },
+      "HUMANITIES_SOCIAL": {
+        "question_id": "cc_hu",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "A heated debate breaks out in class about a current event \u2014 do you jump in with an opinion, or stay quiet and observe?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Jump in with an opinion",
+            "domain_weights": {
+              "HUMANITIES_SOCIAL": 0.8
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "Stay quiet and observe",
+            "domain_weights": {}
+          }
+        ]
+      },
+      "BUSINESS_COMMERCE": {
+        "question_id": "cc_bc",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "Your class is planning a fundraiser \u2014 do you volunteer to handle the budget/pricing, or a different task entirely?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Volunteer for budget/pricing",
+            "domain_weights": {
+              "BUSINESS_COMMERCE": 0.8
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "A different task",
+            "domain_weights": {}
+          }
+        ]
+      },
+      "CREATIVE_VISUAL": {
+        "question_id": "cc_cr",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "Your class needs a poster for an event by tomorrow \u2014 are you the one who offers to design it, or do you leave it to someone else?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Offer to design it",
+            "domain_weights": {
+              "CREATIVE_VISUAL": 0.8
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "Leave it to someone else",
+            "domain_weights": {}
+          }
+        ]
+      },
+      "PRACTICAL_APPLIED": {
+        "question_id": "cc_pa",
+        "stage": "class10",
+        "tier": "cross_check",
+        "prompt": "A projector stops working right before class \u2014 do you get up to try fixing it, or wait for someone else to?",
+        "options": [
+          {
+            "option_id": "a",
+            "label": "Get up to try fixing it",
+            "domain_weights": {
+              "PRACTICAL_APPLIED": 0.8
+            }
+          },
+          {
+            "option_id": "b",
+            "label": "Wait for someone else",
+            "domain_weights": {}
+          }
+        ]
+      }
+    }
+  },
+  "visible_verification_tiebreaker_template": {
+    "note": "Generic Phase-3 tiebreaker between current top-2 domains. Selector fills {A} and {B} with domain-appropriate concrete nouns (e.g. clubs, competitions) at runtime from a small phrase table below.",
+    "prompt_template": "One free elective period today \u2014 do you join the {A} club or the {B} club?",
+    "domain_club_names": {
+      "MATH_LOGICAL": "coding/robotics",
+      "LIFE_SCIENCES_CARE": "health & biology",
+      "HUMANITIES_SOCIAL": "debate/Model UN",
+      "BUSINESS_COMMERCE": "young entrepreneurs",
+      "CREATIVE_VISUAL": "art & design",
+      "PRACTICAL_APPLIED": "maker/workshop"
+    }
+  },
+  "phase1_5_tiebreaker_template": {
+    "note": "Used when domains #2 and #3 from Phase 1 are within threshold of each other. Filled dynamically from domain_club_names or domain top-scoring Phase-1 option label.",
+    "prompt_template": "Which interests you more right now: {optionB} or {optionC}?"
+  },
+  "hidden_verification_commitment_questions": {
+    "note": "One reusable 'forced real-world commitment' question per domain, used in Phase 4. The selector pairs the top eligible domain against its current #2 domain and fills both sides.",
+    "prompt_template": "If you had to pick one elective for the rest of the year \u2014 {A} or {B} \u2014 which would you actually pick?",
+    "domain_elective_names": {
+      "MATH_LOGICAL": "Advanced Math Problem-Solving",
+      "LIFE_SCIENCES_CARE": "Applied Biology & Health Sciences",
+      "HUMANITIES_SOCIAL": "Debate & Public Policy",
+      "BUSINESS_COMMERCE": "Applied Business Case Studies",
+      "CREATIVE_VISUAL": "Studio Art & Design",
+      "PRACTICAL_APPLIED": "Applied Workshop & Making"
+    },
+    "secondary_commitment_prompt_template": "A new club is starting \u2014 {A} Club or {B} Club \u2014 which do you sign up for?",
+    "domain_club_long_names": {
+      "MATH_LOGICAL": "Math & Logic Puzzle Society",
+      "LIFE_SCIENCES_CARE": "Health & Biology Circle",
+      "HUMANITIES_SOCIAL": "Debate & Policy Forum",
+      "BUSINESS_COMMERCE": "Young Entrepreneurs",
+      "CREATIVE_VISUAL": "Art & Design Collective",
+      "PRACTICAL_APPLIED": "Makers Workshop"
+    }
+  },
+  "contradiction_pattern_templates": {
+    "confidence_gap": {
+      "trigger": "high domain score AND meta_flag for that domain absent/low from u5 AND no strong narrowing reinforcement yet",
+      "prompt_template": "You've shown a lot of interest in {domain_label}, but rated your confidence in it lower. Which feels more true: you enjoy it but don't feel confident yet, or you like the idea of it more than the actual coursework?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Enjoy it, just not confident yet",
+          "effect": "keep_lean_flag_confidence_gap"
+        },
+        {
+          "option_id": "b",
+          "label": "Like the idea more than the coursework",
+          "effect": "downweight_domain"
+        }
+      ]
+    },
+    "flat_profile": {
+      "trigger": "no domain meaningfully ahead after Phase 1",
+      "prompt_template": "A few different areas seem to interest you fairly equally \u2014 which would you be most disappointed to not explore at all: technology, business, healthcare, arts, or social sciences?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Technology",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.4
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Business",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.4
+          }
+        },
+        {
+          "option_id": "c",
+          "label": "Healthcare",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.4
+          }
+        },
+        {
+          "option_id": "d",
+          "label": "Arts",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.4
+          }
+        },
+        {
+          "option_id": "e",
+          "label": "Social sciences",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.4
+          }
+        }
+      ],
+      "note": "Weighted lower than normal answers; also sets profile_status = broad_exploratory."
+    }
+  },
+  "config": {
+    "MIN_VISIBLE_QUESTIONS": 13,
+    "MAX_VISIBLE_QUESTIONS": 17,
+    "NARROWING_GAP_THRESHOLD": 2.0,
+    "PHASE1_5_TIE_MARGIN_PCT": 0.18,
+    "HIDDEN_VERIFICATION_CONFIDENCE_THRESHOLD": 0.9,
+    "HIDDEN_VERIFICATION_MAX_DOMAINS_AUDITED": 2
+  }
+}

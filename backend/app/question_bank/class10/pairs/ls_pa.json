@@ -1,0 +1,111 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "ls_pa_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Are you more drawn to research/understanding disease, or hands-on patient care?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Research/understanding disease",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Hands-on patient care",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8,
+            "LIFE_SCIENCES_CARE": 0.2
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_pa_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would a longer path (many years of medicine/research) bother you, or are you looking for a quicker, hands-on path into healthcare?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Longer path is fine",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Prefer a quicker, hands-on path",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_pa_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather run lab experiments, or practice a hands-on medical/technical skill (like first aid or a physical therapy technique)?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Run lab experiments",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Practice a hands-on skill",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_pa_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Do you picture yourself more in a research lab, or a clinic/ward doing direct hands-on work?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Research lab",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Clinic/ward, hands-on work",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.7,
+            "LIFE_SCIENCES_CARE": 0.2
+          }
+        }
+      ]
+    }
+  ]
+}

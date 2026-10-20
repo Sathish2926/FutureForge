@@ -1,0 +1,180 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "ml_bc_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Would you rather solve an equation with one correct answer, or figure out a real-world tradeoff with no single correct answer?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Equation, one right answer",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Real-world tradeoff",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_bc_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Are you more curious about why a formula works, or what it's worth in the real world (pricing, profit, growth)?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Why it works",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "What it's worth",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_bc_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Would you enjoy a stock market simulation game or a coding/robotics competition more?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Stock market simulation",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Coding/robotics competition",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_bc_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "At 25, are you closer to \"working on a technical product\" or \"running/growing a business\"?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Working on a technical product",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Running/growing a business",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_bc_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Would you rather optimize an algorithm, or optimize a business's profit margin?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Optimize an algorithm",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Optimize a profit margin",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_bc_6",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Would you rather present a technical solution, or pitch a business idea?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Present a technical solution",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.7,
+            "PRACTICAL_APPLIED": 0.1
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Pitch a business idea",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

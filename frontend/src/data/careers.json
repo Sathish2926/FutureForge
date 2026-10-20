@@ -1,0 +1,2248 @@
+[
+  {
+    "id": "software-engineer",
+    "name": "Software Engineer",
+    "icon": "Code",
+    "group": "Tech",
+    "aliases": ["programmer", "developer", "coder", "software developer", "sde", "full stack developer"],
+    "keywords": ["CSE", "B.Tech CSE", "BCA", "coding", "algorithms", "frontend", "backend", "python", "java", "sofware engineer"],
+    "sourceDomain": "aicte-india.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Tech Curriculum Board",
+    "steps": [
+      {
+        "id": "se-step-1",
+        "title": "Stream Choice (Class 10 Completion)",
+        "detail": "Choose Science stream with Physics, Mathematics, and optionally Chemistry/Computer Science in Class 11.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "se-step-2",
+        "title": "Class 12 Boards & Engineering Entrances",
+        "detail": "Pass Class 12 with minimum 60% aggregate in PCM. Prepare for national/state engineering entrances such as JEE Main or state CETs.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://jeemain.nta.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "se-step-3",
+        "title": "Undergraduate Degree (B.Tech / B.E. / B.Sc CS / BCA)",
+        "detail": "Enroll in a 4-year B.Tech/B.E. in Computer Science or 3-year BCA/B.Sc CS. Master Data Structures, Algorithms, Operating Systems, and DBMS.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "se-step-4",
+        "title": "Software Development Projects & Open Source",
+        "detail": "Build full-stack applications, contribute to open source on GitHub, and practice competitive programming on LeetCode/HackerRank.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://github.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "se-step-5",
+        "title": "Industry Software Internship",
+        "detail": "Complete a 3-6 month software engineering internship during 3rd/4th year, working with version control (Git) and Agile sprints.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://internshala.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "se-step-6",
+        "title": "Entry-Level SDE Placement & Specialisation",
+        "detail": "Clear technical and system design interviews to land a role as Junior Software Engineer / SDE-1, specializing in backend, frontend, or distributed systems.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nasscom.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "devops-engineer",
+    "name": "DevOps Engineer",
+    "icon": "Layers",
+    "group": "Tech",
+    "aliases": ["cloud engineer", "site reliability engineer", "sre", "platform engineer", "infrastructure engineer"],
+    "keywords": ["AWS", "Docker", "Kubernetes", "CI/CD", "Linux", "Terraform", "Jenkins", "dev ops"],
+    "sourceDomain": "linuxfoundation.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Tech Curriculum Board",
+    "steps": [
+      {
+        "id": "devops-step-1",
+        "title": "Science Stream with Mathematics",
+        "detail": "Select Science stream with Physics, Chemistry, and Mathematics (PCM) or Computer Science after Class 10.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "devops-step-2",
+        "title": "Engineering or IT Degree",
+        "detail": "Pursue B.Tech CSE, IT, or BCA. Gain strong fundamentals in computer networking, OS internals, and scripting (Python, Bash).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "devops-step-3",
+        "title": "Linux Systems Administration & Containerisation",
+        "detail": "Master Linux CLI, shell scripting, containerisation with Docker, and orchestration using Kubernetes (CKA curriculum).",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.cncf.io/certification/cka",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "devops-step-4",
+        "title": "Cloud Architecture & Infrastructure as Code",
+        "detail": "Build automation pipelines using GitHub Actions/GitLab CI and deploy Infrastructure as Code with Terraform on AWS or Azure.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://aws.amazon.com/certification",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "devops-step-5",
+        "title": "Cloud / DevOps Associate Certification",
+        "detail": "Obtain recognized credentials such as AWS Certified Solutions Architect or Linux Foundation CKA to validate cloud deployment expertise.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://aws.amazon.com/certification",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "devops-step-6",
+        "title": "DevOps / SRE Role",
+        "detail": "Join an engineering organization as an Associate DevOps Engineer or SRE, managing zero-downtime deployments and telemetry monitoring.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nasscom.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "data-scientist",
+    "name": "Data Scientist",
+    "icon": "Cpu",
+    "group": "Tech",
+    "aliases": ["machine learning engineer", "ml engineer", "ai specialist", "data analyst", "quantitative analyst"],
+    "keywords": ["data science", "Python", "machine learning", "deep learning", "statistics", "pandas", "data scientest"],
+    "sourceDomain": "nasscom.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Tech Curriculum Board",
+    "steps": [
+      {
+        "id": "ds-step-1",
+        "title": "Class 10 to Higher Secondary with Mathematics",
+        "detail": "Complete Class 12 with a strong foundation in Mathematics, Statistics, and Computer Science.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ds-step-2",
+        "title": "STEM Bachelor's Degree",
+        "detail": "Complete B.Tech in CS/AI, B.Sc in Statistics/Mathematics, or BS in Data Science. Focus on linear algebra, calculus, and probability.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ds-step-3",
+        "title": "Data Engineering & Modeling Mastery",
+        "detail": "Master SQL, Python (NumPy, Pandas, Scikit-learn), feature engineering, exploratory data analysis, and predictive modeling.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://scikit-learn.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ds-step-4",
+        "title": "Kaggle Competitions & Portfolio Projects",
+        "detail": "Build real-world ML projects, publish notebooks on Kaggle, build computer vision / NLP models, and deploy models via FastAPI.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.kaggle.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ds-step-5",
+        "title": "Data Science Internship / Research Apprenticeship",
+        "detail": "Complete a 3-6 month corporate internship solving business analytics, predictive pricing, or recommendation system problems.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nasscom.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ds-step-6",
+        "title": "Junior Data Scientist / ML Engineer Role",
+        "detail": "Secure a position as an Associate Data Scientist, deploying production models and deriving actionable insights from big data.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nasscom.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "name": "Cybersecurity Analyst",
+    "icon": "Shield",
+    "group": "Tech",
+    "aliases": ["security engineer", "soc analyst", "ethical hacker", "penetration tester", "infosec specialist"],
+    "keywords": ["cyber security", "CEH", "CompTIA Security+", "CISSP", "firewall", "cybersecurity", "cyber secury"],
+    "sourceDomain": "cert-in.org.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Tech Curriculum Board",
+    "steps": [
+      {
+        "id": "cyber-step-1",
+        "title": "Higher Secondary (PCM or Computer Science)",
+        "detail": "Complete Class 12 with Science (Mathematics/Physics) or vocational IT subjects.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cyber-step-2",
+        "title": "Degree in Computer Science or Cybersecurity",
+        "detail": "Enroll in B.Tech Computer Science, B.Sc Cybersecurity, or BCA with specialization in Network Security.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cyber-step-3",
+        "title": "Networking & Security Core Competencies",
+        "detail": "Study TCP/IP, OSI model, cryptographic protocols, packet analysis with Wireshark, Linux security, and OWASP Top 10 vulnerabilities.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://owasp.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cyber-step-4",
+        "title": "Industry Certifications (CompTIA Security+ / CEH)",
+        "detail": "Clear foundational security certifications such as CompTIA Security+ or Certified Ethical Hacker (CEH) to validate threat detection skills.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.comptia.org/certifications/security",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cyber-step-5",
+        "title": "Hands-on SOC Lab Training & CTF Challenges",
+        "detail": "Participate in capture-the-flag (CTF) challenges on TryHackMe/HackTheBox and gain experience with SIEM tools (Splunk, Wazuh).",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://tryhackme.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cyber-step-6",
+        "title": "SOC Analyst / Cybersecurity Professional Role",
+        "detail": "Join a Security Operations Center (SOC) as a Tier-1 Analyst monitoring real-time incidents, log analysis, and vulnerability mitigation.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://cert-in.org.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "doctor",
+    "name": "Doctor",
+    "icon": "Stethoscope",
+    "group": "Health",
+    "aliases": ["physician", "surgeon", "mbbs", "medical officer", "general practitioner", "docter"],
+    "keywords": ["MBBS", "NEET", "NEET-UG", "NTA", "NMC", "medical college", "residency", "doktor"],
+    "sourceDomain": "nmc.org.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "doc-step-1",
+        "title": "Class 10 to Science Stream (PCB)",
+        "detail": "Opt for Science with Physics, Chemistry, and Biology (PCB) in Class 11 and Class 12.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-2",
+        "title": "Class 12 Boards (Minimum 50% in PCB)",
+        "detail": "Pass Class 12 with at least 50% aggregate marks in Physics, Chemistry, and Biology (40% for reserved categories).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.nmc.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-3",
+        "title": "NEET-UG Entrance Examination via NTA",
+        "detail": "Appear for and qualify the National Eligibility cum Entrance Test (NEET-UG) conducted annually by the National Testing Agency (NTA).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://neet.nta.nic.in",
+        "minAge": 17,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-4",
+        "title": "MBBS Degree (4.5 Years Academic Course)",
+        "detail": "Secure admission via MCC/State counselling to complete 4.5 years of medical curriculum including anatomy, pharmacology, pathology, and clinical rotations.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.nmc.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-5",
+        "title": "Compulsory Rotatory Internship (1 Year)",
+        "detail": "Complete a mandatory 1-year paid clinical internship rotating through medicine, surgery, obstetrics/gynecology, and community health.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.nmc.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-6",
+        "title": "NMC Registration & Licensure",
+        "detail": "Register with the National Medical Commission (NMC) or State Medical Council to receive a permanent medical practice registration number.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.nmc.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "doc-step-7",
+        "title": "Medical Practice or Post-Graduate Specialisation (MD/MS)",
+        "detail": "Begin practice as a General Duty Medical Officer (GDMO) or appear for NEET-PG/NExT for MD/MS specialization in cardiology, neurology, pediatrics, etc.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nbe.edu.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "dentist",
+    "name": "Dentist",
+    "icon": "Smile",
+    "group": "Health",
+    "aliases": ["dental surgeon", "orthodontist", "periodontist", "bds", "dental doctor"],
+    "keywords": ["BDS", "NEET-UG", "DCI", "dental college", "teeth", "oral surgery", "dentistry"],
+    "sourceDomain": "dciindia.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "dent-step-1",
+        "title": "Science Stream with Biology (PCB)",
+        "detail": "Choose Physics, Chemistry, and Biology (PCB) in Class 11-12 following Class 10.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "dent-step-2",
+        "title": "NEET-UG Examination",
+        "detail": "Qualify the NEET-UG examination conducted by NTA with eligible percentile for dental college counselling.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://neet.nta.nic.in",
+        "minAge": 17,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "dent-step-3",
+        "title": "Bachelor of Dental Surgery (BDS) Course",
+        "detail": "Complete the 4-year BDS curriculum covering dental anatomy, oral pathology, prosthodontics, conservative dentistry, and orthodontics.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://dciindia.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "dent-step-4",
+        "title": "1-Year Paid Dental Internship",
+        "detail": "Complete 12 months of hands-on clinical rotational internship in a recognized dental hospital handling extractions, fillings, and RCTs.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://dciindia.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "dent-step-5",
+        "title": "State Dental Council Registration",
+        "detail": "Register with the Dental Council of India (DCI) / State Dental Council to obtain the license to practice dental medicine.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://dciindia.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "dent-step-6",
+        "title": "Clinical Practice or Master of Dental Surgery (MDS)",
+        "detail": "Set up private dental clinic, join a hospital, or clear NEET-MDS to specialize in orthodontics, oral surgery, or pediatric dentistry.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nbe.edu.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "veterinarian",
+    "name": "Veterinarian",
+    "icon": "HeartPulse",
+    "group": "Health",
+    "aliases": ["vet", "veterinary doctor", "animal doctor", "veterinary surgeon", "bvsc"],
+    "keywords": ["BVSc", "animal hospital", "VCI", "livestock", "pet care", "veterinary", "vetrinary"],
+    "sourceDomain": "vci.dadf.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "vet-step-1",
+        "title": "Higher Secondary with PCB",
+        "detail": "Complete Class 12 with Physics, Chemistry, Biology, and English with minimum 50% marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "vet-step-2",
+        "title": "NEET-UG / State Veterinary Entrance",
+        "detail": "Qualify NEET-UG for Veterinary Council of India (VCI) 15% quota or state-specific veterinary entrance exams.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://vci.dadf.gov.in",
+        "minAge": 17,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "vet-step-3",
+        "title": "B.V.Sc & A.H. Degree Program",
+        "detail": "Complete the 4.5-year Bachelor of Veterinary Science and Animal Husbandry degree program accredited by VCI.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://vci.dadf.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "vet-step-4",
+        "title": "Compulsory Veterinary Internship (1 Year)",
+        "detail": "Undertake practical internship at veterinary colleges, livestock farms, dairy plants, and wildlife/zoo centers.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://vci.dadf.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "vet-step-5",
+        "title": "Veterinary Council of India (VCI) Registration",
+        "detail": "Mandatory registration with State Veterinary Council and the Veterinary Council of India to practice veterinary medicine legally.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://vci.dadf.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "vet-step-6",
+        "title": "Professional Practice / Government Veterinary Officer",
+        "detail": "Practice in companion animal clinics, livestock farms, animal welfare organizations, or join State Animal Husbandry Department as Veterinary Officer.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://vci.dadf.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "pharmacist",
+    "name": "Pharmacist",
+    "icon": "Pill",
+    "group": "Health",
+    "aliases": ["chemist", "druggist", "clinical pharmacist", "industrial pharmacist", "b.pharm"],
+    "keywords": ["B.Pharm", "D.Pharm", "Pharm.D", "PCI", "pharmacy", "drug inspector", "pharmacyst"],
+    "sourceDomain": "pci.nic.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "pharm-step-1",
+        "title": "Science Stream in Class 12 (PCB / PCM)",
+        "detail": "Pass Class 12 with Physics, Chemistry, and Biology or Mathematics with at least 50% marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pharm-step-2",
+        "title": "Pharmacy Entrance Examination",
+        "detail": "Appear for state pharmacy entrance tests (MHT-CET, WBJEE, KCET, etc.) or CUET-UG for central pharmacy programs.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://cuetug.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pharm-step-3",
+        "title": "B.Pharm Degree Course (4 Years)",
+        "detail": "Complete 4-year Bachelor of Pharmacy program accredited by the Pharmacy Council of India (PCI), covering pharmaceutics, medicinal chemistry, and pharmacology.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.pci.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pharm-step-4",
+        "title": "Hospital / Industrial Pharmacy Training",
+        "detail": "Undergo mandatory practical training in hospital pharmacies or pharmaceutical manufacturing units.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.pci.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pharm-step-5",
+        "title": "PCI Registered Pharmacist Licensure",
+        "detail": "Register with the State Pharmacy Council under the Pharmacy Act to obtain official Registered Pharmacist (R.Pharm) certificate.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.pci.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pharm-step-6",
+        "title": "Career: Clinical, Retail, or Pharma R&D",
+        "detail": "Work as a Hospital Pharmacist, Retail Chemist, Quality Assurance Analyst in pharma companies, or appear for Drug Inspector exams.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.pci.nic.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "nurse",
+    "name": "Nurse",
+    "icon": "Activity",
+    "group": "Health",
+    "aliases": ["registered nurse", "staff nurse", "nursing officer", "b.sc nursing", "clinical nurse"],
+    "keywords": ["B.Sc Nursing", "GNM", "INC", "hospital", "patient care", "nursing", "nurce"],
+    "sourceDomain": "indiannursingcouncil.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "nurse-step-1",
+        "title": "Science Stream with Biology (Class 12)",
+        "detail": "Complete Class 12 with Physics, Chemistry, Biology, and English with minimum 45% aggregate marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "nurse-step-2",
+        "title": "B.Sc Nursing Entrance Exam",
+        "detail": "Appear for AIIMS B.Sc Nursing, state entrance exams, or university-specific tests (NEET-UG scores used by several institutions).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.aiimsexams.ac.in",
+        "minAge": 17,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "nurse-step-3",
+        "title": "B.Sc Nursing Degree Program (4 Years)",
+        "detail": "Complete the 4-year degree recognized by the Indian Nursing Council (INC) comprising medical-surgical nursing, pediatrics, and community health.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.indiannursingcouncil.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "nurse-step-4",
+        "title": "Clinical Hospital Rotations",
+        "detail": "Gain extensive hands-on experience in ICU, emergency wards, maternity units, and operation theaters.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.indiannursingcouncil.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "nurse-step-5",
+        "title": "State Nursing Council Registration (RN & RM)",
+        "detail": "Register with the State Nursing Council to earn the Registered Nurse (RN) and Registered Midwife (RM) license.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.indiannursingcouncil.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "nurse-step-6",
+        "title": "Hospital Nursing Officer / NORCET Exam",
+        "detail": "Join leading hospital networks or qualify AIIMS NORCET examination for Central Government Nursing Officer positions.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://norcet.aiimsexams.ac.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "physiotherapist",
+    "name": "Physiotherapist",
+    "icon": "UserCheck",
+    "group": "Health",
+    "aliases": ["physical therapist", "pt", "rehab specialist", "sports physiotherapist", "bpt"],
+    "keywords": ["BPT", "rehabilitation", "kinesiology", "sports injury", "physiotherapy", "physiotherapst"],
+    "sourceDomain": "main.mohfw.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Medical Advisory Panel",
+    "steps": [
+      {
+        "id": "pt-step-1",
+        "title": "Higher Secondary in Science (PCB)",
+        "detail": "Pass Class 12 with Physics, Chemistry, and Biology with minimum 50% marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pt-step-2",
+        "title": "Paramedical / BPT Entrance Test",
+        "detail": "Appear for university or state-level paramedical entrance examinations (IPU CET, NEET scores in some states, etc.).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://main.mohfw.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pt-step-3",
+        "title": "Bachelor of Physiotherapy (BPT) - 4.5 Years",
+        "detail": "Complete the 4-year academic coursework covering anatomy, physiology, biomechanics, exercise therapy, and electrotherapy.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://main.mohfw.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pt-step-4",
+        "title": "6-Month Mandatory Clinical Internship",
+        "detail": "Undergo 6 months of supervised clinical training in orthopedics, neurology, cardiopulmonary, and sports medicine wards.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://main.mohfw.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pt-step-5",
+        "title": "Allied Healthcare Council Registration",
+        "detail": "Register under the National Commission for Allied and Healthcare Professions (NCAHP) or state physiotherapy council.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://ncahp.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pt-step-6",
+        "title": "Clinical Practice or Sports Specialisation (MPT)",
+        "detail": "Work in hospitals, sports clinics, rehabilitation centers, or pursue Master of Physiotherapy (MPT) in sports or neuro-rehab.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://ncahp.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "chartered-accountant",
+    "name": "Chartered Accountant",
+    "icon": "Briefcase",
+    "group": "Finance",
+    "aliases": ["ca", "auditor", "tax consultant", "financial accountant", "statutory auditor"],
+    "keywords": ["ICAI", "CA Foundation", "CA Intermediate", "CA Final", "articleship", "accounting", "chartered"],
+    "sourceDomain": "icai.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "ca-step-1",
+        "title": "Class 10 Completion & Register with ICAI",
+        "detail": "Provisional registration with the Institute of Chartered Accountants of India (ICAI) after passing Class 10.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-2",
+        "title": "Pass Class 12 & CA Foundation Exam",
+        "detail": "Complete Class 12 (any stream, Commerce preferred) and clear the 4-paper CA Foundation examination.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-3",
+        "title": "CA Intermediate Course (Both Groups)",
+        "detail": "Enroll in CA Intermediate, study advanced accounting, corporate law, taxation, and auditing; clear Group 1 and Group 2.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-4",
+        "title": "ICITSS Soft Skills & IT Training",
+        "detail": "Complete mandatory Integrated Course on Information Technology and Soft Skills (ICITSS) before commencing practical training.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-5",
+        "title": "Practical Articleship Training (2 Years)",
+        "detail": "Undergo 2 years of unbroken practical training under a practicing Chartered Accountant, handling statutory audits, taxation, and compliance.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-6",
+        "title": "CA Final Examination",
+        "detail": "Clear the comprehensive CA Final examination (Financial Reporting, Strategic Financial Management, Advanced Auditing).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "ca-step-7",
+        "title": "ICAI Membership & Practice / Corporate Leadership",
+        "detail": "Obtain Certificate of Practice (COP) for independent auditing or take up senior finance/CFO roles in multinational corporations.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.icai.org",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "company-secretary",
+    "name": "Company Secretary",
+    "icon": "FileText",
+    "group": "Finance",
+    "aliases": ["cs", "corporate secretary", "compliance officer", "legal governance specialist"],
+    "keywords": ["ICSI", "CSEET", "corporate law", "governance", "SEBI", "board of directors", "compny secretary"],
+    "sourceDomain": "icsi.edu",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "cs-step-1",
+        "title": "Class 12 Completion (Any Stream)",
+        "detail": "Pass Class 12 in Commerce, Arts, or Science from a recognized education board.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cs-step-2",
+        "title": "CSEET Entrance Exam (ICSI)",
+        "detail": "Clear the CS Executive Entrance Test (CSEET) conducted by the Institute of Company Secretaries of India (ICSI).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.icsi.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cs-step-3",
+        "title": "CS Executive Program",
+        "detail": "Complete the CS Executive stage covering Company Law, Securities Laws, Economic Laws, and Tax Laws.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.icsi.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cs-step-4",
+        "title": "CS Professional Program",
+        "detail": "Qualify the CS Professional examination focusing on Governance, Risk Management, Corporate Restructuring, and Drafting.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.icsi.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cs-step-5",
+        "title": "Practical Training (21 Months EDP)",
+        "detail": "Complete 21 months of practical training under a Practicing Company Secretary (PCS) or approved corporate house.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.icsi.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cs-step-6",
+        "title": "ICSI Associate Membership (ACS)",
+        "detail": "Receive Associate Company Secretary (ACS) credential to advise corporate boards on regulatory compliance and governance.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.icsi.edu",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "cost-accountant",
+    "name": "Cost Accountant",
+    "icon": "Calculator",
+    "group": "Finance",
+    "aliases": ["cma", "cost and management accountant", "management accountant", "cost auditor"],
+    "keywords": ["ICMAI", "CMA Foundation", "CMA Intermediate", "CMA Final", "costing", "cost audit", "cost acountant"],
+    "sourceDomain": "icmai.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "cma-step-1",
+        "title": "Class 10 & 12 Completion",
+        "detail": "Pass Class 12 from any recognized board to become eligible for CMA Foundation examination.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cma-step-2",
+        "title": "CMA Foundation Exam via ICMAI",
+        "detail": "Register with the Institute of Cost Accountants of India (ICMAI) and clear the CMA Foundation exam.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://icmai.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cma-step-3",
+        "title": "CMA Intermediate Course",
+        "detail": "Pass both groups of CMA Intermediate covering Cost Accounting, Financial Management, Direct & Indirect Taxation, and Operations.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://icmai.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cma-step-4",
+        "title": "Practical Training (15 Months)",
+        "detail": "Undergo mandatory 15 months of practical training in cost analysis, budgeting, and inventory valuation in a manufacturing or corporate setup.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://icmai.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cma-step-5",
+        "title": "CMA Final Examination",
+        "detail": "Clear CMA Final exam focusing on Strategic Cost Management, Corporate Financial Reporting, and Strategic Performance Management.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://icmai.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "cma-step-6",
+        "title": "ICMAI Membership & Practice / Industrial Role",
+        "detail": "Receive Associate Membership (ACMA) to conduct statutory cost audits, pricing decisions, and supply-chain cost optimization.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://icmai.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "actuary",
+    "name": "Actuary",
+    "icon": "TrendingUp",
+    "group": "Finance",
+    "aliases": ["actuarial analyst", "risk modeling specialist", "actuarial consultant", "insurance actuary"],
+    "keywords": ["IAI", "ACET", "actuarial science", "insurance", "pension risk", "probability", "actuary"],
+    "sourceDomain": "actuariesindia.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "act-step-1",
+        "title": "Class 12 with Advanced Mathematics",
+        "detail": "Excel in Class 12 with Mathematics or Statistics, building deep fluency in calculus, probability, and algebra.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "act-step-2",
+        "title": "ACET Examination via Institute of Actuaries of India",
+        "detail": "Appear for and pass the Actuarial Common Entrance Test (ACET) to gain student membership of the IAI.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.actuariesindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "act-step-3",
+        "title": "Bachelor's Degree in Maths / Statistics / Actuarial Science",
+        "detail": "Pursue B.Sc in Mathematics, Statistics, or Actuarial Science while simultaneously preparing for professional actuarial papers.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.actuariesindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "act-step-4",
+        "title": "Clear Core Principles Papers (CS, CM, CB Series)",
+        "detail": "Clear foundational actuarial exams: Actuarial Statistics (CS1, CS2), Actuarial Mathematics (CM1, CM2), and Business (CB1, CB2).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.actuariesindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "act-step-5",
+        "title": "Actuarial Internship / Junior Analyst Experience",
+        "detail": "Work with life insurance, general insurance, or reinsurance firms building stochastic loss models and reserving methodologies.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.actuariesindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "act-step-6",
+        "title": "Fellowship (FIAI) & Chief Actuary Certification",
+        "detail": "Clear specialist applications (SA series) and peer review modules to earn Fellowship (FIAI), authorising valuation of insurance solvency.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.actuariesindia.org",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "banking-officer",
+    "name": "Banking Officer",
+    "icon": "Landmark",
+    "group": "Finance",
+    "aliases": ["probationary officer", "po", "bank po", "branch manager", "credit analyst", "bank manager"],
+    "keywords": ["IBPS PO", "SBI PO", "RBI Grade B", "banking", "finance", "commercial bank", "bank officer"],
+    "sourceDomain": "ibps.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "bank-step-1",
+        "title": "Class 12 in Any Discipline",
+        "detail": "Pass Class 12 with Commerce, Science, or Humanities with strong quantitative and communication skills.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "bank-step-2",
+        "title": "Undergraduate Graduation Degree",
+        "detail": "Complete any Bachelor's degree (B.Com, BBA, B.Tech, B.A., B.Sc) with minimum 55-60% marks as required for banking examinations.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "bank-step-3",
+        "title": "Competitive Exam Prep (Aptitude, Reasoning, Banking Awareness)",
+        "detail": "Prepare for quantitative aptitude, logical reasoning, English comprehension, general financial awareness, and computer knowledge.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.ibps.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "bank-step-4",
+        "title": "IBPS PO / SBI PO Competitive Examinations",
+        "detail": "Appear for and qualify Preliminary exam, Main exam, and Descriptive Paper conducted by IBPS or State Bank of India.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.ibps.in",
+        "minAge": 20,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "bank-step-5",
+        "title": "Psychometric Assessment & Group Interview",
+        "detail": "Clear the personality interview and group exercise conducted by public sector bank selection boards.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://sbi.co.in/careers",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "bank-step-6",
+        "title": "2-Year Probationary Training & Branch Placement",
+        "detail": "Complete 2 years of probation covering retail banking, credit appraisal, treasury operations, and foreign exchange.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.ibps.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "economist",
+    "name": "Economist",
+    "icon": "BarChart3",
+    "group": "Finance",
+    "aliases": ["policy analyst", "economic consultant", "macroeconometrician", "market research analyst"],
+    "keywords": ["economics", "econometrics", "RBI", "policy", "macroeconomics", "IES", "economyst"],
+    "sourceDomain": "rbi.org.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Finance Curriculum Board",
+    "steps": [
+      {
+        "id": "econ-step-1",
+        "title": "Class 12 with Economics and Mathematics",
+        "detail": "Pass Class 12 with strong grades in Economics, Mathematics, and Statistics.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "econ-step-2",
+        "title": "B.A. / B.Sc in Economics",
+        "detail": "Complete a 3 or 4-year undergraduate degree in Economics from recognized universities (DSE, St. Stephen's, Loyola, Christ, etc.).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "econ-step-3",
+        "title": "Econometric & Statistical Tools",
+        "detail": "Learn advanced econometric modeling, regression analysis, and tools such as R, Stata, Python, and EViews.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.r-project.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "econ-step-4",
+        "title": "Master's Degree (M.A. / M.Sc in Economics)",
+        "detail": "Complete a postgraduate degree in Economics, Quantitative Economics, or Financial Economics (via CUET-PG or institute entrances).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://cuetpg.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "econ-step-5",
+        "title": "Indian Economic Service (IES) / Corporate Research",
+        "detail": "Appear for the Indian Economic Service (IES) exam conducted by UPSC, or join central bank / investment bank research teams.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://upsc.gov.in",
+        "minAge": 21,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "econ-step-6",
+        "title": "Senior Economic Advisor / Policy Researcher",
+        "detail": "Lead macroeconomic forecasts, monetary policy analysis, development policy design, or trade impact assessments.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://rbi.org.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "lawyer",
+    "name": "Lawyer",
+    "icon": "Scale",
+    "group": "Law & Government",
+    "aliases": ["advocate", "barrister", "attorney", "legal counsel", "litigator"],
+    "keywords": ["CLAT", "LL.B", "BCI", "bar council", "supreme court", "high court", "lawer"],
+    "sourceDomain": "barcouncilofindia.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Legal Education Council",
+    "steps": [
+      {
+        "id": "law-step-1",
+        "title": "Class 10 to Higher Secondary (Any Stream)",
+        "detail": "Complete Class 12 in Humanities, Commerce, or Science with minimum 45% marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-2",
+        "title": "CLAT / AILET Law Entrance Examination",
+        "detail": "Appear for the Common Law Admission Test (CLAT) or AILET for admission to National Law Universities (NLUs).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://consortiumofnlus.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-3",
+        "title": "5-Year Integrated B.A. LL.B / BBA LL.B Degree",
+        "detail": "Complete 5 years of legal education covering Constitutional Law, Criminal Law (BNS), Civil Procedure, Torts, and Corporate Law.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.barcouncilofindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-4",
+        "title": "Court Mooting & Chamber Internships",
+        "detail": "Participate in national moot court competitions and undertake mandatory internships with senior advocates, law firms, and legal aid clinics.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.barcouncilofindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-5",
+        "title": "State Bar Council Enrolment",
+        "detail": "Enroll as an Advocate with the respective State Bar Council to obtain provisional permission to practice law.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.barcouncilofindia.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-6",
+        "title": "All India Bar Examination (AIBE)",
+        "detail": "Clear the All India Bar Examination (AIBE) conducted by the Bar Council of India to receive Certificate of Practice (COP).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://allindiabarexamination.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "law-step-7",
+        "title": "Independent Litigation / Corporate Legal Counsel",
+        "detail": "Argue matters in district courts and High Courts, or join corporate legal teams managing M&A transactions, contracts, and IP rights.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.barcouncilofindia.org",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "civil-servant",
+    "name": "Civil Servant",
+    "icon": "Award",
+    "group": "Law & Government",
+    "aliases": ["ias officer", "ips officer", "collector", "district magistrate", "bureaucrat"],
+    "keywords": ["UPSC", "IAS", "IPS", "IFS", "civil services", "CSE", "civil servnt"],
+    "sourceDomain": "upsc.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Public Administration Advisory",
+    "steps": [
+      {
+        "id": "csrv-step-1",
+        "title": "Class 10 to Higher Secondary (Any Stream)",
+        "detail": "Complete Class 12 in any stream, cultivating habits of reading national daily newspapers and understanding civic issues.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-2",
+        "title": "Undergraduate Bachelor's Degree (Any Field)",
+        "detail": "Complete any Bachelor's degree (Humanities, Engineering, Commerce, Medicine). Deepen understanding of polity, history, geography, and economics.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-3",
+        "title": "UPSC Civil Services Preliminary Examination",
+        "detail": "Appear for and clear UPSC CSE Prelims: General Studies Paper I and Civil Services Aptitude Test (CSAT Paper II).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://upsc.gov.in",
+        "minAge": 21,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-4",
+        "title": "UPSC Civil Services Main Examination (9 Papers)",
+        "detail": "Write 9 descriptive subjective papers covering Essay, GS I-IV, Language papers, and chosen Optional Subject.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://upsc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-5",
+        "title": "Personality Test / Interview at Dholpur House",
+        "detail": "Clear the comprehensive UPSC interview evaluating mental alertness, leadership, moral integrity, and social balance.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://upsc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-6",
+        "title": "LBSNAA Foundation Course & Academy Training",
+        "detail": "Undergo professional administrative training at Lal Bahadur Shastri National Academy of Administration (LBSNAA), Mussoorie.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.lbsnaa.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "csrv-step-7",
+        "title": "Cadre Allotment & Sub-Divisional Magistrate Posting",
+        "detail": "Begin field postings as Assistant Collector / SDM managing law and order, land revenue administration, and public welfare schemes.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://dopt.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "social-worker",
+    "name": "Social Worker",
+    "icon": "Users",
+    "group": "Law & Government",
+    "aliases": ["msw specialist", "ngo director", "community organizer", "child protection officer", "development worker"],
+    "keywords": ["MSW", "BSW", "TISS", "NGO", "community development", "social work", "social worker"],
+    "sourceDomain": "tiss.edu",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Public Administration Advisory",
+    "steps": [
+      {
+        "id": "soc-step-1",
+        "title": "Higher Secondary Completion (Class 12)",
+        "detail": "Pass Class 12 in any stream with interest in sociology, psychology, and public health.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "soc-step-2",
+        "title": "Bachelor of Social Work (BSW) / BA Social Sciences",
+        "detail": "Enroll in a 3-year BSW program focusing on social policy, human behavior, human rights, and social research methods.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "soc-step-3",
+        "title": "Field Practicum & Rural Community Camps",
+        "detail": "Complete mandatory concurrent fieldwork placements with grassroots NGOs, slum communities, and tribal welfare missions.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.tiss.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "soc-step-4",
+        "title": "Master of Social Work (MSW)",
+        "detail": "Appear for CUET-PG or institute entrances (e.g. TISS NET / CUET) to specialize in Mental Health, Child & Family, or Community Development.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://cuetpg.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "soc-step-5",
+        "title": "Specialized Field Interventions & Research",
+        "detail": "Conduct fieldwork with hospital psychiatric units, women shelter homes, or child protection committees.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://wcd.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "soc-step-6",
+        "title": "NGO Program Officer / CSR Lead / Medical Social Worker",
+        "detail": "Lead development interventions in UN agencies, national NGOs, Corporate Social Responsibility foundations, or hospitals.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://tiss.edu",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "designer",
+    "name": "Designer",
+    "icon": "Palette",
+    "group": "Creative",
+    "aliases": ["ui ux designer", "product designer", "graphic designer", "interaction designer", "visual designer"],
+    "keywords": ["UCEED", "NID", "Figma", "design portfolio", "UX research", "wireframing", "desiner"],
+    "sourceDomain": "nid.edu",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Design Curriculum Board",
+    "steps": [
+      {
+        "id": "des-step-1",
+        "title": "Class 10 to Higher Secondary (Any Stream)",
+        "detail": "Pass Class 12 in any stream. Develop sketching, observation, and creative problem-solving skills.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "des-step-2",
+        "title": "Design Entrance Exams (UCEED / NID DAT / NIFT)",
+        "detail": "Appear for national design entrance tests like UCEED (conducted by IIT Bombay) or NID Design Aptitude Test.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://uceed.iitb.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "des-step-3",
+        "title": "Bachelor of Design (B.Des) Degree",
+        "detail": "Enroll in a 4-year B.Des program in Interaction Design, Product Design, or Communication Design.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.nid.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "des-step-4",
+        "title": "UX Research & Prototyping Mastery",
+        "detail": "Master Figma, user interviews, information architecture, wireframing, usability testing, and design systems.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://figma.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "des-step-5",
+        "title": "Case Study Portfolio Development",
+        "detail": "Build a portfolio with 3-4 end-to-end design case studies showcasing problem statement, iteration, metrics, and high-fidelity prototypes.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.behance.net",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "des-step-6",
+        "title": "Product Designer / UI/UX Role",
+        "detail": "Join tech companies, digital product agencies, or startups as Product Designer crafting user experiences.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nasscom.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "fashion-designer",
+    "name": "Fashion Designer",
+    "icon": "Scissors",
+    "group": "Creative",
+    "aliases": ["apparel designer", "couture designer", "textile designer", "fashion stylist", "garment technologist"],
+    "keywords": ["NIFT", "apparel", "textile", "fashion illustration", "garment construction", "runway", "fashon designer"],
+    "sourceDomain": "nift.ac.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Design Curriculum Board",
+    "steps": [
+      {
+        "id": "fash-step-1",
+        "title": "Class 12 in Any Stream",
+        "detail": "Pass Class 12 from any recognized board with interest in textiles, illustration, and cultural trends.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "fash-step-2",
+        "title": "NIFT Entrance Examination (CAT & GAT)",
+        "detail": "Appear for the National Institute of Fashion Technology entrance exam: Creative Ability Test (CAT) and General Ability Test (GAT).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://nift.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "fash-step-3",
+        "title": "Bachelor of Fashion Design (B.Des Fashion)",
+        "detail": "Complete a 4-year degree in Fashion Design covering pattern making, draping, fabric science, garment construction, and CAD.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://nift.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "fash-step-4",
+        "title": "Textile Mill & Export House Internship",
+        "detail": "Undergo an intensive 8-10 week industry internship in garment manufacturing or with an established couture fashion designer.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nift.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "fash-step-5",
+        "title": "Graduation Collection Showcase",
+        "detail": "Design, manufacture, and present a cohesive 5-look collection at the annual college runway graduation exhibition.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://nift.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "fash-step-6",
+        "title": "Fashion House Designer / Independent Label",
+        "detail": "Work with fashion export brands, luxury retail houses, or launch an independent sustainable apparel label.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nift.ac.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "animator-game-developer",
+    "name": "Animator/Game Developer",
+    "icon": "Gamepad2",
+    "group": "Creative",
+    "aliases": ["game designer", "3d animator", "vfx artist", "technical artist", "game programmer", "unity developer"],
+    "keywords": ["Unity", "Unreal Engine", "Blender", "Maya", "3D animation", "C++", "animater"],
+    "sourceDomain": "mescindia.org",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Design Curriculum Board",
+    "steps": [
+      {
+        "id": "game-step-1",
+        "title": "Class 12 Completion (Maths or Arts)",
+        "detail": "Pass Class 12 with interest in computer graphics, 3D spatial thinking, storytelling, and digital arts.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "game-step-2",
+        "title": "B.Des Animation / B.Sc Gaming & VFX Degree",
+        "detail": "Complete a 3-4 year degree program in Animation, Game Design, or Computer Science with Game Development.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.nid.edu",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "game-step-3",
+        "title": "3D Modeling & Animation Fundamentals",
+        "detail": "Master Blender/Maya for polygonal modeling, texturing, rigging, character skinning, and lighting.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.blender.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "game-step-4",
+        "title": "Game Engine Programming (Unity / Unreal)",
+        "detail": "Learn C# scripting in Unity or C++/Blueprints in Unreal Engine 5, managing physics, collision, and game loops.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://unity.com",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "game-step-5",
+        "title": "Playable Game Demo / Animation Showreel",
+        "detail": "Publish a playable game prototype on itch.io or create a 60-second character animation reel on ArtStation.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://itch.io",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "game-step-6",
+        "title": "Game Studio / VFX House Placement",
+        "detail": "Secure a position as Gameplay Programmer, Junior 3D Animator, or Technical Artist at gaming studios or VFX production houses.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://mescindia.org",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "journalist",
+    "name": "Journalist",
+    "icon": "Newspaper",
+    "group": "Creative",
+    "aliases": ["reporter", "news anchor", "correspondent", "editor", "media specialist", "broadcast journalist"],
+    "keywords": ["IIMC", "mass communication", "journalism", "press", "media", "news", "journalst"],
+    "sourceDomain": "iimc.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Media Studies Board",
+    "steps": [
+      {
+        "id": "journ-step-1",
+        "title": "Class 12 in Any Discipline",
+        "detail": "Pass Class 12 with Humanities, Commerce, or Science, maintaining keen interest in current affairs, writing, and fact-checking.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "journ-step-2",
+        "title": "Bachelor of Journalism and Mass Communication (BJMC)",
+        "detail": "Complete a 3-year BJMC / BA Journalism degree covering news reporting, media ethics, broadcast production, and digital media.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "journ-step-3",
+        "title": "IIMC / University Postgraduate Diploma Entrance",
+        "detail": "Appear for CUET-PG or Indian Institute of Mass Communication (IIMC) entrance for postgraduate diploma in Journalism.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://iimc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "journ-step-4",
+        "title": "Newsroom / Media House Internship",
+        "detail": "Undertake practical newsroom internships covering beat reporting, press conferences, photojournalism, and copy editing.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://iimc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "journ-step-5",
+        "title": "Digital Investigative Portfolio",
+        "detail": "Publish articles, investigative video reports, or data journalism stories covering civic, business, or political issues.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://iimc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "journ-step-6",
+        "title": "Staff Reporter / Broadcast Correspondent Role",
+        "detail": "Join leading news organizations, digital publishers, or national daily newspapers as a Staff Correspondent.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://iimc.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "core-engineer",
+    "name": "Core Engineer",
+    "icon": "Wrench",
+    "group": "Engineering & Trades",
+    "aliases": ["mechanical engineer", "civil engineer", "electrical engineer", "design engineer", "project engineer"],
+    "keywords": ["GATE", "B.Tech", "AutoCAD", "SolidWorks", "infrastructure", "manufacturing", "core engg"],
+    "sourceDomain": "gate2026.iitkgp.ac.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Engineering Standards Council",
+    "steps": [
+      {
+        "id": "core-step-1",
+        "title": "Class 10 to Science Stream (PCM)",
+        "detail": "Opt for Physics, Chemistry, and Mathematics (PCM) in Class 11-12 with strong problem-solving orientation.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "core-step-2",
+        "title": "Engineering Entrances (JEE Main / State CETs)",
+        "detail": "Appear for JEE Main, JEE Advanced, or state-level engineering entrances for admission to NITs, IITs, and government engineering colleges.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://jeemain.nta.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "core-step-3",
+        "title": "B.Tech / B.E. in Core Engineering Branch",
+        "detail": "Complete a 4-year degree in Mechanical, Civil, Electrical, or Chemical Engineering accredited by AICTE.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "core-step-4",
+        "title": "CAD Modeling & Simulation Proficiency",
+        "detail": "Master industry-standard CAD/CAE tools: AutoCAD, SolidWorks, CATIA, MATLAB, or STAAD.Pro for structural/circuit design.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.autodesk.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "core-step-5",
+        "title": "Industrial Manufacturing / Site Internship",
+        "detail": "Complete a 6-8 week on-site plant or construction internship (L&T, Tata Motors, BHEL, or state PWD departments).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "core-step-6",
+        "title": "GATE Exam / PSU Placement / Core Engineering Role",
+        "detail": "Clear the Graduate Aptitude Test in Engineering (GATE) for PSU recruitment (NTPC, ONGC, IOCL) or join top infrastructure/manufacturing firms.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://gate2026.iitkgp.ac.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "architect",
+    "name": "Architect",
+    "icon": "Building",
+    "group": "Engineering & Trades",
+    "aliases": ["building architect", "urban architect", "landscape architect", "b.arch", "architectural designer"],
+    "keywords": ["B.Arch", "NATA", "JEE Main Paper 2", "COA", "Revit", "BIM", "archtect"],
+    "sourceDomain": "coa.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Architecture Standards Board",
+    "steps": [
+      {
+        "id": "arch-step-1",
+        "title": "Class 12 with Physics, Chemistry & Mathematics",
+        "detail": "Pass Class 12 with at least 50% aggregate marks in PCM as mandated by the Council of Architecture (COA).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.coa.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "arch-step-2",
+        "title": "NATA / JEE Main Paper 2 Entrance Exam",
+        "detail": "Qualify the National Aptitude Test in Architecture (NATA) conducted by COA or JEE Main Paper 2 for SPA/NIT admissions.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.nata.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "arch-step-3",
+        "title": "Bachelor of Architecture (B.Arch) - 5 Years",
+        "detail": "Complete the 5-year B.Arch course recognized by COA covering architectural design studios, building materials, structures, and history.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.coa.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "arch-step-4",
+        "title": "Architectural Office Internship (Practical Training)",
+        "detail": "Complete a mandatory semester-long architectural internship working on live site measurements, drafting, and client briefs.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.coa.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "arch-step-5",
+        "title": "Council of Architecture (COA) Registration",
+        "detail": "Register with the Council of Architecture (COA) under the Architects Act 1972 to legally hold the title 'Architect' in India.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.coa.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "arch-step-6",
+        "title": "Architectural Practice / Urban Planning",
+        "detail": "Establish an independent architectural studio or work with top planning and sustainable architecture consultancies.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.coa.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "skilled-technician",
+    "name": "Skilled Technician (ITI/Diploma)",
+    "icon": "Hammer",
+    "group": "Engineering & Trades",
+    "aliases": ["iti technician", "polytechnic technician", "junior engineer", "electrician", "maintenance technician", "mechanic"],
+    "keywords": ["ITI", "NCVT", "polytechnic", "diploma", "CTS", "trade certificate", "technition"],
+    "sourceDomain": "dgt.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Vocational Standards Council",
+    "steps": [
+      {
+        "id": "tech-step-1",
+        "title": "Pass Class 10 (Secondary School)",
+        "detail": "Pass Class 10 with Science and Mathematics from any recognized state or central board.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tech-step-2",
+        "title": "Enroll in ITI or Polytechnic Diploma",
+        "detail": "Join a 2-year ITI trade (Electrician, Fitter, Machinist, Wireman) or 3-year Polytechnic Diploma in Mechanical/Electrical/Civil.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://dgt.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tech-step-3",
+        "title": "Workshop Hands-on Trade Training",
+        "detail": "Complete hands-on vocational training: blueprints reading, precision measuring instruments, lathe machines, and electrical safety standards.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://dgt.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tech-step-4",
+        "title": "All India Trade Test (AITT) via NCVT",
+        "detail": "Pass the All India Trade Test (AITT) to earn the National Trade Certificate (NTC) issued by the National Council for Vocational Training.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://ncvtmis.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tech-step-5",
+        "title": "National Apprenticeship Training (NATS/NAPS)",
+        "detail": "Complete 1 year of paid industrial apprenticeship under the Apprentices Act in Indian Railways, PSUs, or manufacturing plants.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.apprenticeshipindia.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tech-step-6",
+        "title": "Certified Trade Technician / Lateral Entry to B.Tech",
+        "detail": "Work as Certified Maintenance Technician or Junior Engineer, or utilize lateral entry into 2nd year B.Tech for degree advancement.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://dgt.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "school-teacher",
+    "name": "School Teacher",
+    "icon": "GraduationCap",
+    "group": "Education & Science",
+    "aliases": ["tgt", "pgt", "prt", "educator", "high school teacher", "school master"],
+    "keywords": ["ITEP", "NCET", "B.Ed", "CTET", "TET", "NCTE", "teachr"],
+    "sourceDomain": "ncte.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "National Education Council",
+    "steps": [
+      {
+        "id": "tch-step-1",
+        "title": "Class 12 Boards in Chosen Subject Stream",
+        "detail": "Pass Class 12 with at least 50% marks in the discipline you aspire to teach (Science, Humanities, or Commerce).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tch-step-2",
+        "title": "NCET Entrance for 4-Year Integrated ITEP",
+        "detail": "Appear for the National Common Entrance Test (NCET) conducted by NTA for admission to 4-year Integrated Teacher Education Programme (ITEP).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://ncet.nta.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tch-step-3",
+        "title": "B.Ed / Integrated ITEP Course Completion",
+        "detail": "Complete B.Ed or 4-year ITEP (B.A. B.Ed / B.Sc B.Ed) accredited by NCTE covering pedagogy, child psychology, and micro-teaching.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://ncte.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tch-step-4",
+        "title": "School Internship & Practice Teaching",
+        "detail": "Complete 16-20 weeks of supervised practice teaching in schools, designing lesson plans and evaluating student outcomes.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://ncte.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tch-step-5",
+        "title": "Central Teacher Eligibility Test (CTET / State TET)",
+        "detail": "Clear CTET Paper I (Primary) or Paper II (Elementary/Secondary) conducted by CBSE or respective State TET.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://ctet.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "tch-step-6",
+        "title": "TGT/PGT Appointment (KVS, NVS, State Schools)",
+        "detail": "Appear for recruitment examinations (KVS, NVS, DSSSB) to secure appointment as Trained Graduate Teacher (TGT) or Post Graduate Teacher (PGT).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://kvsangathan.nic.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "college-professor",
+    "name": "College Professor",
+    "icon": "BookOpen",
+    "group": "Education & Science",
+    "aliases": ["assistant professor", "lecturer", "academician", "associate professor", "faculty"],
+    "keywords": ["UGC-NET", "CSIR-NET", "PhD", "JRF", "higher education", "research", "profesor"],
+    "sourceDomain": "ugcnet.nta.ac.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "National Education Council",
+    "steps": [
+      {
+        "id": "prof-step-1",
+        "title": "Undergraduate Bachelor's Degree in Core Discipline",
+        "detail": "Complete a 3 or 4-year Bachelor's degree (B.A., B.Sc, B.Com, or B.Tech) with academic distinction.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "prof-step-2",
+        "title": "Postgraduate Master's Degree (Minimum 55%)",
+        "detail": "Complete Master's degree (M.A., M.Sc, M.Com, or M.Tech) in the specialized discipline with at least 55% marks.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "prof-step-3",
+        "title": "Qualify UGC-NET / CSIR-NET / SLET for Assistant Professor",
+        "detail": "Appear for and qualify UGC-NET or CSIR-NET (or state-level SLET) to establish eligibility for Assistant Professor and JRF scholarship.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://ugcnet.nta.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "prof-step-4",
+        "title": "Doctor of Philosophy (Ph.D.) Research",
+        "detail": "Complete doctoral research (Ph.D.) with original thesis submission, publishing research papers in peer-reviewed Scopus/UGC-CARE journals.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "prof-step-5",
+        "title": "Teaching Assistantship & Conference Presentations",
+        "detail": "Deliver undergraduate lectures, present papers at national and international conferences, and mentor students.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "prof-step-6",
+        "title": "Assistant Professor Appointment & Tenured Faculty",
+        "detail": "Participate in university recruitment interviews under UGC regulations for appointment as Assistant Professor.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "psychologist",
+    "name": "Psychologist",
+    "icon": "Brain",
+    "group": "Education & Science",
+    "aliases": ["clinical psychologist", "counseling psychologist", "therapist", "mental health counselor", "counselor"],
+    "keywords": ["RCI", "M.Phil Clinical Psychology", "M.Sc Psychology", "mental health", "counseling", "psychology", "psycologist"],
+    "sourceDomain": "rehabcouncil.nic.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Mental Health Advisory",
+    "steps": [
+      {
+        "id": "psych-step-1",
+        "title": "Class 12 in Any Stream (Psychology Elective Helpful)",
+        "detail": "Pass Class 12 with good grades in Humanities or Science.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "psych-step-2",
+        "title": "B.A. / B.Sc in Psychology",
+        "detail": "Complete a 3-year undergraduate degree in Psychology covering cognitive, developmental, social, and abnormal psychology.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "psych-step-3",
+        "title": "M.A. / M.Sc in Psychology or Clinical Psychology",
+        "detail": "Complete a 2-year Master's degree in Psychology focusing on psychometrics, therapeutic techniques, and diagnostic assessments.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://cuetpg.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "psych-step-4",
+        "title": "M.Phil / Professional Diploma in Clinical Psychology",
+        "detail": "Complete a 2-year hospital-based clinical training program recognized by the Rehabilitation Council of India (RCI).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://rehabcouncil.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "psych-step-5",
+        "title": "RCI Registration as Licensed Clinical Psychologist",
+        "detail": "Obtain official registration with the Rehabilitation Council of India (RCI) to practice psychotherapy legally in India.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://rehabcouncil.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "psych-step-6",
+        "title": "Independent Clinical Practice / Hospital Consultant",
+        "detail": "Provide clinical evaluations, cognitive behavioral therapy, and counseling services in hospitals, schools, or private clinics.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://rehabcouncil.nic.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "research-scientist",
+    "name": "Research Scientist",
+    "icon": "Microscope",
+    "group": "Education & Science",
+    "aliases": ["scientist", "r&d scientist", "principal investigator", "postdoc researcher", "laboratory scientist"],
+    "keywords": ["CSIR", "ISRO", "DRDO", "BARC", "PhD", "research", "patent", "scintist"],
+    "sourceDomain": "csir.res.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Scientific Research Advisory",
+    "steps": [
+      {
+        "id": "sci-step-1",
+        "title": "Science Stream in Class 12 (PCM / PCB)",
+        "detail": "Pass Class 12 with at least 60% in Science subjects, cultivating scientific curiosity and experimental methodology.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sci-step-2",
+        "title": "Bachelor's in Science (BS / B.Sc / B.Tech)",
+        "detail": "Enroll in premiere institutions (IISER, IISc, IITs, or central universities) for an integrated or standalone BS/B.Sc.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.iiseradmission.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sci-step-3",
+        "title": "Master's Degree (M.Sc / MS / M.Tech)",
+        "detail": "Complete Master's degree with dissertation work in specialized physics, chemistry, biotechnology, or material science.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sci-step-4",
+        "title": "National Fellowship Qualifying (CSIR-UGC JRF / GATE)",
+        "detail": "Clear CSIR-UGC NET JRF, GATE, or JEST with top percentile to secure Junior Research Fellowship funding.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://csirnet.nta.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sci-step-5",
+        "title": "Ph.D. Research & International Publications",
+        "detail": "Conduct 4-5 years of rigorous laboratory/computational research, authoring first-author papers in high-impact scientific journals.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.csir.res.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sci-step-6",
+        "title": "Scientist Position in National Labs (CSIR/DRDO/ISRO)",
+        "detail": "Join as Scientist-C/D at CSIR, DRDO, ISRO, or corporate R&D laboratories leading breakthrough innovation and patents.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.csir.res.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "agricultural-scientist",
+    "name": "Agricultural Scientist",
+    "icon": "Sprout",
+    "group": "Education & Science",
+    "aliases": ["agronomist", "crop scientist", "soil scientist", "icar scientist", "agriculture officer"],
+    "keywords": ["CUET (ICAR-UG)", "ICAR", "B.Sc Agriculture", "agronomy", "soil science", "crop breeding", "agriculutre"],
+    "sourceDomain": "icar.org.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Agricultural Research Council",
+    "steps": [
+      {
+        "id": "agri-step-1",
+        "title": "Class 12 in Science (PCB / PCM / Agriculture)",
+        "detail": "Pass Class 12 with at least 50% aggregate marks in Physics, Chemistry, and Biology/Maths/Agriculture.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "agri-step-2",
+        "title": "CUET (ICAR-UG) Entrance Exam",
+        "detail": "Appear for the CUET (ICAR-UG) conducted by NTA for admission to agricultural universities across India.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://cuetug.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "agri-step-3",
+        "title": "B.Sc (Hons) Agriculture Degree (4 Years)",
+        "detail": "Complete 4-year degree accredited by ICAR covering agronomy, genetics, plant pathology, soil science, and agricultural economics.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.icar.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "agri-step-4",
+        "title": "Rural Agricultural Work Experience (RAWE)",
+        "detail": "Complete a semester-long village stay program (RAWE) working directly with farming communities on crop health and agro-clinics.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.icar.org.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "agri-step-5",
+        "title": "M.Sc & ICAR-AIEEA-PG Exam",
+        "detail": "Qualify ICAR-AIEEA-PG to pursue Master's in specialized fields such as Plant Breeding, Seed Technology, or Soil Chemistry.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://icar.nta.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "agri-step-6",
+        "title": "Agricultural Research Service (ARS / NET) Exam",
+        "detail": "Clear the Agricultural Research Service (ARS) examination conducted by ASRB for Scientist postings at ICAR institutes.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.asrb.org.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "business-manager",
+    "name": "Business Manager",
+    "icon": "Briefcase",
+    "group": "Business",
+    "aliases": ["corporate manager", "operations manager", "product manager", "strategy consultant", "mba professional"],
+    "keywords": ["CAT", "MBA", "IIM", "management", "consulting", "marketing", "business maneger"],
+    "sourceDomain": "iimcat.ac.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Management Education Board",
+    "steps": [
+      {
+        "id": "biz-step-1",
+        "title": "Class 12 Completion (Any Stream)",
+        "detail": "Pass Class 12 in Commerce, Science, or Arts with at least 50% marks.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "biz-step-2",
+        "title": "Bachelor's Degree (BBA / B.Com / B.Tech / B.A.)",
+        "detail": "Complete any undergraduate Bachelor's degree with strong academic record, leadership initiatives, and business society activities.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.ugc.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "biz-step-3",
+        "title": "CAT / XAT / GMAT MBA Entrance Exams",
+        "detail": "Appear for the Common Admission Test (CAT) conducted by IIMs or XAT/GMAT for admission to top business schools.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://iimcat.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "biz-step-4",
+        "title": "MBA / PGDM Program at Top B-School",
+        "detail": "Complete 2-year full-time MBA studying Marketing, Finance, Operations, Strategy, and Human Resources.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.aicte-india.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "biz-step-5",
+        "title": "Corporate Summer Internship (8-10 Weeks)",
+        "detail": "Work on an intensive summer internship project with FMCG, consulting, investment banking, or tech firms.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://iimcat.ac.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "biz-step-6",
+        "title": "Management Associate / Strategy Lead",
+        "detail": "Join multinational corporations or management consultancies leading business unit growth, operations, and team strategy.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://iimcat.ac.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "hotel-manager",
+    "name": "Hotel Manager",
+    "icon": "Utensils",
+    "group": "Business",
+    "aliases": ["hospitality manager", "general manager hotel", "f&b manager", "front office manager", "resort manager"],
+    "keywords": ["NCHMCT JEE", "B.Sc Hospitality", "IHM", "hotel management", "hospitality", "hotel maneger"],
+    "sourceDomain": "nchmct.info",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Hospitality Standards Board",
+    "steps": [
+      {
+        "id": "hotel-step-1",
+        "title": "Class 12 in Any Stream with English",
+        "detail": "Pass Class 12 from any recognized board with English as a compulsory subject.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "hotel-step-2",
+        "title": "NCHMCT JEE Entrance Examination",
+        "detail": "Appear for the National Council for Hotel Management Joint Entrance Examination (NCHMCT JEE) conducted by NTA.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://nchmct.info",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "hotel-step-3",
+        "title": "B.Sc in Hospitality & Hotel Administration (3 Years)",
+        "detail": "Complete the 3-year degree at an affiliated Institute of Hotel Management (IHM) covering Front Office, F&B Service, Culinary Arts, and Housekeeping.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://nchmct.info",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "hotel-step-4",
+        "title": "Industrial Training in 5-Star Hotel (20 Weeks)",
+        "detail": "Complete 20 weeks of rigorous rotational industrial exposure in all core departments of a premier 5-star hotel brand.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nchmct.info",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "hotel-step-5",
+        "title": "Management Training (MT) / Operations Executive",
+        "detail": "Join flagship Management Trainee programs (Taj, Marriott, Oberoi OCLD, ITC) through campus recruitment.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nchmct.info",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "hotel-step-6",
+        "title": "General Manager / Luxury Hospitality Director",
+        "detail": "Advance to Department Head and General Manager overseeing hotel revenue, luxury guest experience, and multinational operations.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://nchmct.info",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "defence-officer",
+    "name": "Defence Officer (NDA/CDS)",
+    "icon": "ShieldAlert",
+    "group": "Defence & Aviation",
+    "aliases": ["army officer", "navy officer", "air force officer", "commissioned officer", "lieutenant"],
+    "keywords": ["NDA", "CDS", "SSB", "UPSC", "Armed Forces", "military", "defenc officer"],
+    "sourceDomain": "joinindianarmy.nic.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Armed Forces Medical & Personnel Board",
+    "steps": [
+      {
+        "id": "def-step-1",
+        "title": "Class 12 Boards (PCM for Air Force/Navy, Any Stream for Army)",
+        "detail": "Pass Class 12 with Physics and Mathematics for Air Force / Navy, or any stream for Indian Army NDA entry.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "def-step-2",
+        "title": "NDA / CDS Written Examination via UPSC",
+        "detail": "Qualify the National Defence Academy (NDA) after Class 12 or Combined Defence Services (CDS) exam after Graduation.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://upsc.gov.in",
+        "minAge": 16,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "def-step-3",
+        "title": "5-Day Services Selection Board (SSB) Interview",
+        "detail": "Clear the comprehensive 5-day SSB interview including psychological testing, group testing officer (GTO) tasks, and personal interview.",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://joinindianarmy.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "def-step-4",
+        "title": "Special Military Medical Board Examination",
+        "detail": "Pass strict physical standards, vision checks, and comprehensive medical examination at designated military command hospitals.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://joinindianarmy.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "def-step-5",
+        "title": "Military Academy Training (NDA / IMA / INA / AFA)",
+        "detail": "Complete 3 years of rigorous academic and physical training at NDA Khadakwasla followed by 1 year at IMA Dehradun / INA / AFA.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://nda.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "def-step-6",
+        "title": "Presidential Commission as Lieutenant / Flying Officer / Sub-Lieutenant",
+        "detail": "Receive the President's Commission upon passing out parade, commanding platoons and operational military units.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://joinindianarmy.nic.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "pilot",
+    "name": "Pilot",
+    "icon": "Plane",
+    "group": "Defence & Aviation",
+    "aliases": ["commercial pilot", "airline captain", "first officer", "aviator", "flight captain"],
+    "keywords": ["DGCA", "CPL", "flying school", "airline", "cockpit", "aviation", "commercial pilot"],
+    "sourceDomain": "dgca.gov.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Aviation Standards Board",
+    "steps": [
+      {
+        "id": "pilot-step-1",
+        "title": "Class 12 with Physics & Mathematics",
+        "detail": "Pass Class 12 with Physics and Mathematics (minimum 50% aggregate) or equivalent through NIOS.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-2",
+        "title": "DGCA Class 2 & Class 1 Medical Assessment",
+        "detail": "Undergo and pass Class 2 and Class 1 medical examinations conducted by DGCA-approved medical examiners and IAF centres.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-3",
+        "title": "DGCA Theory Ground School Examinations",
+        "detail": "Clear DGCA theory examinations in Air Navigation, Aviation Meteorology, Air Regulations, Technical General, and RTR (Aero).",
+        "detailKind": "exam",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-4",
+        "title": "Flying Training School (200 Flying Hours)",
+        "detail": "Enroll in a DGCA-approved Flying Training Organization (FTO) and complete 200 hours of flight time (solo, cross-country, night, instrument).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "minAge": 17,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-5",
+        "title": "Commercial Pilot Licence (CPL) Issuance",
+        "detail": "Receive the Commercial Pilot Licence (CPL) issued by the Directorate General of Civil Aviation (DGCA) with Multi-Engine Rating.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "minAge": 18,
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-6",
+        "title": "Aircraft Type Rating (A320 / B737)",
+        "detail": "Complete aircraft Type Rating on commercial passenger jets (Airbus A320 or Boeing 737) at an approved training organization (ATO).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "pilot-step-7",
+        "title": "Airline First Officer / Captain",
+        "detail": "Join a commercial passenger or cargo airline as First Officer, advancing to Commander / Captain after fulfilling required flight command hours.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.dgca.gov.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  },
+  {
+    "id": "sports-professional",
+    "name": "Sports Professional",
+    "icon": "Trophy",
+    "group": "Defence & Aviation",
+    "aliases": ["athlete", "sports coach", "fitness trainer", "sports officer", "national athlete"],
+    "keywords": ["SAI", "NIS Patiala", "B.P.Ed", "national games", "olympics", "athletics", "sportsman"],
+    "sourceDomain": "sportsauthorityofindia.nic.in",
+    "lastReviewed": "2026-06-15",
+    "reviewOwner": "Sports Advisory Council",
+    "steps": [
+      {
+        "id": "sprt-step-1",
+        "title": "School Level Sports Training & District Representation",
+        "detail": "Develop physical conditioning and competitive excellence in a chosen sport representing school and district teams.",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://sportsauthorityofindia.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sprt-step-2",
+        "title": "Class 12 Boards & State Championship Medals",
+        "detail": "Complete Class 12 while competing at State and National School Games federations (SGFI).",
+        "detailKind": "milestone",
+        "officialSourceUrl": "https://www.cbse.gov.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sprt-step-3",
+        "title": "Bachelor of Physical Education (B.P.Ed) / Sports Science",
+        "detail": "Enroll in a 3-4 year degree in Physical Education, Sports Coaching, or Kinesiology from sports universities (LNIPE, NSU).",
+        "detailKind": "course",
+        "officialSourceUrl": "https://lnipe.edu.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sprt-step-4",
+        "title": "National Institute of Sports (NIS) Diploma in Coaching",
+        "detail": "Clear the entrance test for 1-year Diploma in Sports Coaching at Netaji Subhas National Institute of Sports (NSNIS), Patiala.",
+        "detailKind": "course",
+        "officialSourceUrl": "https://nsnis.org",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sprt-step-5",
+        "title": "National / International Representation & Medals",
+        "detail": "Participate in National Games, Khelo India University Games, or international championships representing India.",
+        "detailKind": "skill",
+        "officialSourceUrl": "https://sportsauthorityofindia.nic.in",
+        "lastReviewed": "2026-06-15"
+      },
+      {
+        "id": "sprt-step-6",
+        "title": "Professional Sports Coach / Sports Officer Recruitment",
+        "detail": "Secure direct appointments under sports quota in Indian Railways, Armed Forces, or join SAI / elite academies as Certified Coach.",
+        "detailKind": "licence",
+        "officialSourceUrl": "https://sportsauthorityofindia.nic.in",
+        "lastReviewed": "2026-06-15"
+      }
+    ]
+  }
+]

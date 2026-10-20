@@ -1,0 +1,208 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "ml_cr_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "When you imagine building an app, are you more excited by making it work correctly, or making it look and feel good to use?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Making it work correctly",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Making it look and feel good",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather win a coding competition, or a design/art competition?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Coding competition",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design/art competition",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Are you more drawn to solving a logic puzzle, or arranging/composing something visually until it feels right?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Solving a logic puzzle",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Composing something visually",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "On a website, do you first notice if it's fast and functional, or if it's beautifully designed?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Fast and functional",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Beautifully designed",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather code a game's mechanics, or design its characters/world?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Code the mechanics",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design characters/world",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_6",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Given a free afternoon with a computer, would you tinker with a small program, or edit/design something visual?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Tinker with a small program",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Edit/design something visual",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_cr_7",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather build a working prototype with an ugly interface, or a beautiful interface that barely works?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Working prototype, ugly interface",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Beautiful interface, barely works",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

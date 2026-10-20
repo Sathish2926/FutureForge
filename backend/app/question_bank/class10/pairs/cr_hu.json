@@ -1,0 +1,135 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "cr_hu_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather express an idea visually (design, film, art), or in writing/speech (essays, debate)?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Visually",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "In writing/speech",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_hu_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Are you more interested in how something looks and feels, or in what it means and why it matters?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How it looks and feels",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "What it means and why",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_hu_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Could you see yourself in a design portfolio review, or a moot court/debate competition?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Design portfolio review",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Moot court/debate competition",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_hu_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather illustrate a story, or write one?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Illustrate it",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Write it",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "cr_hu_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "CREATIVE_VISUAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather design a campaign's poster, or write its message/script?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Design the poster",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Write the message/script",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

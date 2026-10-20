@@ -1,0 +1,121 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "ml_hu_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather build a system that solves a technical problem, or argue a position that changes how people think?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Build a technical system",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Argue a position",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_hu_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Are you more interested in how something was made to work, or whether it's fair/right that it works that way?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How it was made to work",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Whether it's fair/right",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_hu_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Would you rather join a coding/robotics team, or a Model UN/debate team?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Coding/robotics team",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Model UN/debate team",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_hu_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "HUMANITIES_SOCIAL"
+      ],
+      "prompt": "Reading about a new AI tool, are you more curious about how it was built, or the ethical/social debate around it?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How it was built",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "The ethical/social debate",
+          "domain_weights": {
+            "HUMANITIES_SOCIAL": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

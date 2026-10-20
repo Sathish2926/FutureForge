@@ -1,0 +1,260 @@
+{
+  "id": 1,
+  "career_name": "Mbbs Physician",
+  "career_slug": "mbbs-physician-4856",
+  "sector": "Medicine & Healthcare",
+  "version": 1,
+  "is_user_generated": true,
+  "needs_verification": true,
+  "is_ambiguous": false,
+  "clarification_reason": null,
+  "clarification_suggestions": [],
+  "confidence_score": 0.9,
+  "skill_gap_summary": {
+    "known": [],
+    "gaps": [
+      {
+        "skill": "Deepen core skills for medicine and healthcare",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Complete an internship or supervised practice",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Check the next entry or specialization route",
+        "priority": "high",
+        "gap_level": "missing"
+      },
+      {
+        "skill": "Prepare the first serious application or portfolio",
+        "priority": "high",
+        "gap_level": "missing"
+      }
+    ]
+  },
+  "completion_percent": 0,
+  "steps": [
+    {
+      "id": 1,
+      "order_index": 0,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Deepen core skills for medicine and healthcare",
+      "title": "Deepen core skills for medicine and healthcare",
+      "description": "Finish one course/project that strengthens clinical observation, anatomy, communication, and supervised practice.; Keep a running list of what recruiters or supervisors actually ask for.; Keep one eye on internships and one eye on the next academic step.",
+      "why": "Use your degree years to turn theory into practical ability in medicine and healthcare.",
+      "estimated_time": "1 semester",
+      "skill_name": "Deepen",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "Physics, Chemistry, and Biology (PCB)"
+      ],
+      "actions": [
+        "Finish one course/project that strengthens clinical observation, anatomy, communication, and supervised practice.",
+        "Keep a running list of what recruiters or supervisors actually ask for.",
+        "Keep one eye on internships and one eye on the next academic step."
+      ],
+      "resources": [
+        {
+          "id": 1,
+          "title": "NTA, medical college, and official counselling notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 2,
+          "title": "the current eligibility and counselling schedule on the official notice",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Finish one course/project that strengthens clinical observation, anatomy, communication, and supervised practice.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 2,
+          "title": "Keep a running list of what recruiters or supervisors actually ask for.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 3,
+          "title": "Keep one eye on internships and one eye on the next academic step.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 2,
+      "order_index": 1,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Complete an internship or supervised practice",
+      "title": "Complete an internship or supervised practice",
+      "description": "Apply for internships, labs, studios, apprenticeships, or field work tied to medicine and healthcare.; Record what you learned and what you still need to learn.",
+      "why": "Try the work in a real environment so you can judge fit and improve faster.",
+      "estimated_time": "4-12 weeks",
+      "skill_name": "Complete",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "A basic handle on the subject or tooling."
+      ],
+      "actions": [
+        "Apply for internships, labs, studios, apprenticeships, or field work tied to medicine and healthcare.",
+        "Record what you learned and what you still need to learn."
+      ],
+      "resources": [
+        {
+          "id": 3,
+          "title": "NTA, medical college, and official counselling notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 4,
+          "title": "Internship / lab / studio page",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 4,
+          "title": "Apply for internships, labs, studios, apprenticeships, or field work tied to medicine and healthcare.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 5,
+          "title": "Record what you learned and what you still need to learn.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 3,
+      "order_index": 2,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Check the next entry or specialization route",
+      "title": "Check the next entry or specialization route",
+      "description": "Review the current official route into medicine and healthcare and save the syllabus or program requirements.; Compare direct entry with one higher-study route.",
+      "why": "Use the official notices to see whether your next move is an exam, application, or specialization choice.",
+      "estimated_time": "1-2 weeks",
+      "skill_name": "Check",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "An internship or project record for medicine and healthcare has started."
+      ],
+      "actions": [
+        "Review the current official route into medicine and healthcare and save the syllabus or program requirements.",
+        "Compare direct entry with one higher-study route."
+      ],
+      "resources": [
+        {
+          "id": 5,
+          "title": "NTA, medical college, and official counselling notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 6,
+          "title": "the current eligibility and counselling schedule on the official notice",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 6,
+          "title": "Review the current official route into medicine and healthcare and save the syllabus or program requirements.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 7,
+          "title": "Compare direct entry with one higher-study route.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    },
+    {
+      "id": 4,
+      "order_index": 3,
+      "stage": "Undergraduate",
+      "stage_key": "ug",
+      "goal": "Prepare the first serious application or portfolio",
+      "title": "Prepare the first serious application or portfolio",
+      "description": "Prepare the first application, test, or portfolio for internship, licensing, or specialization routes depending on the profession.; Ask one mentor to review it before you submit.",
+      "why": "Turn your coursework and practice into a first real application for medicine and healthcare.",
+      "estimated_time": "2-4 weeks",
+      "skill_name": "Prepare",
+      "is_skipped": false,
+      "skip_reason": null,
+      "prerequisites": [
+        "A project and internship record are on hand."
+      ],
+      "actions": [
+        "Prepare the first application, test, or portfolio for internship, licensing, or specialization routes depending on the profession.",
+        "Ask one mentor to review it before you submit."
+      ],
+      "resources": [
+        {
+          "id": 7,
+          "title": "Portfolio / CV / application draft",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        },
+        {
+          "id": 8,
+          "title": "NTA, medical college, and official counselling notices",
+          "url": null,
+          "resource_type": "article",
+          "estimated_minutes": 15
+        }
+      ],
+      "tasks": [
+        {
+          "id": 8,
+          "title": "Prepare the first application, test, or portfolio for internship, licensing, or specialization routes depending on the profession.",
+          "is_completed": false,
+          "task_type": "action"
+        },
+        {
+          "id": 9,
+          "title": "Ask one mentor to review it before you submit.",
+          "is_completed": false,
+          "task_type": "action"
+        }
+      ],
+      "is_current_stage": true,
+      "status": "not_started"
+    }
+  ]
+}

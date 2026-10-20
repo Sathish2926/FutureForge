@@ -1,0 +1,724 @@
+<USER_REQUEST>
+# FUTUREFORGE — AI CAREER GUIDANCE ENGINE & VERIFIED CAREER KNOWLEDGE BASE
+
+## 1. PROJECT CONTEXT
+
+We are developing **FutureForge, an AI-Driven Career and Education Guidance Application**.
+
+The goal is to help students and working professionals understand their career opportunities and receive personalized, reliable, and practical guidance based on their education, skills, interests, experience, and career goals.
+
+Our application already contains existing modules and functionality. Your task is to improve the AI career guidance capabilities and implement a structured career knowledge base without breaking existing features.
+
+### Existing Technology Stack
+
+* Frontend: React and Tailwind CSS
+* Backend: FastAPI
+* Database: PostgreSQL
+* AI: Existing Gemini API integration
+* Existing authentication and application infrastructure
+
+First, inspect the actual repository and identify the technologies, existing AI integrations, database schema, API endpoints, UI components, and career-related modules. Adapt your implementation to the actual codebase rather than assuming that every component exists exactly as described here.
+
+**Do not rebuild the application from scratch. Do not replace working functionality unnecessarily.**
+
+---
+
+## 2. PRIMARY OBJECTIVE
+
+Implement a reliable AI career guidance system that follows this workflow:
+
+**UNDERSTAND → ANALYSE → VERIFY → RECOMMEND → GUIDE**
+
+The AI must understand the user's complete profile, analyse all relevant inputs, compare them with available career information, and provide clear, personalized guidance.
+
+The system must not invent user skills, qualifications, work experience, career requirements, certifications, salary figures, or learning resources.
+
+If sufficient verified information is unavailable, the system must ask relevant questions or transparently explain that it cannot currently provide a reliable recommendation.
+
+Accuracy and honesty are more important than generating an answer for every query.
+
+---
+
+## 3. UNDERSTAND ME — COMPREHENSIVE PROFILE ANALYSIS
+
+Improve the existing Understand Me/profile collection process.
+
+Collect relevant information based on the user's category.
+
+### For Students
+
+* Current educational level.
+* Stream or specialization.
+* Completed qualifications.
+* Subjects of interest.
+* Skills and activities.
+* Career interests and goals.
+* Preferred learning options.
+* Relevant constraints.
+
+### For Working Professionals
+
+* Current job role.
+* Industry.
+* Total work experience.
+* Previous roles, if applicable.
+* Current responsibilities.
+* Technical and non-technical skills.
+* Tools and technologies used.
+* Educational qualifications.
+* Certifications.
+* Career goals.
+* Preferred work domains.
+* Available learning time.
+* Learning budget, if relevant.
+
+### Natural-Language Input Handling
+
+Users must be able to enter information naturally instead of being restricted to predefined dropdown options.
+
+Examples:
+
+* "I am working as a digital marketer and also have teaching experience."
+* "I know Python, Excel, communication, and basic data analysis."
+* "I want to move from accounting into data analytics."
+* "I am a teacher who wants to transition into instructional design."
+
+The system must process all relevant information in the input.
+
+Do not focus exclusively on the first skill or job mentioned.
+
+For example, if a user mentions digital marketing, teaching, communication, and data analysis, analyse each skill and experience separately before identifying potentially relevant career options.
+
+### Important Profile Rules
+
+Maintain clear distinctions between:
+
+1. Facts explicitly provided by the user.
+2. Potentially transferable skills inferred from verified user information.
+3. Skills requiring confirmation.
+4. Skills the target career requires but the user has not demonstrated.
+5. Information that is missing or unknown.
+
+Never convert an assumption into a confirmed user skill.
+
+If an important detail is missing, ask a concise follow-up question.
+
+Avoid asking questions that the user has already answered.
+
+---
+
+## 4. AI CAREER RECOMMENDATION ENGINE
+
+Create or improve a reusable career recommendation service that can support the existing student and working-professional modules.
+
+### Recommendation Process
+
+1. Understand the user's profile and objective.
+2. Identify relevant career families.
+3. Retrieve the appropriate career knowledge records.
+4. Compare confirmed user information with documented career requirements.
+5. Identify relevant transferable skills.
+6. Determine missing information.
+7. Assess whether the available evidence is sufficient.
+8. Generate recommendations only when adequately supported.
+9. Explain the reasons for each recommendation.
+10. Provide actionable next steps.
+
+### Recommendation Categories
+
+Where appropriate, present:
+
+**A. Closely Related Careers**
+Careers that align with the user's existing qualifications, skills, or experience.
+
+**B. Career Growth Opportunities**
+Roles that represent potential progression within the user's current field.
+
+**C. Career Transition Opportunities**
+Alternative careers that may be achievable after developing additional skills or meeting relevant requirements.
+
+Do not force all three categories to appear if the available information does not support them.
+
+### Every Recommendation Must Explain
+
+* Why the career is relevant.
+* Which confirmed user skills or experiences are applicable.
+* Which skills require confirmation.
+* Which skills need development.
+* What qualifications or prerequisites apply.
+* What the user should do next.
+* Which knowledge-base information supports the recommendation.
+
+Recommendations must be specific to the user.
+
+Do not return generic lists of unrelated careers merely to fill the results page.
+
+### Match Scores
+
+Do not assign identical placeholder percentages to every career.
+
+If a match score is displayed, calculate it using a documented, consistent method based on relevant factors such as:
+
+* Confirmed skill alignment.
+* Relevant experience.
+* Qualification requirements.
+* Career goal alignment.
+* Missing or unverified requirements.
+
+Explain what the score means.
+
+Do not describe a profile-match score as the probability of getting hired.
+
+If the available profile is insufficient for a meaningful score, ask for more information or display an appropriate status instead of inventing a percentage.
+
+---
+
+## 5. SEED A VERIFIED KNOWLEDGE BASE FOR 50–70 CAREERS
+
+Create an initial structured career knowledge base covering approximately 50–70 distinct careers.
+
+Target approximately 66 careers across multiple domains.
+
+Suggested distribution:
+
+| Career Domain                      | Target Count |
+| ---------------------------------- | -----------: |
+| IT and Software Development        |           10 |
+| Data and Analytics                 |            6 |
+| Digital Marketing and Business     |            8 |
+| Finance and Accounting             |            6 |
+| Human Resources and Administration |            5 |
+| Education and Training             |            6 |
+| Design and Creative Careers        |            5 |
+| Engineering and Technical Roles    |            8 |
+| Healthcare and Life Sciences       |            6 |
+| Operations and Customer Success    |            6 |
+| Total                              |           66 |
+
+These are planning targets, not a reason to add duplicate, incomplete, or fabricated career records.
+
+Choose distinct, useful careers and verify that each record contains meaningful information.
+
+### Required Career Data Fields
+
+Design a structured, extensible data model that includes:
+
+* Unique career ID.
+* Career title.
+* Career domain.
+* Career description.
+* Typical responsibilities.
+* Relevant educational qualifications.
+* Essential qualifications or licensing requirements, where applicable.
+* Commonly required technical skills.
+* Relevant soft skills.
+* Related or transferable skills.
+* Typical experience expectations.
+* Entry-level pathways.
+* Potential career progression.
+* Related careers.
+* Required skill development.
+* Relevant certifications and prerequisites.
+* Practical project suggestions.
+* Learning resources.
+* Career transition guidance.
+* Relevant location or country conditions.
+* Source references.
+* Last-verified date.
+* Data completeness status.
+* Publication or review status.
+
+Include the fields that are appropriate for each career and explicitly mark unavailable information.
+
+Do not fill every field with invented content merely to make the database look complete.
+
+### Data Quality Requirements
+
+* Use credible and relevant sources.
+* Prefer official occupational information, professional bodies, government resources, and official certification providers where appropriate.
+* Keep source references associated with the relevant records.
+* Do not fabricate citations or claim that information has been verified when it has not.
+* Distinguish verified facts from general guidance.
+* Avoid presenting country-specific requirements as universal.
+* Record when information was last checked.
+* Avoid duplicate career records.
+* Make the knowledge base easy to extend.
+
+If external research or source verification is unavailable during implementation, mark the affected information as needing verification instead of falsely labelling it verified.
+
+### Database Seeding
+
+Create an appropriate seed-data mechanism compatible with the existing PostgreSQL setup.
+
+The implementation should support:
+
+* Repeatable seeding.
+* Duplicate prevention.
+* Stable career identifiers.
+* Safe updates to existing seed records.
+* Data validation.
+* Clear distinction between seed data and user-generated data.
+
+Do not delete existing production or user data while seeding the knowledge base.
+
+---
+
+## 6. CRITICAL FEATURE — MISSING CAREER DATA HANDLING
+
+This feature is mandatory.
+
+The application must distinguish between:
+
+1. Career data available and sufficient.
+2. Career data available but incomplete.
+3. User profile insufficient.
+4. Career data unavailable.
+5. AI service unavailable.
+
+These situations must not produce the same response.
+
+### Case A: Sufficient Data Available
+
+Retrieve relevant career information, analyse the user's profile, and provide a personalized recommendation with supporting explanations.
+
+### Case B: Career Data Exists but Is Incomplete
+
+Use only the information that is adequately supported.
+
+Ask additional questions or clearly identify which parts of the guidance require further verification.
+
+Do not fabricate missing details.
+
+### Case C: User Information Is Insufficient
+
+Ask targeted follow-up questions.
+
+For example, if a user requests a transition into business development but their profile does not establish whether they have client-facing or sales experience, ask about those responsibilities before treating them as existing skills.
+
+### Case D: Career Is Not Covered by the Knowledge Base
+
+Do not generate an authoritative-looking career pathway from unsupported assumptions.
+
+Collect only the additional details needed to understand the request.
+
+Then show a transparent message such as:
+
+"This career path is not currently covered by our verified guidance database. We have recorded the guidance request for review, subject to the application's consent and privacy controls. We cannot provide a reliable, detailed recommendation at this time."
+
+If a genuine review mechanism has been implemented, explain that the request can be reviewed and updated later.
+
+Do not promise that an administrator will upload the information shortly unless the system actually supports that workflow.
+
+### Case E: AI Service Is Unavailable
+
+If verified career data is available, provide appropriate rule-based guidance where possible.
+
+If reliable guidance cannot be generated, explain that the service is temporarily unavailable and avoid inventing a response.
+
+### Important
+
+A career title existing in the database does not automatically mean sufficient information exists to recommend it.
+
+Check whether the required career, skill, qualification, and pathway information is available before generating detailed guidance.
+
+---
+
+## 7. GUIDANCE REQUEST RECORDING
+
+Prepare the backend architecture for recording requests when the knowledge base does not contain sufficient information.
+
+Where appropriate, store:
+
+* Request ID.
+* Requested career or guidance topic.
+* Relevant category.
+* Minimum necessary user-provided context.
+* Reason the system could not answer reliably.
+* Missing information categories.
+* Request status.
+* Creation timestamp.
+* Review timestamp, if applicable.
+
+Follow appropriate privacy, consent, authorization, and data-retention practices.
+
+Do not expose one user's profile or request to another user.
+
+Do not store unnecessary sensitive information.
+
+### Initial Version
+
+Implement only the required backend recording capability and any minimal user-facing status necessary for the existing application.
+
+Do not build a full administrative dashboard in this phase.
+
+### Future Enhancement
+
+Keep the design extensible so that a future administrator module can support:
+
+* Reviewing unanswered guidance requests.
+* Adding new career records.
+* Updating career requirements.
+* Managing learning resources.
+* Verifying references.
+* Publishing reviewed guidance.
+* Tracking data freshness.
+
+Do not implement this entire admin module now.
+
+---
+
+## 8. PERSONALIZED SKILL GAP ANALYSIS
+
+When a user selects a target career, compare their confirmed skills with the career's documented requirements.
+
+Classify skills into meaningful categories:
+
+* Confirmed relevant skills.
+* Potentially transferable skills.
+* Skills requiring user confirmation.
+* Skills to develop.
+* Mandatory qualifications or requirements not yet confirmed.
+
+For every identified gap, explain:
+
+* Why the skill matters.
+* Whether it is essential or beneficial.
+* How it can be developed.
+* What practical exercise or project may help.
+* Which learning resource supports it, if available.
+
+Do not assume that an unmentioned skill is definitely absent.
+
+Prefer statuses such as "Not yet confirmed" when the profile does not provide sufficient evidence.
+
+Do not mark a user as eligible for a regulated profession without verifying applicable requirements.
+
+---
+
+## 9. PERSONALIZED CAREER ROADMAP
+
+Generate a roadmap based on:
+
+* The selected career goal.
+* The user's confirmed background.
+* Identified skill gaps.
+* Available learning time.
+* Budget preferences, if provided.
+* Verified career requirements.
+* Relevant learning resources.
+
+The roadmap should include:
+
+1. Current profile summary.
+2. Target career and its requirements.
+3. Priority skills.
+4. Suggested learning sequence.
+5. Suitable learning resources.
+6. Practical projects.
+7. Resume or portfolio preparation, where relevant.
+8. Next actionable steps.
+9. Progress tracking.
+
+Do not create an arbitrary 30-day, 90-day, or six-month plan for every user.
+
+Choose a reasonable duration based on the scope of the required learning and clearly label estimates as estimates.
+
+If the knowledge base lacks sufficient information to build a reliable roadmap, explain the limitation and request further information or flag the missing guidance.
+
+---
+
+## 10. LEARNING RESOURCES
+
+Recommend relevant resources only when reliable information is available.
+
+For each resource, store or display:
+
+* Resource title.
+* Provider.
+* Relevant skill.
+* Resource type.
+* Cost information, if verified.
+* Prerequisites, if applicable.
+* Source or official link.
+* Last-verified date, where maintained.
+
+Prefer free resources when the user requests free learning options.
+
+Do not fabricate course names, URLs, certifications, fees, or course availability.
+
+If suitable resources are unavailable, state that clearly.
+
+---
+
+## 11. REUSE THE EXISTING AI INFRASTRUCTURE
+
+Use the existing Gemini API integration and backend architecture wherever practical.
+
+Do not introduce a new paid AI service.
+
+Create reusable services for:
+
+* Profile analysis.
+* Career data retrieval.
+* Career recommendation.
+* Skill gap analysis.
+* Roadmap generation.
+* Response validation.
+* Missing-data handling.
+
+Keep prompts and business rules consistent across relevant modules.
+
+The AI must not independently invent career records when the knowledge base cannot support the requested guidance.
+
+Use a controlled pipeline:
+
+User Input → Profile Extraction → Knowledge Retrieval → Evidence and Coverage Validation → Recommendation → Response Validation → User-Facing Guidance.
+
+Validate AI-generated structured responses before displaying or storing them.
+
+Handle malformed responses, API failures, rate limits, and timeouts safely.
+
+Use the existing fallback strategy where available.
+
+Never expose API keys or secret configuration values to the frontend.
+
+---
+
+## 12. FRONTEND REQUIREMENTS
+
+Keep the interface minimal, attractive, readable, and consistent with the existing FutureForge design.
+
+Do not add unnecessary dashboards or complex navigation.
+
+The core experience should be:
+
+**Understand Me**
+
+* Collect profile information.
+* Accept natural-language answers.
+* Ask relevant follow-up questions.
+* Summarize the profile for user confirmation.
+
+**Career Recommendations**
+
+* Display relevant career options.
+* Explain why each option was recommended.
+* Show relevant skills and missing information.
+* Distinguish career growth from career transition.
+
+**Skill Gap Analysis**
+
+* Display confirmed skills, unknown skills, and required skills.
+* Explain what the user needs to learn.
+
+**Career Roadmap**
+
+* Provide practical, ordered steps.
+* Integrate relevant learning resources.
+* Track progress using existing application capabilities where possible.
+
+**Unavailable Guidance**
+
+* Display a clear message when reliable information is unavailable.
+* Never show fabricated career matches or unsupported roadmaps.
+* Show request-submission status only when the backend actually records the request.
+
+Keep existing navigation and design conventions.
+
+Do not introduce unnecessary UI sections that duplicate existing functionality.
+
+---
+
+## 13. API AND DATABASE INTEGRATION
+
+Inspect the current FastAPI routes, PostgreSQL schema, authentication, and frontend API calls before implementing changes.
+
+Create or extend endpoints only where needed.
+
+Possible logical operations include:
+
+* Submit or update a professional profile.
+* Analyse a profile.
+* Retrieve relevant career records.
+* Generate career recommendations.
+* Analyse skill gaps.
+* Generate a career roadmap.
+* Record an unsupported-guidance request.
+* Retrieve a user's saved roadmap and progress.
+
+These are logical operations, not a requirement to create every endpoint if equivalent functionality already exists.
+
+Requirements:
+
+* Validate incoming data.
+* Enforce user authorization.
+* Prevent cross-user data access.
+* Keep API contracts backward-compatible wherever possible.
+* Add database migrations safely.
+* Handle missing or invalid records.
+* Avoid unnecessary duplicate storage.
+* Preserve existing data.
+* Keep secrets on the backend.
+
+Use the project's existing conventions rather than creating a second competing architecture.
+
+---
+
+## 14. TESTING REQUIREMENTS
+
+Implement meaningful backend tests and frontend checks for the main workflows.
+
+### Test 1: Multiple Skills
+
+Input:
+A digital marketer with teaching experience, communication skills, and basic data analysis.
+
+Expected:
+
+* Analyse all provided information.
+* Do not ignore secondary skills.
+* Do not invent unreported qualifications or achievements.
+* Recommend only careers supported by relevant data.
+
+### Test 2: Career Transition
+
+Input:
+An accountant who wants to become a data analyst.
+
+Expected:
+
+* Identify potentially relevant accounting and analytical experience.
+* Confirm unknown technical skills.
+* Identify documented gaps such as SQL or visualization when applicable.
+* Provide a supported learning pathway if sufficient data exists.
+
+### Test 3: Missing Profile Details
+
+Input:
+A professional asks for a career change but does not provide their current skills or target role.
+
+Expected:
+
+* Ask concise, relevant follow-up questions.
+* Do not generate arbitrary match percentages.
+
+### Test 4: Unsupported Career
+
+Input:
+A user requests detailed guidance for a career absent from the knowledge base.
+
+Expected:
+
+* Detect the missing coverage.
+* Avoid inventing requirements or roadmaps.
+* Explain the limitation.
+* Record the request only if the implemented workflow supports it.
+
+### Test 5: Incomplete Career Record
+
+Input:
+A career exists in the database but has insufficient skill or qualification information.
+
+Expected:
+
+* Detect incomplete coverage.
+* Avoid presenting the record as fully verified.
+* Provide only supported information or ask for further review.
+
+### Test 6: User Mentions an Unknown Skill
+
+Expected:
+
+* Preserve the original skill text.
+* Ask for clarification if necessary.
+* Avoid rejecting unfamiliar wording solely because it is absent from predefined dropdown options.
+
+### Test 7: AI Failure
+
+Expected:
+
+* Use reliable rule-based fallback where possible.
+* Display a transparent error or unavailable status otherwise.
+* Never fabricate an answer to hide an API failure.
+
+### Test 8: Existing Module Regression
+
+Verify that:
+
+* Student career guidance continues to work.
+* Existing Graduate features remain functional.
+* Scholarship functionality remains unchanged.
+* Existing Career DNA modules remain functional.
+* Authentication and user profiles remain functional.
+* Existing saved data is preserved.
+* Existing API consumers continue to work.
+
+---
+
+## 15. IMPLEMENTATION RULES
+
+1. Inspect the complete relevant codebase before making changes.
+2. Identify the root cause of existing recommendation problems.
+3. Reuse existing components and services wherever appropriate.
+4. Implement actual functionality, not placeholder screens.
+5. Do not create fake career records just to reach the target count.
+6. Do not hardcode arbitrary match scores.
+7. Do not invent user skills or career requirements.
+8. Do not replace the existing AI integration without a valid reason.
+9. Do not introduce paid APIs.
+10. Do not build the full admin module in this phase.
+11. Do not break existing functionality.
+12. Do not mark tests as passed unless they were actually run.
+13. Keep implementation modular, maintainable, and documented.
+14. If a required data source is unavailable, document the limitation instead of pretending that the data was verified.
+
+---
+
+## 16. EXPECTED DELIVERABLES
+
+Complete the implementation in the existing repository.
+
+Provide:
+
+1. Summary of the existing implementation inspected.
+2. Root causes of any recommendation or data-quality problems discovered.
+3. List of modified and newly created files.
+4. Database schema changes and migration instructions.
+5. Seed-data implementation and the actual number of usable career records.
+6. Sources and verification status of career data.
+7. API endpoints added or modified.
+8. Description of profile analysis and recommendation logic.
+9. Description of missing-data handling.
+10. Tests executed and their actual results.
+11. Known limitations and remaining work.
+12. Steps to run and verify the feature locally.
+
+Do not claim that all 50–70 careers are verified unless the implemented records actually meet the defined verification requirements.
+
+## FINAL SUCCESS CRITERIA
+
+FutureForge must provide relevant, explainable, personalized career guidance based on the user's actual profile and available career information.
+
+It must handle natural-language input, consider all relevant skills, ask for missing details, detect unsupported career requests, and avoid fabricated recommendations.
+
+**When the system does not have enough reliable information, it must be honest rather than guess.**
+
+Preserve the existing application, implement only the necessary changes, and make the system ready for a future administrator-managed career knowledge base.
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-20T10:39:12+05:30.
+
+The user's current state is as follows:
+Active Document: d:\Futureforge\backend\app\services\class10_copilot_service.py (LANGUAGE_PYTHON)
+Cursor is on line: 1
+Other open documents:
+- d:\Futureforge\frontend\src\components\scholarships\ApplicationTracker.tsx (LANGUAGE_TSX)
+- d:\Futureforge\backend\app\routers\recommendations.py (LANGUAGE_PYTHON)
+- d:\Futureforge\backend\app\routers\saved.py (LANGUAGE_PYTHON)
+- d:\Futureforge\backend\app\tests\test_scholarships_api.py (LANGUAGE_PYTHON)
+- d:\Futureforge\backend\app\services\class10_copilot_service.py (LANGUAGE_PYTHON)
+Running terminal commands:
+- npm run dev (in d:\Futureforge\frontend, running for 14h2m21s)
+- uvicorn app.main:app  (in d:\Futureforge\backend, running for 13h59m54s)
+</ADDITIONAL_METADATA>

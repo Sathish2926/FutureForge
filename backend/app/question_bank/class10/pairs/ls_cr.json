@@ -1,0 +1,109 @@
+{
+  "depth": "thinnest",
+  "questions": [
+    {
+      "question_id": "ls_cr_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Are you more interested in understanding how the body works, or visually representing/explaining how it works?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Understanding how it works",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Visually representing it",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_cr_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather diagnose what's wrong, or design a diagram/model that explains it clearly to others?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Diagnose what's wrong",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design a clear diagram/model",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_cr_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "For a biology project, would you rather write the research, or design the visual presentation/model?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Write the research",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design the visual presentation",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_cr_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Are you more drawn to a career centered on treatment, or one centered on visual/creative science communication (medical illustration, exhibit design)?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Centered on treatment",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Visual science communication",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

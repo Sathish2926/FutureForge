@@ -1,0 +1,161 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "bc_cr_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Are you more excited by growing a business's numbers, or shaping how it looks and feels to customers?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Growing the numbers",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Shaping how it looks and feels",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_cr_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather analyze why a product is selling well, or design what makes people want to buy it?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Analyze why it's selling",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design what makes people buy it",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_cr_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather run a school event's budget, or design its posters/branding/theme?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Run the budget",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Design posters/branding/theme",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_cr_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "If you started a small business, would you be more excited about strategy/finances, or branding/product design?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Strategy/finances",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Branding/product design",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_cr_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Are you more drawn to reading about a company's growth strategy, or a designer's creative process?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Growth strategy",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "A designer's creative process",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "bc_cr_6",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "BUSINESS_COMMERCE",
+        "CREATIVE_VISUAL"
+      ],
+      "prompt": "Would you rather pitch investors on numbers, or pitch them on a product's look and story?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Pitch on numbers",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Pitch on look and story",
+          "domain_weights": {
+            "CREATIVE_VISUAL": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "ml_ls_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "Are you more drawn to how machines/systems work, or how living things work?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How machines/systems work",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "How living things work",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_ls_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "Would you rather build something that solves a problem, or understand/treat something that's broken?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Build something that solves a problem",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Understand or treat something that's broken",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_ls_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "Which lab excites you more: chemicals/physics, or biology/medicine?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Chemicals/physics lab",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Biology/medicine lab",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_ls_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "If a family member were ill, are you more interested in how the treatment was engineered, or how it works in the body?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How the treatment was engineered",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "How it works in the body",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_ls_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "Would you rather design a medical device, or research a new treatment?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Design a medical device",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.7,
+            "LIFE_SCIENCES_CARE": 0.2
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Research a new treatment",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_ls_6",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "LIFE_SCIENCES_CARE"
+      ],
+      "prompt": "Would you rather crack a physics problem set, or memorize and apply biological processes?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Crack a physics problem set",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Study and apply biological processes",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

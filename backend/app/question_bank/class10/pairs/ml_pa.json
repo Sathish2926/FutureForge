@@ -1,0 +1,153 @@
+{
+  "depth": "full",
+  "questions": [
+    {
+      "question_id": "ml_pa_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory",
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Do you prefer understanding a concept deeply on paper, or actually building/testing a working version of it?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Understand it deeply on paper",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Build/test a working version",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_pa_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "computing",
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather win a math/physics olympiad, or a robotics/making competition?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Math/physics olympiad",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Robotics/making competition",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8,
+            "MATH_LOGICAL": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_pa_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "pure-theory"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "When stuck on a problem, do you like reasoning it out theoretically, or trying things hands-on until something works?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Reason it out theoretically",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Try hands-on until it works",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_pa_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Would you rather derive a formula from scratch, or take apart and rebuild a machine?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Derive a formula from scratch",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Take apart and rebuild a machine",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ml_pa_5",
+      "stage": "class10",
+      "tier": "narrowing",
+      "flavor_tags": [
+        "engineering-applied"
+      ],
+      "domain_pair": [
+        "MATH_LOGICAL",
+        "PRACTICAL_APPLIED"
+      ],
+      "prompt": "Do you enjoy a subject more when it stays abstract, or once it becomes something you can touch/use?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Stays abstract",
+          "domain_weights": {
+            "MATH_LOGICAL": 0.7
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Becomes something you can touch/use",
+          "domain_weights": {
+            "PRACTICAL_APPLIED": 0.7
+          }
+        }
+      ]
+    }
+  ]
+}

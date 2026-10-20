@@ -1,0 +1,109 @@
+{
+  "depth": "thin",
+  "questions": [
+    {
+      "question_id": "ls_bc_1",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Are you more interested in discovering/delivering a treatment, or how a hospital/health company is run and funded?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Discovering/delivering treatment",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "How it's run and funded",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_bc_2",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Would you rather work directly with patients, or on the business side of a healthcare/biotech company?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "Work directly with patients",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.9
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "The business side",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_bc_3",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "Reading about a new drug, are you more curious how it works in the body, or how much it costs and who can access it?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "How it works in the body",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Cost and access",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "ls_bc_4",
+      "stage": "class10",
+      "tier": "narrowing",
+      "domain_pair": [
+        "LIFE_SCIENCES_CARE",
+        "BUSINESS_COMMERCE"
+      ],
+      "prompt": "For a science fair project, would you research a biology topic, or analyze healthcare costs/access?",
+      "options": [
+        {
+          "option_id": "a",
+          "label": "A biology topic",
+          "domain_weights": {
+            "LIFE_SCIENCES_CARE": 0.8
+          }
+        },
+        {
+          "option_id": "b",
+          "label": "Healthcare costs/access",
+          "domain_weights": {
+            "BUSINESS_COMMERCE": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

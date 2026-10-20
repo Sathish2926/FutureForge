@@ -1,0 +1,454 @@
+placement_id,college_id,program_id,placement_year,students_eligible,students_placed,placement_percentage,average_package,median_package,highest_package,minimum_package,package_currency,source,source_url,program,academic_year,students_graduated,confidence,last_verified
+PLC_000642,CLG_000022,,,18.0,18.0,100.0,,21.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,18.0,HIGH,2026-09-26
+PLC_000637,CLG_000023,,,20.0,15.0,75.0,,18.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,20.0,HIGH,2026-09-26
+PLC_000640,CLG_000029,,,49.0,37.0,75.51020408163265,,16.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,49.0,HIGH,2026-09-26
+PLC_000647,CLG_000037,,,6.0,4.0,66.66666666666666,,20.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,6.0,HIGH,2026-09-26
+PLC_000636,CLG_000039,,,17.0,15.0,88.23529411764706,,24.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,17.0,HIGH,2026-09-26
+PLC_000050,CLG_000097,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000104,CLG_000156,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000126,CLG_000192,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000180,CLG_000457,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000196,CLG_000473,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000650,CLG_000494,,,1.0,1.0,100.0,,19.1,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,1.0,HIGH,2026-09-26
+PLC_000234,CLG_000505,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000232,CLG_000506,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000649,CLG_000540,,,117.0,97.0,82.90598290598291,,9.12,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,117.0,HIGH,2026-09-26
+PLC_000635,CLG_000541,,,182.0,12.0,6.593406593406594,,16.78,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,182.0,HIGH,2026-09-26
+PLC_000399,CLG_000777,,,,4.0,66.66666666666666,6.5,30.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,6.0,HIGH,2026-09-26
+PLC_000401,CLG_000789,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000416,CLG_000810,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000597,CLG_000959,,,19.0,19.0,100.0,,4.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,19.0,HIGH,2026-09-26
+PLC_000491,CLG_000971,,,,94.0,82.45614035087719,7.0,6.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,114.0,HIGH,2026-09-26
+PLC_000135,CLG_001037,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000244,CLG_001134,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000131,CLG_001143,,,,,,8.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000053,CLG_001148,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000366,CLG_001210,,,,,,8.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000395,CLG_001230,,,,,,8.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000443,CLG_001285,,,,,,7.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000371,CLG_001296,,,,,,6.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000355,CLG_001319,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000444,CLG_001336,,,,,,6.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000420,CLG_001393,,,,,,8.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000335,CLG_001734,,,,,,5.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000464,CLG_001780,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000245,CLG_001783,,,,,,7.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000039,CLG_001790,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000003,CLG_001820,,,,,,21.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000084,CLG_001841,,,,,,16.42,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000255,CLG_001865,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000134,CLG_001984,,,,,,7.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000101,CLG_001987,,,,,,17.39,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000272,CLG_002097,,,,,,5.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000172,CLG_002171,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000344,CLG_002358,,,,32.0,69.56521739130434,8.0,1.8,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,46.0,HIGH,2026-09-26
+PLC_000199,CLG_002360,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000324,CLG_002365,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000149,CLG_002370,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000112,CLG_002396,,,,,,6.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000418,CLG_002428,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000391,CLG_002436,,,,,,8.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000093,CLG_002445,,,,,,5.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000099,CLG_002446,,,,,,8.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000062,CLG_002451,,,,14.0,77.77777777777779,6.4,10.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,18.0,HIGH,2026-09-26
+PLC_000389,CLG_002460,,,,,,7.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000367,CLG_002461,,,,24.0,48.97959183673469,8.0,7.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,49.0,HIGH,2026-09-26
+PLC_000090,CLG_002464,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000236,CLG_002591,,,,,,8.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000629,CLG_002595,,,257.0,257.0,100.0,,9.05,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,257.0,HIGH,2026-09-26
+PLC_000660,CLG_002597,,,111.0,35.0,31.53153153153153,,5.8,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,111.0,HIGH,2026-09-26
+PLC_000609,CLG_002602,,,399.0,399.0,100.0,,25.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,399.0,HIGH,2026-09-26
+PLC_000573,CLG_002605,,,195.0,177.0,90.76923076923076,,17.34,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,195.0,HIGH,2026-09-26
+PLC_000108,CLG_002612,,,,171.0,80.28169014084507,15.75,13.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,213.0,HIGH,2026-09-26
+PLC_000575,CLG_002622,,,127.0,70.0,55.11811023622048,,13.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,127.0,HIGH,2026-09-26
+PLC_000168,CLG_002624,,,,9.0,100.0,10.0,5.25,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,9.0,HIGH,2026-09-26
+PLC_000231,CLG_002626,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000002,CLG_002645,,,,,,19.08,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000621,CLG_002649,,,370.0,366.0,98.91891891891892,,15.52,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,370.0,HIGH,2026-09-26
+PLC_000618,CLG_002686,,,413.0,380.0,92.00968523002422,,14.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,413.0,HIGH,2026-09-26
+PLC_000210,CLG_002710,,,,,,31.16,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000109,CLG_002716,,,,,,25.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000364,CLG_002721,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000315,CLG_002722,,,,,,20.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000619,CLG_002805,,,265.0,265.0,100.0,,15.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,265.0,HIGH,2026-09-26
+PLC_000346,CLG_002812,,,,66.0,94.28571428571428,45.98,6.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,70.0,HIGH,2026-09-26
+PLC_000343,CLG_002822,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000129,CLG_002904,,,,,,11.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000493,CLG_002935,,,,,,23.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000269,CLG_002961,,,,,,10.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000615,CLG_002975,,,200.0,200.0,100.0,,18.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,200.0,HIGH,2026-09-26
+PLC_000501,CLG_003276,,,,,,26.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000290,CLG_003281,,,,,,7.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000171,CLG_003321,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000165,CLG_003322,,,,115.0,95.83333333333334,22.5,10.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,120.0,HIGH,2026-09-26
+PLC_000663,CLG_003398,,,41.0,37.0,90.2439024390244,,4.96,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,41.0,HIGH,2026-09-26
+PLC_000452,CLG_003408,,,,,,8.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000106,CLG_003435,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000127,CLG_003490,,,,,,6.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000184,CLG_003491,,,,,,15.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000605,CLG_003493,,,556.0,547.0,98.38129496402878,,26.13,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,556.0,HIGH,2026-09-26
+PLC_000219,CLG_003524,,,,,,47.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000102,CLG_003565,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000430,CLG_003599,,,,,,20.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000449,CLG_003708,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000280,CLG_003725,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000534,CLG_003792,,,21.0,13.0,61.90476190476191,,3.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,UG [5 Years Program(s)],2023-24,21.0,HIGH,2026-09-26
+PLC_000365,CLG_003819,,,,,,8.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000327,CLG_003823,,,,,,8.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000067,CLG_003851,,,,7.0,77.77777777777779,9.1,7.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,9.0,HIGH,2026-09-26
+PLC_000390,CLG_003862,,,,,,7.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000393,CLG_003880,,,,,,7.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000246,CLG_003942,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000051,CLG_003943,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000264,CLG_003949,,,,,,8.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000546,CLG_003961,,,35.0,33.0,94.28571428571428,,3.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,35.0,HIGH,2026-09-26
+PLC_000214,CLG_004002,,,,174.0,100.0,6.5,29.37,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,174.0,HIGH,2026-09-26
+PLC_000128,CLG_004022,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000496,CLG_004030,,,,,,8.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000291,CLG_004031,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000307,CLG_004243,,,,,,21.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000311,CLG_004353,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000362,CLG_004401,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000332,CLG_004420,,,,,,7.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000308,CLG_004448,,,,,,10.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000422,CLG_004455,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000571,CLG_004474,,,231.0,196.0,84.84848484848484,,7.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,231.0,HIGH,2026-09-26
+PLC_000069,CLG_004494,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000437,CLG_004495,,,,,,8.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000120,CLG_004505,,,,,,6.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000329,CLG_004520,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000333,CLG_004550,,,,,,7.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000105,CLG_004559,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000589,CLG_004907,,,39.0,29.0,74.35897435897436,,6.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,39.0,HIGH,2026-09-26
+PLC_000453,CLG_004973,,,,,,30.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000454,CLG_005436,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000195,CLG_005480,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000095,CLG_005490,,,,15.0,33.33333333333333,9.5,3.6,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,45.0,HIGH,2026-09-26
+PLC_000130,CLG_005574,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000098,CLG_005615,,,,54.0,100.0,8.4,8.23,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,54.0,HIGH,2026-09-26
+PLC_000470,CLG_005631,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000368,CLG_005638,,,,,,8.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000019,CLG_005646,,,,,,6.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000338,CLG_005648,,,,,,8.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000398,CLG_005691,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000630,CLG_005724,,,215.0,204.0,94.88372093023256,,7.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,215.0,HIGH,2026-09-26
+PLC_000295,CLG_005725,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000432,CLG_005736,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000097,CLG_005738,,,,,,6.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000419,CLG_006310,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000010,CLG_006357,,,,,,10.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000221,CLG_006460,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000011,CLG_006510,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000356,CLG_006532,,,,,,32.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000386,CLG_006556,,,,,,6.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000190,CLG_006567,,,,,,20.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000075,CLG_006635,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000013,CLG_006710,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000448,CLG_006869,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000625,CLG_006925,,,653.0,635.0,97.24349157733538,,11.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,653.0,HIGH,2026-09-26
+PLC_000123,CLG_006964,,,,44.0,91.66666666666666,8.0,10.45,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,48.0,HIGH,2026-09-26
+PLC_000182,CLG_006979,,,,,,18.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000061,CLG_007040,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000203,CLG_007145,,,,169.0,74.44933920704845,12.0,7.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,227.0,HIGH,2026-09-26
+PLC_000612,CLG_007291,,,292.0,292.0,100.0,,31.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,292.0,HIGH,2026-09-26
+PLC_000665,CLG_007420,,,139.0,128.0,92.0863309352518,,5.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,139.0,HIGH,2026-09-26
+PLC_000633,CLG_007498,,,305.0,305.0,100.0,,11.07,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,305.0,HIGH,2026-09-26
+PLC_000485,CLG_007512,,,,,,8.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000113,CLG_007518,,,,,,9.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000380,CLG_007618,,,,,,8.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000579,CLG_007622,,,217.0,140.0,64.51612903225806,,6.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,217.0,HIGH,2026-09-26
+PLC_000137,CLG_007623,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000456,CLG_007633,,,,600.0,100.0,18.0,7.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,600.0,HIGH,2026-09-26
+PLC_000494,CLG_007662,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000351,CLG_007695,,,,,,8.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000465,CLG_007703,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000502,CLG_007710,,,,,,7.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000417,CLG_007711,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000498,CLG_007879,,,,,,8.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000309,CLG_008004,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000424,CLG_008497,,,,30.0,100.0,7.5,8.4,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,30.0,HIGH,2026-09-26
+PLC_000001,CLG_008574,,,,,,14.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000323,CLG_008591,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000211,CLG_008593,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000410,CLG_008640,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000484,CLG_008647,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000345,CLG_008651,,,,,,5.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000063,CLG_008673,,,,246.0,95.34883720930232,7.3,9.7,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,258.0,HIGH,2026-09-26
+PLC_000267,CLG_008729,,,,,,4.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000064,CLG_008733,,,,,,4.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000249,CLG_008754,,,,21.0,100.0,8.5,18.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,21.0,HIGH,2026-09-26
+PLC_000142,CLG_008870,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000352,CLG_008902,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000372,CLG_008913,,,,,,6.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000289,CLG_008915,,,,,,7.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000439,CLG_008919,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000466,CLG_008958,,,,125.0,68.30601092896174,11.25,10.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,183.0,HIGH,2026-09-26
+PLC_000029,CLG_008970,,,,,,40.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000046,CLG_008987,,,,,,12.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000117,CLG_009016,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000045,CLG_009056,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000198,CLG_009058,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000170,CLG_009090,,,,,,10.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000138,CLG_009091,,,,,,12.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000167,CLG_009101,,,,,,17.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000145,CLG_009103,,,,,,30.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000020,CLG_009134,,,,32.0,86.48648648648648,6.5,5.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,37.0,HIGH,2026-09-26
+PLC_000252,CLG_009230,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000056,CLG_009236,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000217,CLG_009270,,,,75.0,85.22727272727273,5.0,5.4,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,88.0,HIGH,2026-09-26
+PLC_000407,CLG_009274,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000251,CLG_009297,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000361,CLG_009317,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000258,CLG_009337,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000293,CLG_009376,,,,20.0,83.33333333333334,8.0,5.75,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,24.0,HIGH,2026-09-26
+PLC_000227,CLG_009432,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000462,CLG_009443,,,,,,25.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000661,CLG_009451,,,16.0,12.0,75.0,,3.36,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,16.0,HIGH,2026-09-26
+PLC_000457,CLG_009540,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000446,CLG_009556,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000353,CLG_009575,,,,,,7.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000068,CLG_009592,,,,596.0,95.81993569131832,25.0,13.7,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,622.0,HIGH,2026-09-26
+PLC_000451,CLG_009771,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000624,CLG_009794,,,235.0,232.0,98.72340425531917,,8.79,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,235.0,HIGH,2026-09-26
+PLC_000030,CLG_009890,,,,17.0,33.33333333333333,8.3,4.8,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,51.0,HIGH,2026-09-26
+PLC_000254,CLG_009913,,,,,,7.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000248,CLG_009919,,,,200.0,96.15384615384616,6.5,13.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,208.0,HIGH,2026-09-26
+PLC_000616,CLG_009920,,,240.0,181.0,75.41666666666667,,10.85,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,240.0,HIGH,2026-09-26
+PLC_000042,CLG_009951,,,,,,6.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000405,CLG_009967,,,,37.0,72.54901960784314,7.0,15.6,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,51.0,HIGH,2026-09-26
+PLC_000487,CLG_009973,,,,884.0,69.60629921259842,9.9,9.15,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,1270.0,HIGH,2026-09-26
+PLC_000486,CLG_009981,,,,80.0,88.88888888888889,6.0,5.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,90.0,HIGH,2026-09-26
+PLC_000620,CLG_009990,,,238.0,232.0,97.47899159663864,,11.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,238.0,HIGH,2026-09-26
+PLC_000268,CLG_010056,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000394,CLG_010172,,,,18.0,94.73684210526316,7.58,7.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,19.0,HIGH,2026-09-26
+PLC_000431,CLG_010388,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000632,CLG_010473,,,118.0,112.0,94.91525423728814,,10.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,118.0,HIGH,2026-09-26
+PLC_000459,CLG_010482,,,,194.0,50.91863517060368,6.5,6.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,381.0,HIGH,2026-09-26
+PLC_000447,CLG_010545,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000438,CLG_010557,,,,30.0,88.5,6.2,5.8,32.0,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,32.0,HIGH,2026-09-26
+PLC_000521,CLG_010597,,,193.0,132.0,68.39378238341969,,3.02,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,193.0,HIGH,2026-09-26
+PLC_000403,CLG_010599,,,,82.0,59.42028985507246,6.5,6.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,138.0,HIGH,2026-09-26
+PLC_000469,CLG_010615,,,,,,8.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000265,CLG_010638,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000537,CLG_010652,,,59.0,56.0,94.91525423728814,,9.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,59.0,HIGH,2026-09-26
+PLC_000096,CLG_010676,,,,,,8.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000441,CLG_010705,,,,,,8.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000301,CLG_010720,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000052,CLG_010777,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000626,CLG_010795,,,237.0,228.0,96.20253164556962,,7.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,237.0,HIGH,2026-09-26
+PLC_000357,CLG_010832,,,,91.0,93.5,10.5,7.5,43.5,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,120.0,HIGH,2026-09-26
+PLC_000404,CLG_010860,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000543,CLG_010989,,,44.0,30.0,68.18181818181817,,8.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,44.0,HIGH,2026-09-26
+PLC_000087,CLG_011024,,,,26.0,89.65517241379311,7.0,18.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,29.0,HIGH,2026-09-26
+PLC_000584,CLG_011061,,,67.0,59.0,88.05970149253731,,17.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,67.0,HIGH,2026-09-26
+PLC_000094,CLG_011067,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000478,CLG_011154,,,,51.0,65.38461538461539,10.0,15.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,78.0,HIGH,2026-09-26
+PLC_000304,CLG_011165,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000215,CLG_011177,,,,136.0,93.79310344827586,25.0,32.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,145.0,HIGH,2026-09-26
+PLC_000631,CLG_011199,,,65.0,63.0,96.92307692307692,,11.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,65.0,HIGH,2026-09-26
+PLC_000081,CLG_011243,,,,,,8.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000434,CLG_011278,,,,,,7.7,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000482,CLG_011299,,,,,,8.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000147,CLG_011302,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000247,CLG_011317,,,,,,7.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000073,CLG_011324,,,,,,8.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000580,CLG_011353,,,72.0,64.0,88.88888888888889,,6.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,72.0,HIGH,2026-09-26
+PLC_000480,CLG_011360,,,,,,8.1,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000201,CLG_011433,,,,,,8.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000463,CLG_011613,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000472,CLG_011618,,,,,,6.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000023,CLG_011690,,,,,,26.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000503,CLG_011735,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000237,CLG_011764,,,,,,11.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000260,CLG_011774,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000143,CLG_011782,,,,,,23.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000133,CLG_011820,,,,,,22.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000014,CLG_012028,,,,,,33.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000614,CLG_012135,,,1216.0,1170.0,96.2171052631579,,31.72,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,1216.0,HIGH,2026-09-26
+PLC_000174,CLG_012222,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000072,CLG_012241,,,,,,6.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000229,CLG_012254,,,,340.0,97.98270893371756,36.64,8.85,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,347.0,HIGH,2026-09-26
+PLC_000276,CLG_012282,,,,95.0,87.96296296296296,9.0,15.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,108.0,HIGH,2026-09-26
+PLC_000189,CLG_012328,,,,454.0,100.0,41.55,10.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,454.0,HIGH,2026-09-26
+PLC_000334,CLG_012354,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000623,CLG_012587,,,694.0,674.0,97.11815561959656,,17.58,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,694.0,HIGH,2026-09-26
+PLC_000473,CLG_012742,,,,,,36.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000412,CLG_012753,,,,,,42.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000387,CLG_012759,,,,11.0,44.0,18.0,21.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,25.0,HIGH,2026-09-26
+PLC_000114,CLG_012798,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000681,CLG_012834,,,19.0,19.0,100.0,,3.26,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,19.0,HIGH,2026-09-26
+PLC_000427,CLG_012851,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000218,CLG_012943,,,,,,18.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000230,CLG_012991,,,,,,7.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000250,CLG_012993,,,,,,7.4,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000242,CLG_013001,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000316,CLG_013003,,,,,,7.8,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000426,CLG_013005,,,,,,7.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000176,CLG_013010,,,,,,7.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000222,CLG_013020,,,,4.0,80.0,8.0,9.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,5.0,HIGH,2026-09-26
+PLC_000173,CLG_013032,,,,,,7.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000036,CLG_013053,,,,,,7.6,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000298,CLG_013057,,,,23.0,85.18518518518519,7.7,2.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,27.0,HIGH,2026-09-26
+PLC_000208,CLG_013366,,,,,,19.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000680,CLG_014581,,,59.0,56.0,94.91525423728814,,5.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,59.0,HIGH,2026-09-26
+PLC_000140,CLG_014633,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000205,CLG_015541,,,,,,3.65,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000082,CLG_015922,,,,,,50.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000539,CLG_016866,,,4.0,3.0,75.0,,4.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,4.0,HIGH,2026-09-26
+PLC_000107,CLG_020356,,,,,,8.2,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000677,CLG_020619,,,83.0,75.0,90.36144578313254,,4.24,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,83.0,HIGH,2026-09-26
+PLC_000153,CLG_021770,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000549,CLG_022296,,,46.0,44.0,95.65217391304348,,9.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,46.0,HIGH,2026-09-26
+PLC_000550,CLG_022314,,,27.0,25.0,92.5925925925926,,5.35,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,27.0,HIGH,2026-09-26
+PLC_000659,CLG_022358,,,105.0,97.0,92.38095238095238,,6.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,105.0,HIGH,2026-09-26
+PLC_000646,CLG_023213,,,48.0,46.0,95.83333333333334,,13.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,48.0,HIGH,2026-09-26
+PLC_000673,CLG_024060,,,27.0,24.0,88.88888888888889,,7.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,27.0,HIGH,2026-09-26
+PLC_000658,CLG_025794,,,117.0,99.0,84.61538461538461,,8.35,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,117.0,HIGH,2026-09-26
+PLC_000568,CLG_025947,,,39.0,36.0,92.3,10.2,7.5,64.0,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,39.0,HIGH,2026-09-26
+PLC_000354,CLG_027833,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000005,CLG_027932,,,,,,21.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000657,CLG_027962,,,90.0,86.0,95.55555555555556,,8.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,90.0,HIGH,2026-09-26
+PLC_000347,CLG_028077,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000664,CLG_028135,,,134.0,104.0,77.61194029850746,,6.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,134.0,HIGH,2026-09-26
+PLC_000682,CLG_029478,,,45.0,39.0,86.66666666666667,,2.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,45.0,HIGH,2026-09-26
+PLC_000674,CLG_030220,,,20.0,19.0,95.0,,5.75,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,20.0,HIGH,2026-09-26
+PLC_000671,CLG_030262,,,79.0,68.0,86.07594936708861,,4.9,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,79.0,HIGH,2026-09-26
+PLC_000651,CLG_032285,,,53.0,20.0,37.735849056603776,,7.25,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,53.0,HIGH,2026-09-26
+PLC_000586,CLG_032598,,,78.0,75.0,96.15384615384616,,18.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,78.0,HIGH,2026-09-26
+PLC_000607,CLG_032608,,,247.0,239.0,96.76113360323887,,25.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,247.0,HIGH,2026-09-26
+PLC_000648,CLG_033350,,,150.0,125.0,83.33333333333334,,1.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,150.0,HIGH,2026-09-26
+PLC_000296,CLG_033690,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000538,CLG_034037,,,13.0,13.0,100.0,,4.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,13.0,HIGH,2026-09-26
+PLC_000545,CLG_034872,,,23.0,22.0,95.65217391304348,,2.85,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,23.0,HIGH,2026-09-26
+PLC_000536,CLG_035644,,,11.0,11.0,100.0,,4.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,11.0,HIGH,2026-09-26
+PLC_000216,CLG_037180,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000643,CLG_038182,,,1.0,1.0,100.0,,18.61,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,1.0,HIGH,2026-09-26
+PLC_000544,CLG_040000,,,24.0,24.0,100.0,,10.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,24.0,HIGH,2026-09-26
+PLC_000541,CLG_040977,,,64.0,56.0,87.5,,6.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,64.0,HIGH,2026-09-26
+PLC_000553,CLG_041574,,,471.0,448.0,95.1167728237792,,19.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,471.0,HIGH,2026-09-26
+PLC_000652,CLG_041620,,,136.0,130.0,95.58823529411764,,19.1,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,136.0,HIGH,2026-09-26
+PLC_000542,CLG_041923,,,31.0,28.0,90.32258064516128,,6.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,31.0,HIGH,2026-09-26
+PLC_000641,CLG_041999,,,193.0,180.0,93.26424870466322,,8.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,193.0,HIGH,2026-09-26
+PLC_000587,CLG_042013,,,12.0,8.0,66.66666666666666,,4.8,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,12.0,HIGH,2026-09-26
+PLC_000552,CLG_042254,,,21.0,19.0,90.47619047619048,,6.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,21.0,HIGH,2026-09-26
+PLC_000653,CLG_042255,,,21.0,15.0,71.42857142857143,,1.7,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,21.0,HIGH,2026-09-26
+PLC_000551,CLG_042272,,,36.0,36.0,100.0,,12.74,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,36.0,HIGH,2026-09-26
+PLC_000392,CLG_042430,,,,9.0,100.0,6.5,7.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,9.0,HIGH,2026-09-26
+PLC_000044,CLG_043032,,,,130.0,47.27272727272727,6.5,25.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,275.0,HIGH,2026-09-26
+PLC_000150,CLG_043070,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000679,CLG_043086,,,41.0,39.0,95.1219512195122,,2.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,41.0,HIGH,2026-09-26
+PLC_000596,CLG_043119,,,8.0,45.0,60.0,,6.3,,,INR (LPA),NIRF Official via Avanti Fellows (2025) & NIRF Official,https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,8.0,HIGH,2026-09-26
+PLC_000548,CLG_043221,,,40.0,35.0,87.5,,6.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,40.0,HIGH,2026-09-26
+PLC_000540,CLG_043603,,,22.0,10.0,45.45454545454545,,18.58,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,22.0,HIGH,2026-09-26
+PLC_000100,CLG_044476,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000070,CLG_044707,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000676,CLG_044761,,,79.0,69.0,87.34177215189874,,4.7,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,79.0,HIGH,2026-09-26
+PLC_000057,CLG_044924,,,,,,13.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000547,CLG_045063,,,12.0,12.0,100.0,,7.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,12.0,HIGH,2026-09-26
+PLC_000152,CLG_045375,,,,,,6.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000049,CLG_045892,,,,7.0,43.75,6.5,8.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,16.0,HIGH,2026-09-26
+PLC_000085,CLG_045894,,,,88.0,47.56756756756757,6.5,5.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,185.0,HIGH,2026-09-26
+PLC_000683,CLG_045895,,,17.0,17.0,100.0,,4.26,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,17.0,HIGH,2026-09-26
+PLC_000518,CLG_045904,,,205.0,122.0,59.512195121951216,,6.3,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,205.0,HIGH,2026-09-26
+PLC_000520,CLG_045908,,,35.0,23.0,65.71428571428571,,5.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,35.0,HIGH,2026-09-26
+PLC_000634,CLG_045911,,,4.0,3.0,75.0,,24.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,4.0,HIGH,2026-09-26
+PLC_000515,CLG_045914,,,125.0,89.0,71.2,,8.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,125.0,HIGH,2026-09-26
+PLC_000565,CLG_045917,,,206.0,72.0,34.95145631067961,,16.97,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,206.0,HIGH,2026-09-26
+PLC_000200,CLG_045925,,,,,,30.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000590,CLG_045941,,,27.0,158.0,92.39766081871343,,7.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025) & NIRF Official,https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,27.0,HIGH,2026-09-26
+PLC_000322,CLG_045945,,,,470.0,83.92857142857143,6.5,11.78,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,560.0,HIGH,2026-09-26
+PLC_000116,CLG_045955,,,,121.0,41.43835616438356,52.0,7.94,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,292.0,HIGH,2026-09-26
+PLC_000292,CLG_045965,,,,,,10.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000555,CLG_045968,,,821.0,513.0,62.48477466504263,,19.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,821.0,HIGH,2026-09-26
+PLC_000566,CLG_045976,,,142.0,115.0,80.98591549295774,,14.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,142.0,HIGH,2026-09-26
+PLC_000261,CLG_045980,,,,42.0,100.0,11.0,16.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,42.0,HIGH,2026-09-26
+PLC_000684,CLG_046002,,,24.0,20.0,83.33333333333334,,6.12,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,24.0,HIGH,2026-09-26
+PLC_000524,CLG_046026,,,16.0,15.0,93.75,,8.07,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,16.0,HIGH,2026-09-26
+PLC_000583,CLG_046028,,,72.0,48.0,66.66666666666666,,10.68,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,72.0,HIGH,2026-09-26
+PLC_000574,CLG_046037,,,62.0,32.0,51.61290322580645,,13.25,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,62.0,HIGH,2026-09-26
+PLC_000376,CLG_046047,,,,,,18.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000508,CLG_046049,,,294.0,202.0,68.70748299319727,,6.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,294.0,HIGH,2026-09-26
+PLC_000083,CLG_046054,,,,6.0,60.0,6.73,5.2,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,10.0,HIGH,2026-09-26
+PLC_000561,CLG_046069,,,73.0,52.0,71.23287671232876,,13.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,73.0,HIGH,2026-09-26
+PLC_000592,CLG_046081,,,55.0,19.0,34.54545454545455,,16.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,55.0,HIGH,2026-09-26
+PLC_000325,CLG_046086,,,,77.0,85.55555555555556,18.0,16.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,90.0,HIGH,2026-09-26
+PLC_000516,CLG_046089,,,48.0,28.0,58.333333333333336,,5.71,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,48.0,HIGH,2026-09-26
+PLC_000015,CLG_046101,,,,15.0,93.75,9.0,20.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,16.0,HIGH,2026-09-26
+PLC_000523,CLG_046103,,,61.0,1.0,1.639344262295082,,4.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,61.0,HIGH,2026-09-26
+PLC_000675,CLG_046105,,,21.0,18.0,85.71428571428571,,6.25,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,21.0,HIGH,2026-09-26
+PLC_000668,CLG_046116,,,42.0,35.0,83.33333333333334,,3.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,42.0,HIGH,2026-09-26
+PLC_000585,CLG_046132,,,100.0,75.0,75.0,,20.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,100.0,HIGH,2026-09-26
+PLC_000119,CLG_046149,,,,55.0,40.44117647058824,6.5,5.5,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,136.0,HIGH,2026-09-26
+PLC_000194,CLG_046153,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000578,CLG_046172,,,290.0,247.0,85.17241379310346,,9.01,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,290.0,HIGH,2026-09-26
+PLC_000594,CLG_046175,,,4.0,1.0,25.0,,6.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,4.0,HIGH,2026-09-26
+PLC_000514,CLG_046176,,,174.0,99.0,56.896551724137936,,5.7,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,174.0,HIGH,2026-09-26
+PLC_000411,CLG_046178,,,,,,12.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000504,CLG_046183,,,111.0,43.0,38.73873873873874,,10.43,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,111.0,HIGH,2026-09-26
+PLC_000569,CLG_046189,,,192.0,90.0,46.875,,6.81,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,192.0,HIGH,2026-09-26
+PLC_000086,CLG_046190,,,,99.0,68.27586206896552,6.5,13.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,145.0,HIGH,2026-09-26
+PLC_000517,CLG_046197,,,62.0,34.0,54.83870967741935,,6.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,62.0,HIGH,2026-09-26
+PLC_000562,CLG_046198,,,251.0,95.0,37.84860557768924,,44.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,251.0,HIGH,2026-09-26
+PLC_000588,CLG_046206,,,66.0,51.0,77.27272727272727,,7.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,66.0,HIGH,2026-09-26
+PLC_000477,CLG_046213,,,,,,10.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000554,CLG_046216,,,666.0,538.0,80.78078078078079,,24.3,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,666.0,HIGH,2026-09-26
+PLC_000321,CLG_046218,,,,90.0,100.0,6.5,16.1,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,90.0,HIGH,2026-09-26
+PLC_000511,CLG_046223,,,245.0,114.0,46.53061224489796,,0.75,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,245.0,HIGH,2026-09-26
+PLC_000406,CLG_046225,,,,,,9.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000285,CLG_046228,,,,23.0,88.46153846153845,6.5,6.72,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,26.0,HIGH,2026-09-26
+PLC_000226,CLG_046246,,,,48.0,90.56603773584906,8.0,8.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,53.0,HIGH,2026-09-26
+PLC_000461,CLG_046248,,,,,,12.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000512,CLG_046251,,,322.0,261.0,81.05590062111801,,7.68,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,322.0,HIGH,2026-09-26
+PLC_000598,CLG_046254,,,36.0,31.0,86.11111111111111,,3.17,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,36.0,HIGH,2026-09-26
+PLC_000686,CLG_046257,,,,,100.0,,28.0,,,INR (LPA),Avanti Fellows IIT/NIT/IIIT Scorecards,https://www.nirfindia.org/nirfpdfcdn/2023/pdf/Engineering/IR-E-U-0516.pdf,B.Tech / Professional,2023.0,,HIGH,2026-09-26
+PLC_000564,CLG_046266,,,539.0,356.0,66.04823747680891,,14.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,539.0,HIGH,2026-09-26
+PLC_000563,CLG_046269,,,159.0,122.0,76.72955974842768,,8.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,159.0,HIGH,2026-09-26
+PLC_000560,CLG_046271,,,130.0,120.0,92.3076923076923,,22.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,130.0,HIGH,2026-09-26
+PLC_000535,CLG_046272,,,17.0,16.0,94.11764705882352,,10.05,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,17.0,HIGH,2026-09-26
+PLC_000570,CLG_046274,,,159.0,89.0,55.9748427672956,,11.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,159.0,HIGH,2026-09-26
+PLC_000058,CLG_046275,,,,,,7.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000497,CLG_046277,,,,,,46.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000507,CLG_046280,,,666.0,248.0,37.23723723723724,,16.4,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,666.0,HIGH,2026-09-26
+PLC_000358,CLG_046286,,,,135.0,49.45054945054945,7.0,4.8,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,273.0,HIGH,2026-09-26
+PLC_000577,CLG_046290,,,9.0,5.0,55.55555555555556,,7.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,9.0,HIGH,2026-09-26
+PLC_000040,CLG_046300,,,,29.0,63.04347826086957,6.6,3.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,46.0,HIGH,2026-09-26
+PLC_000526,CLG_046305,,,36.0,28.0,77.77777777777779,,17.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,36.0,HIGH,2026-09-26
+PLC_000476,CLG_046306,,,,56.0,32.18390804597701,7.0,5.75,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,174.0,HIGH,2026-09-26
+PLC_000528,CLG_046325,,,19.0,14.0,73.68421052631578,,11.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,UG [5 Years Program(s)],2023-24,19.0,HIGH,2026-09-26
+PLC_000556,CLG_046327,,,599.0,440.0,73.45575959933221,,19.48,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,599.0,HIGH,2026-09-26
+PLC_000667,CLG_046330,,,36.0,27.0,75.0,,4.8,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,36.0,HIGH,2026-09-26
+PLC_000505,CLG_046332,,,422.0,246.0,58.29383886255924,,6.84,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,422.0,HIGH,2026-09-26
+PLC_000645,CLG_046351,,,16.0,16.0,100.0,,47.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [3 Year Program(s)],2023-24,16.0,HIGH,2026-09-26
+PLC_000576,CLG_046354,,,198.0,128.0,64.64646464646465,,9.6,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,198.0,HIGH,2026-09-26
+PLC_000529,CLG_046358,,,206.0,185.0,89.80582524271846,,8.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,206.0,HIGH,2026-09-26
+PLC_000689,CLG_046368,,,,,91.8,,14.0,,,INR (LPA),Avanti Fellows IIT/NIT/IIIT Scorecards,https://www.nirfindia.org/nirfpdfcdn/2023/pdf/Engineering/IR-E-U-0795.pdf,B.Tech / Professional,2023.0,,HIGH,2026-09-26
+PLC_000132,CLG_046377,,,,35.0,89.74358974358975,39.0,7.4,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,39.0,HIGH,2026-09-26
+PLC_000595,CLG_046382,,,38.0,6.0,15.789473684210526,,8.9,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,38.0,HIGH,2026-09-26
+PLC_000146,CLG_046401,,,,,,30.5,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000593,CLG_046414,,,40.0,12.0,30.0,,6.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [1 Year Program(s)],2023-24,40.0,HIGH,2026-09-26
+PLC_000531,CLG_046416,,,16.0,3.0,18.75,,3.96,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,16.0,HIGH,2026-09-26
+PLC_000582,CLG_046468,,,15.0,8.0,53.333333333333336,,7.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,15.0,HIGH,2026-09-26
+PLC_000572,CLG_046476,,,114.0,79.0,69.2982456140351,,8.2,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,114.0,HIGH,2026-09-26
+PLC_000558,CLG_046483,,,153.0,63.0,41.17647058823529,,19.48,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,153.0,HIGH,2026-09-26
+PLC_000557,CLG_046497,,,263.0,196.0,74.52471482889734,,20.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,263.0,HIGH,2026-09-26
+PLC_000460,CLG_046506,,,,53.0,79.1044776119403,8.2,8.4,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,67.0,HIGH,2026-09-26
+PLC_000193,CLG_046530,,,,,,56.3,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000273,CLG_046549,,,,,,15.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000522,CLG_046555,,,112.0,90.0,80.35714285714286,,7.42,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,112.0,HIGH,2026-09-26
+PLC_000533,CLG_046575,,,282.0,276.0,97.87234042553192,,12.3,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,282.0,HIGH,2026-09-26
+PLC_000179,CLG_047713,,,,,,20.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000187,CLG_048156,,,,,,10.0,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000611,CLG_048277,,,227.0,227.0,100.0,,19.27,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,227.0,HIGH,2026-09-26
+PLC_000606,CLG_048732,,,768.0,764.0,99.47916666666666,,56.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,768.0,HIGH,2026-09-26
+PLC_000320,CLG_049570,,,,1072.0,100.0,9.3,66.0,,,INR (LPA),Official Placement Report via io-PEAK & NIRF Official,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,1072.0,HIGH,2026-09-26
+PLC_000600,CLG_049610,,,444.0,434.0,97.74774774774777,,31.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,444.0,HIGH,2026-09-26
+PLC_000622,CLG_050283,,,643.0,595.0,92.53499222395024,,12.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,643.0,HIGH,2026-09-26
+PLC_000604,CLG_050396,,,635.0,633.0,99.68503937007874,,25.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,635.0,HIGH,2026-09-26
+PLC_000613,CLG_050452,,,315.0,315.0,100.0,,18.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,315.0,HIGH,2026-09-26
+PLC_000617,CLG_051043,,,514.0,514.0,100.0,,13.09,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,514.0,HIGH,2026-09-26
+PLC_000602,CLG_051306,,,547.0,547.0,100.0,,27.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,547.0,HIGH,2026-09-26
+PLC_000601,CLG_051633,,,517.0,517.0,100.0,,32.5,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,517.0,HIGH,2026-09-26
+PLC_000024,CLG_051947,,,,,,35.9,,,,INR (LPA),Official Placement Report via io-PEAK,https://github.com/io-PEAK/india-edu-cities-data,UG Overall,2024-25,,MEDIUM,2026-09-26
+PLC_000608,CLG_052132,,,386.0,383.0,99.22279792746112,,18.1,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,386.0,HIGH,2026-09-26
+PLC_000603,CLG_052172,,,614.0,614.0,100.0,,30.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,614.0,HIGH,2026-09-26
+PLC_000610,CLG_052544,,,340.0,340.0,100.0,,18.0,,,INR (LPA),NIRF Official via Avanti Fellows (2025),https://www.nirfindia.org,PG [2 Year Program(s)],2023-24,340.0,HIGH,2026-09-26
