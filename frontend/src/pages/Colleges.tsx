@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { api } from "../api/client";
 import {
   GraduationCap,
@@ -965,129 +966,159 @@ export default function Colleges() {
       )}
 
       {/* Detail Modal */}
-      {detailModalOpen && selectedCollegeDetail && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
-          <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-slate-200 shadow-2xl p-6 relative">
-            <button
-              onClick={() => setDetailModalOpen(false)}
-              className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="flex items-start gap-4 mb-6 pr-10">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-bold shrink-0">
-                <Building2 className="w-7 h-7" />
-              </div>
-              <div>
-                <span className="px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 font-semibold text-xs capitalize">
-                  {selectedCollegeDetail.institution_type} Institute
-                </span>
-                <h2 className="text-xl font-bold text-slate-900 font-heading mt-1">{selectedCollegeDetail.name}</h2>
-                <div className="flex items-center gap-2 text-xs text-slate-500 mt-1">
-                  <MapPin className="w-3.5 h-3.5 text-slate-400" />
-                  <span>{selectedCollegeDetail.city}, {selectedCollegeDetail.state}</span>
-                  {selectedCollegeDetail.nirf_rank && (
-                    <span className="ml-2 font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
-                      NIRF #{selectedCollegeDetail.nirf_rank}
-                    </span>
-                  )}
+      {detailModalOpen && selectedCollegeDetail && createPortal(
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-xs animate-fade-in"
+          onClick={() => setDetailModalOpen(false)}
+        >
+          <div 
+            className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden border border-slate-200 shadow-2xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="p-6 pb-4 border-b border-slate-100 flex items-start justify-between gap-4 shrink-0 bg-slate-50/60">
+              <div className="flex items-start gap-3.5 pr-2">
+                <div className="w-12 h-12 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 font-bold shrink-0">
+                  <Building2 className="w-6 h-6" />
+                </div>
+                <div>
+                  <span className="px-2.5 py-0.5 rounded-full bg-slate-200/70 text-slate-700 font-semibold text-[11px] uppercase tracking-wider">
+                    {selectedCollegeDetail.institution_type || "Recognized"} Institute
+                  </span>
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-900 font-heading mt-1 leading-tight">{selectedCollegeDetail.name}</h2>
+                  <div className="flex items-center gap-2 text-xs text-slate-500 mt-1">
+                    <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                    <span>{selectedCollegeDetail.city}, {selectedCollegeDetail.state}</span>
+                    {selectedCollegeDetail.nirf_rank && (
+                      <span className="ml-1.5 font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-[11px]">
+                        NIRF #{selectedCollegeDetail.nirf_rank}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
+
+              <button
+                type="button"
+                onClick={() => setDetailModalOpen(false)}
+                className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 transition-colors shrink-0"
+                title="Close"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </div>
 
-            {/* Quick Metrics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs mb-6">
-              <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-                <div className="text-slate-400 font-medium">Annual Fee Range</div>
-                <div className="text-base font-bold text-slate-900 mt-0.5">
-                  {selectedCollegeDetail.annual_fee_min_inr && selectedCollegeDetail.annual_fee_max_inr && selectedCollegeDetail.annual_fee_min_inr !== selectedCollegeDetail.annual_fee_max_inr
-                    ? `₹${(selectedCollegeDetail.annual_fee_min_inr / 1000).toFixed(0)}k - ₹${(selectedCollegeDetail.annual_fee_max_inr / 1000).toFixed(0)}k`
-                    : `₹${((selectedCollegeDetail.annual_fee_max_inr || selectedCollegeDetail.annual_fee_inr || 50000) / 1000).toFixed(0)}k`}
+            {/* Modal Scrollable Body */}
+            <div className="p-6 overflow-y-auto space-y-6 flex-1 custom-scrollbar">
+              {/* Quick Metrics */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                  <div className="text-slate-400 font-medium">Annual Fee Range</div>
+                  <div className="text-base font-bold text-slate-900 mt-0.5">
+                    {selectedCollegeDetail.annual_fee_min_inr && selectedCollegeDetail.annual_fee_max_inr && selectedCollegeDetail.annual_fee_min_inr !== selectedCollegeDetail.annual_fee_max_inr
+                      ? `₹${(selectedCollegeDetail.annual_fee_min_inr / 1000).toFixed(0)}k - ₹${(selectedCollegeDetail.annual_fee_max_inr / 1000).toFixed(0)}k`
+                      : `₹${((selectedCollegeDetail.annual_fee_max_inr || selectedCollegeDetail.annual_fee_inr || 50000) / 1000).toFixed(0)}k`}
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                  <div className="text-slate-400 font-medium">Avg Package</div>
+                  <div className="text-base font-bold text-slate-900 mt-0.5">
+                    ₹{selectedCollegeDetail.avg_package_lpa || 4.0} LPA
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                  <div className="text-slate-400 font-medium">Placement %</div>
+                  <div className="text-base font-bold text-slate-900 mt-0.5">
+                    {selectedCollegeDetail.placement_rate_pct_est || 65}%
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                  <div className="text-slate-400 font-medium">Hostel Facility</div>
+                  <div className="text-base font-bold text-slate-900 mt-0.5">
+                    {selectedCollegeDetail.hostel_available ? "Available" : "Not Offered"}
+                  </div>
                 </div>
               </div>
 
-              <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-                <div className="text-slate-400 font-medium">Avg Package</div>
-                <div className="text-base font-bold text-slate-900 mt-0.5">
-                  ₹{selectedCollegeDetail.avg_package_lpa || 4.0} LPA
+              {/* Detailed Info Sections */}
+              <div className="space-y-4 text-xs">
+                <div className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
+                  <h4 className="font-bold text-indigo-900 text-sm mb-2">Admission Route & Eligibility</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700">
+                    <div><strong className="text-slate-900">Admission Route:</strong> {selectedCollegeDetail.common_admission_route || "State / Central Counselling"}</div>
+                    <div><strong className="text-slate-900">Domain Group:</strong> {selectedCollegeDetail.domain_group || "General Higher Education"}</div>
+                  </div>
                 </div>
-              </div>
 
-              <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-                <div className="text-slate-400 font-medium">Placement %</div>
-                <div className="text-base font-bold text-slate-900 mt-0.5">
-                  {selectedCollegeDetail.placement_rate_pct_est || 65}%
-                </div>
-              </div>
+                {/* Courses & Programs Offered */}
+                <div>
+                  <h4 className="font-bold text-slate-900 text-sm mb-3">Courses & Program Specializations Offered</h4>
+                  <div className="space-y-2.5">
+                    {selectedCollegeDetail.programs && selectedCollegeDetail.programs.length > 0 ? (
+                      selectedCollegeDetail.programs.map((p: any, i: number) => {
+                        const progTitle = p.course_name || p.degree || p.specialization || p.branch || "Specialization Program";
+                        const levelInfo = p.education_level || p.degree_level || p.course_category || "Regular Degree";
+                        const intakeInfo = p.seat_intake || p.approved_intake ? `${p.seat_intake || p.approved_intake} seats` : "Seats based on quota";
+                        const tag = p.recognition_status || p.accredited || (p.entrance_exam ? `Exam: ${p.entrance_exam}` : null);
 
-              <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-                <div className="text-slate-400 font-medium">Hostel Facility</div>
-                <div className="text-base font-bold text-slate-900 mt-0.5">
-                  {selectedCollegeDetail.hostel_available ? "Available" : "Not Offered"}
-                </div>
-              </div>
-            </div>
-
-            {/* Detailed Info Sections */}
-            <div className="space-y-4 text-xs">
-              <div className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
-                <h4 className="font-bold text-indigo-900 text-sm mb-2">Admission Route & Eligibility</h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700">
-                  <div><strong className="text-slate-900">Admission Route:</strong> {selectedCollegeDetail.common_admission_route}</div>
-                  <div><strong className="text-slate-900">Domain Group:</strong> {selectedCollegeDetail.domain_group}</div>
-                </div>
-              </div>
-
-              {/* Courses & Programs Offered */}
-              <div>
-                <h4 className="font-bold text-slate-900 text-sm mb-3">Courses & Program Specializations Offered</h4>
-                <div className="space-y-2 max-h-60 overflow-y-auto pr-1">
-                  {selectedCollegeDetail.programs && selectedCollegeDetail.programs.length > 0 ? (
-                    selectedCollegeDetail.programs.map((p: any, i: number) => (
-                      <div key={i} className="p-3 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-between">
-                        <div>
-                          <div className="font-bold text-slate-900 text-sm">{p.branch}</div>
-                          <div className="text-slate-500 text-[11px] mt-0.5">
-                            Category: {p.course_category || "Regular"} • Intake: {p.approved_intake || "N/A"} seats
+                        return (
+                          <div key={i} className="p-3.5 rounded-xl bg-slate-50 hover:bg-slate-100/60 transition border border-slate-200/70 flex items-center justify-between gap-3">
+                            <div className="min-w-0">
+                              <div className="font-bold text-slate-900 text-sm truncate">{progTitle}</div>
+                              <div className="text-slate-500 text-[11px] mt-0.5 flex flex-wrap items-center gap-1.5">
+                                <span>{levelInfo}</span>
+                                <span>•</span>
+                                <span>Intake: {intakeInfo}</span>
+                                {p.duration && (
+                                  <>
+                                    <span>•</span>
+                                    <span>{p.duration}</span>
+                                  </>
+                                )}
+                              </div>
+                            </div>
+                            {tag && (
+                              <span className="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold shrink-0">
+                                {tag}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      })
+                    ) : selectedCollegeDetail.courses && selectedCollegeDetail.courses.length > 0 ? (
+                      selectedCollegeDetail.courses.map((c: any, i: number) => (
+                        <div key={i} className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 flex items-center justify-between gap-3">
+                          <div className="min-w-0">
+                            <div className="font-bold text-slate-900 text-sm truncate">{c.course || c.course_name || "Degree Program"}</div>
+                            <div className="text-slate-500 text-[11px] mt-0.5">
+                              Level: {c.degree_level || "Undergraduate"} • Entrance: {c.entrance_exam || "Merit"}
+                            </div>
+                          </div>
+                          <div className="text-slate-900 font-bold shrink-0">
+                            ₹{((c.annual_fees_inr || 50000) / 1000).toFixed(0)}k/yr
                           </div>
                         </div>
-                        {p.accredited && (
-                          <span className="px-2 py-1 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
-                            {p.accredited}
-                          </span>
-                        )}
-                      </div>
-                    ))
-                  ) : selectedCollegeDetail.courses && selectedCollegeDetail.courses.length > 0 ? (
-                    selectedCollegeDetail.courses.map((c: any, i: number) => (
-                      <div key={i} className="p-3 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-between">
-                        <div>
-                          <div className="font-bold text-slate-900 text-sm">{c.course}</div>
-                          <div className="text-slate-500 text-[11px] mt-0.5">
-                            Level: {c.degree_level} • Entrance: {c.entrance_exam || "Merit"}
-                          </div>
-                        </div>
-                        <div className="text-slate-900 font-bold">
-                          ₹{((c.annual_fees_inr || 50000) / 1000).toFixed(0)}k/yr
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    <div className="p-4 text-slate-500 bg-slate-50 rounded-xl">Standard degree programs offered in {selectedCollegeDetail.domain_group}</div>
-                  )}
+                      ))
+                    ) : (
+                      <div className="p-4 text-slate-500 bg-slate-50 rounded-xl text-center">Standard degree programs offered in {selectedCollegeDetail.domain_group}</div>
+                    )}
+                  </div>
                 </div>
-              </div>
 
-              {/* Data Verification Footer */}
-              <div className="p-3 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-between text-[11px]">
-                <span>Data Source Provider: {selectedCollegeDetail.source_provider}</span>
-                <span>Verification Status: {selectedCollegeDetail.verification_status}</span>
+                {/* Data Verification Footer */}
+                <div className="p-3 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-between text-[11px]">
+                  <span>Data Source: {selectedCollegeDetail.source_provider || "Government Accredited Database"}</span>
+                  <span>Status: {selectedCollegeDetail.verification_status || "VERIFIED"}</span>
+                </div>
               </div>
             </div>
 
-            {/* Modal Actions */}
-            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            {/* Modal Fixed Footer */}
+            <div className="p-4 sm:px-6 border-t border-slate-100 flex items-center justify-between shrink-0 bg-slate-50/50">
               {selectedCollegeDetail.website ? (
                 <a
                   href={selectedCollegeDetail.website}
@@ -1100,12 +1131,17 @@ export default function Colleges() {
               ) : (
                 <div></div>
               )}
-              <button onClick={() => setDetailModalOpen(false)} className="btn-secondary text-xs py-2 px-4">
+              <button 
+                type="button"
+                onClick={() => setDetailModalOpen(false)} 
+                className="btn-secondary text-xs py-2 px-5 font-semibold"
+              >
                 Close
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

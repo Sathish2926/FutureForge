@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { 
   Sparkles, Send, Bot, User, CheckCircle2, AlertCircle, 
   HelpCircle, FileText, ArrowRight, X 
@@ -26,6 +26,17 @@ export default function ScholarshipAICopilot({
   ]);
   const [inputQuery, setInputQuery] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // Close on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && onClose) {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
 
   const sendQuery = async (queryText: string) => {
     if (!queryText.trim() || loading) return;
@@ -63,16 +74,16 @@ export default function ScholarshipAICopilot({
   };
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden flex flex-col h-[520px]">
-      {/* Header */}
-      <div className="p-4 bg-gradient-to-r from-brand-600 to-brand-700 text-white flex items-center justify-between">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+    <div className="bg-white rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden flex flex-col h-[540px] max-h-[calc(100vh-6rem)]">
+      {/* Header with prominent Close button */}
+      <div className="p-3.5 sm:p-4 bg-gradient-to-r from-brand-600 via-indigo-600 to-brand-700 text-white flex items-center justify-between shrink-0 shadow-sm">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
             <Sparkles className="w-4 h-4 text-white" />
           </div>
-          <div>
-            <div className="text-sm font-bold font-heading">Scholarship AI Copilot</div>
-            <div className="text-[10px] text-white/80 truncate max-w-[220px]">
+          <div className="min-w-0">
+            <div className="text-sm font-bold font-heading truncate">Scholarship AI Assistant</div>
+            <div className="text-[11px] text-white/80 truncate max-w-[210px]">
               {scholarshipName || "Verified Government Guidance"}
             </div>
           </div>
@@ -81,16 +92,19 @@ export default function ScholarshipAICopilot({
           <button
             type="button"
             onClick={onClose}
-            className="p-1 rounded-full hover:bg-white/10 text-white/80 transition"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 active:scale-95 text-white transition text-xs font-bold shrink-0 ml-2 shadow-xs border border-white/20"
+            title="Close Assistant"
+            aria-label="Close Assistant"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
+            <span>Close</span>
           </button>
         )}
       </div>
 
       {/* Suggested Query Chips */}
       {scholarshipId && (
-        <div className="p-3 bg-slate-50 border-b border-slate-100 flex overflow-x-auto gap-2 scrollbar-none">
+        <div className="p-2.5 bg-slate-50 border-b border-slate-100 flex overflow-x-auto gap-2 hide-scrollbar scrollbar-none shrink-0">
           {[
             "What documents do I need?",
             "How do I apply step by step?",
@@ -101,7 +115,7 @@ export default function ScholarshipAICopilot({
               key={idx}
               type="button"
               onClick={() => sendQuery(chip)}
-              className="text-[11px] font-semibold whitespace-nowrap bg-white text-slate-700 border border-slate-200/80 hover:border-brand-300 hover:text-brand-600 px-3 py-1.5 rounded-full transition shadow-2xs"
+              className="text-[11px] font-semibold whitespace-nowrap bg-white text-slate-700 border border-slate-200/80 hover:border-brand-300 hover:text-brand-600 px-3 py-1.5 rounded-full transition shadow-2xs hover:bg-brand-50/40"
             >
               {chip}
             </button>
@@ -110,7 +124,7 @@ export default function ScholarshipAICopilot({
       )}
 
       {/* Messages Scroll Area */}
-      <div className="p-4 overflow-y-auto flex-1 space-y-4">
+      <div className="p-4 overflow-y-auto flex-1 space-y-4 custom-scrollbar">
         {messages.map((m, idx) => (
           <div
             key={idx}

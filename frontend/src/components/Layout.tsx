@@ -49,7 +49,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-[#F8FAFC] dark:bg-slate-950 transition-colors">
-      <nav className="md:w-72 bg-white dark:bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200/60 dark:border-slate-800 flex flex-col md:h-screen sticky top-0 z-50">
+      <nav className="md:w-72 bg-white dark:bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200/60 dark:border-slate-800 flex flex-col md:h-screen sticky top-0 z-30">
         <div className="p-6 md:p-8">
           <div className="flex items-center gap-3 font-bold text-slate-900 dark:text-white text-2xl tracking-tight font-heading">
             <div className="w-9 h-9 bg-gradient-to-br from-brand-600 to-brand-700 rounded-xl shadow-[0_4px_10px_rgba(37,99,235,0.3)] flex items-center justify-center">
@@ -122,7 +122,7 @@ export default function Layout() {
       </nav>
 
       <div className="flex-1 flex flex-col h-screen overflow-hidden">
-        <header className="h-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-800 flex items-center justify-between px-6 md:px-10 shrink-0 z-40 sticky top-0 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+        <header className="h-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-800 flex items-center justify-between px-6 md:px-10 shrink-0 z-20 sticky top-0 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
           <h1 className="text-xl font-bold font-heading text-slate-900 dark:text-white">{getPageTitle()}</h1>
 
           <div className="flex items-center gap-4">

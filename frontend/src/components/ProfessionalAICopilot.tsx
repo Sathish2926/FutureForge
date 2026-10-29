@@ -168,17 +168,28 @@ export default function ProfessionalAICopilot({
     }
   };
 
+  // Close on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && onClose) {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
   return (
-    <div className="bg-white rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden flex flex-col h-[560px] max-h-[85vh] transition-all">
+    <div className="bg-white rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden flex flex-col h-[560px] max-h-[calc(100vh-6rem)] transition-all">
       {/* Header (Matching Scholarship Copilot Gradient with Professional Theme) */}
-      <div className="p-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white flex items-center justify-between shrink-0 shadow-sm">
+      <div className="p-3.5 sm:p-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white flex items-center justify-between shrink-0 shadow-sm">
         <div className="flex items-center gap-2.5 min-w-0">
           <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
             <Sparkles className="w-4 h-4 text-emerald-200 animate-pulse" />
           </div>
           <div className="min-w-0">
             <div className="text-sm font-bold font-heading truncate">Career AI Copilot</div>
-            <div className="text-[11px] text-white/85 truncate max-w-[240px]">
+            <div className="text-[11px] text-white/85 truncate max-w-[210px]">
               {currentTitle} → {targetRole}
             </div>
           </div>
@@ -187,16 +198,18 @@ export default function ProfessionalAICopilot({
           <button
             type="button"
             onClick={onClose}
-            className="p-1 rounded-full hover:bg-white/20 text-white transition shrink-0"
-            title="Minimize Assistant"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 active:scale-95 text-white transition text-xs font-bold shrink-0 ml-2 shadow-xs border border-white/20"
+            title="Close Assistant"
+            aria-label="Close Assistant"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
+            <span>Close</span>
           </button>
         )}
       </div>
 
       {/* Suggested Query Chips */}
-      <div className="p-2.5 bg-slate-50 border-b border-slate-100 flex overflow-x-auto gap-1.5 scrollbar-none shrink-0">
+      <div className="p-2.5 bg-slate-50 border-b border-slate-100 flex overflow-x-auto gap-1.5 hide-scrollbar scrollbar-none shrink-0">
         {quickChips.map((chip, idx) => (
           <button
             key={idx}
@@ -210,7 +223,7 @@ export default function ProfessionalAICopilot({
       </div>
 
       {/* Messages Scroll Area */}
-      <div className="p-4 overflow-y-auto flex-1 space-y-3.5 bg-slate-50/50">
+      <div className="p-4 overflow-y-auto flex-1 space-y-3.5 bg-slate-50/50 custom-scrollbar">
         {messages.map((m, idx) => (
           <div
             key={idx}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { 
   Award, Sparkles, Search, BookmarkCheck, 
   HelpCircle, Shield, CheckCircle2, AlertCircle, RefreshCw, 
@@ -737,26 +738,29 @@ export default function Scholarships() {
       )}
 
       {/* FLOATING AI COPILOT BUTTON & DRAWER */}
-      <div className="fixed bottom-6 right-6 z-40">
-        {copilotOpen ? (
-          <div className="w-[360px] sm:w-[420px] shadow-2xl animate-fade-in">
+      {copilotOpen ? (
+        createPortal(
+          <div className="fixed bottom-6 right-6 z-[90] w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] shadow-2xl animate-fade-in">
             <ScholarshipAICopilot
               scholarshipId={copilotSch.id || selectedScholarship?.id || (recData?.results?.[0]?.scholarship?.id)}
               scholarshipName={copilotSch.name || selectedScholarship?.name || (recData?.results?.[0]?.scholarship?.name)}
               onClose={() => setCopilotOpen(false)}
             />
-          </div>
-        ) : (
+          </div>,
+          document.body
+        )
+      ) : (
+        <div className="fixed bottom-6 right-6 z-30">
           <button
             type="button"
             onClick={() => handleOpenCopilot()}
-            className="flex items-center gap-2.5 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-bold text-xs py-3 px-5 rounded-full shadow-lg hover:shadow-xl transition hover:scale-105"
+            className="flex items-center gap-2.5 bg-gradient-to-r from-brand-600 via-indigo-600 to-brand-700 text-white font-bold text-xs py-3.5 px-5 rounded-full shadow-lg hover:shadow-xl transition hover:scale-105 border border-white/20 active:scale-95"
           >
-            <Sparkles className="w-4 h-4 text-white" />
+            <Sparkles className="w-4 h-4 text-white animate-pulse" />
             <span>Scholarship AI Assistant</span>
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

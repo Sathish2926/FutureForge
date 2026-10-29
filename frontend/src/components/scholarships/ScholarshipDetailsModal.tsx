@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { 
   X, Building2, CheckCircle2, ShieldAlert, XCircle, Award, 
   Clock, ExternalLink, BookmarkPlus, ArrowUpRight, FileCheck, 
@@ -44,8 +45,11 @@ export default function ScholarshipDetailsModal({
     ? JSON.parse(scholarship.application_steps || "[]")
     : [];
 
-  return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 animate-fade-in">
+  return createPortal(
+    <div 
+      className="fixed inset-0 z-[100] bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 animate-fade-in"
+      onClick={onClose}
+    >
       <div 
         className="bg-white rounded-3xl shadow-2xl border border-slate-200/80 max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
@@ -84,7 +88,7 @@ export default function ScholarshipDetailsModal({
         </div>
 
         {/* Tab Navigation */}
-        <div className="border-b border-slate-100 px-6 md:px-8 bg-white flex overflow-x-auto scrollbar-none gap-2">
+        <div className="border-b border-slate-100 px-6 md:px-8 bg-white flex overflow-x-auto hide-scrollbar scrollbar-none gap-2 shrink-0">
           {[
             { id: "overview", label: "Overview & Match" },
             { id: "eligibility", label: "Eligibility Breakdown" },
@@ -456,6 +460,7 @@ export default function ScholarshipDetailsModal({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

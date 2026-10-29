@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import {
   Compass, CheckCircle2, Circle, Clock, BookOpen, AlertCircle,
   Briefcase, TrendingUp, Sparkles, ArrowRight, ChevronRight,
@@ -2355,9 +2356,15 @@ export default function ProfessionalCareerDna(_props: Props) {
           )}
 
           {/* POPUP MODAL: Request Personalised Career Guide */}
-          {guidanceModalOpen && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fade-in">
-              <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-5 animate-scale-in">
+          {guidanceModalOpen && createPortal(
+            <div 
+              className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fade-in"
+              onClick={() => setGuidanceModalOpen(false)}
+            >
+              <div 
+                className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-5 animate-scale-in"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
@@ -2474,7 +2481,8 @@ export default function ProfessionalCareerDna(_props: Props) {
                   </div>
                 </form>
               </div>
-            </div>
+            </div>,
+            document.body
           )}
         </div>
       )}
@@ -2586,18 +2594,21 @@ export default function ProfessionalCareerDna(_props: Props) {
         </div>
       )}
 
-      {/* FLOATING AI COPILOT BUTTON & DRAWER (EXACT SAME PATTERN AS SCHOLARSHIP AND GRADUATE) */}
-      <div className="fixed bottom-6 right-6 z-40">
-        {copilotOpen ? (
-          <div className="w-[360px] sm:w-[420px] shadow-2xl animate-fade-in">
+      {/* FLOATING AI COPILOT BUTTON & DRAWER */}
+      {copilotOpen ? (
+        createPortal(
+          <div className="fixed bottom-6 right-6 z-[90] w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] shadow-2xl animate-fade-in">
             <ProfessionalAICopilot
               profile={profile}
               activePlan={activePlan}
               onClose={() => setCopilotOpen(false)}
               onNavigateTab={(tab) => setActiveTab(tab)}
             />
-          </div>
-        ) : (
+          </div>,
+          document.body
+        )
+      ) : (
+        <div className="fixed bottom-6 right-6 z-30">
           <button
             type="button"
             onClick={() => setCopilotOpen(true)}
@@ -2607,8 +2618,8 @@ export default function ProfessionalCareerDna(_props: Props) {
             <span>Career AI Assistant</span>
             <span className="w-2 h-2 rounded-full bg-emerald-300 animate-ping" />
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

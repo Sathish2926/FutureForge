@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { api } from "../../api/client";
 import { MarksProfile, CatalogNode } from "./CatalogTypes";
 import {
@@ -226,57 +227,48 @@ export const Class10CoPilotDrawer: React.FC<Class10CoPilotDrawerProps> = ({
       )}
 
       {/* Slide-out Drawer Panel (Desktop: Right Drawer, Mobile: Bottom Sheet Overlay) */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 pointer-events-none flex justify-end">
-          {/* Backdrop on mobile */}
-          <div
-            onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-slate-900/40 backdrop-blur-xs transition-opacity duration-300 pointer-events-auto md:hidden"
-          />
+      {isOpen &&
+        createPortal(
+          <div className="fixed inset-0 z-[100] flex justify-end animate-fade-in">
+            {/* Backdrop across full screen */}
+            <div
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-slate-900/40 backdrop-blur-xs transition-opacity duration-300"
+            />
 
-          <aside
-            className={`pointer-events-auto w-full md:w-[400px] lg:w-[420px] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col transition-all duration-300 ${
-              isMinimizedMobile
-                ? "h-14 fixed bottom-0 left-0 right-0 md:relative md:h-full"
-                : "h-full fixed right-0 top-0 bottom-0"
-            }`}
-          >
-            {/* Header */}
-            <div className="px-4 py-3.5 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/90 backdrop-blur-md flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-indigo-600/10 dark:bg-indigo-400/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800">
-                  <Bot className="w-4 h-4" />
+            <aside
+              className="relative z-10 w-full md:w-[420px] lg:w-[460px] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col h-full animate-slide-left transition-all duration-300"
+            >
+              {/* Header with prominent, always-visible Close button */}
+              <div className="px-5 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-slate-900/95 backdrop-blur-md flex items-center justify-between shrink-0 shadow-xs">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <div className="w-9 h-9 rounded-xl bg-indigo-600/10 dark:bg-indigo-400/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 shrink-0 shadow-2xs">
+                    <Bot className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
+                      Pathway Co-Pilot
+                      <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 rounded border border-emerald-300 dark:border-emerald-800 shrink-0">
+                        Grounded
+                      </span>
+                    </h3>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate">Class 10 Direction & Navigation</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
-                    Pathway Co-Pilot
-                    <span className="text-[10px] uppercase font-bold px-1.5 py-0.2 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 rounded border border-emerald-300 dark:border-emerald-800">
-                      Grounded
-                    </span>
-                  </h3>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">Class 10 Direction & Navigation</p>
+
+                <div className="flex items-center gap-2 shrink-0 ml-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen(false)}
+                    className="px-3.5 py-1.5 rounded-xl bg-slate-200/90 hover:bg-slate-300 active:scale-95 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-xs flex items-center gap-1.5 transition-all shadow-xs border border-slate-300/80 dark:border-slate-700"
+                    title="Close Assistant"
+                    aria-label="Close Assistant"
+                  >
+                    <X className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+                    <span>Close</span>
+                  </button>
                 </div>
               </div>
-
-              <div className="flex items-center gap-1.5">
-                {/* Mobile Minimize Toggle */}
-                <button
-                  onClick={() => setIsMinimizedMobile(!isMinimizedMobile)}
-                  className="p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 md:hidden"
-                  title={isMinimizedMobile ? "Expand Chat" : "Show on Page (Minimize)"}
-                >
-                  {isMinimizedMobile ? <Maximize2 className="w-4 h-4" /> : <Minimize2 className="w-4 h-4" />}
-                </button>
-                <button
-                  onClick={() => setIsOpen(false)}
-                  className="px-2.5 py-1.5 rounded-xl bg-slate-200/80 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold text-xs flex items-center gap-1 transition-all border border-slate-300 dark:border-slate-700"
-                  title="Close Assistant"
-                >
-                  <X className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
-                  <span>Close</span>
-                </button>
-              </div>
-            </div>
 
             {/* If Minimized on Mobile, show compact banner */}
             {isMinimizedMobile ? (
@@ -293,7 +285,7 @@ export const Class10CoPilotDrawer: React.FC<Class10CoPilotDrawerProps> = ({
             ) : (
               <>
                 {/* Messages Scroll Area */}
-                <div className="flex-1 overflow-y-auto p-4 space-y-4">
+                <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
                   {messages.map((msg) => (
                     <div
                       key={msg.id}
@@ -393,7 +385,8 @@ export const Class10CoPilotDrawer: React.FC<Class10CoPilotDrawerProps> = ({
               </>
             )}
           </aside>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
