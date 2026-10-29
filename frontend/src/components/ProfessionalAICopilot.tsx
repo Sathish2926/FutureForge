@@ -57,14 +57,64 @@ export default function ProfessionalAICopilot({
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
-  const quickChips = [
-    "Why was this role recommended for me?",
-    "Which of my skills are transferable?",
-    `How to balance ${weeklyHours} hrs/week?`,
-    "What are my biggest skill gaps?",
-    "How should I approach a promotion?",
-    "Explain my roadmap milestones",
-  ];
+  const isDoctor =
+    currentTitle.toLowerCase().includes("doctor") ||
+    currentTitle.toLowerCase().includes("physician") ||
+    currentTitle.toLowerCase().includes("mbbs") ||
+    currentTitle.toLowerCase().includes("clinic") ||
+    currentTitle.toLowerCase().includes("medical");
+
+  const quickChips = isDoctor
+    ? [
+        "I'm currently a doctor, what can I switch to?",
+        "Which non-clinical healthcare roles fit me?",
+        "Can I switch to clinical research (CRA) or MSL?",
+        "Which of my clinical skills are transferable?",
+        `How to balance ${weeklyHours} hrs/week?`,
+        "Explain my transition roadmap",
+      ]
+    : [
+        "What can I switch my career to?",
+        "Why was this role recommended for me?",
+        "Which of my skills are transferable?",
+        `How to balance ${weeklyHours} hrs/week?`,
+        "What are my biggest skill gaps?",
+        "How should I approach a promotion?",
+        "Explain my roadmap milestones",
+      ];
+
+  const renderFormattedText = (rawText: string) => {
+    const paragraphs = rawText.split("\n\n");
+    return paragraphs.map((para, pIdx) => {
+      const lines = para.split("\n");
+      return (
+        <div key={pIdx} className={pIdx > 0 ? "mt-2" : ""}>
+          {lines.map((line, lIdx) => {
+            const parts = line.split(/(\*\*.*?\*\*)/g);
+            const isBullet = line.trim().startsWith("- ") || line.trim().startsWith("• ");
+            const isNumber = /^\d+\.\s/.test(line.trim());
+            return (
+              <div
+                key={lIdx}
+                className={`${isBullet || isNumber ? "pl-2 py-0.5" : ""} leading-relaxed`}
+              >
+                {parts.map((part, partIdx) => {
+                  if (part.startsWith("**") && part.endsWith("**")) {
+                    return (
+                      <strong key={partIdx} className="font-bold text-slate-900">
+                        {part.slice(2, -2)}
+                      </strong>
+                    );
+                  }
+                  return <span key={partIdx}>{part}</span>;
+                })}
+              </div>
+            );
+          })}
+        </div>
+      );
+    });
+  };
 
   const sendQuery = async (queryText: string) => {
     if (!queryText.trim() || loading) return;
@@ -84,7 +134,7 @@ export default function ProfessionalAICopilot({
         quickAction = { label: "Open Roadmap", tab: "overview" };
       } else if (lower.includes("skill gap") || lower.includes("missing skills")) {
         quickAction = { label: "Open Skill Gap Analyzer", tab: "skill_gap" };
-      } else if (lower.includes("recommend") || lower.includes("other career") || lower.includes("pathway")) {
+      } else if (lower.includes("recommend") || lower.includes("other career") || lower.includes("pathway") || lower.includes("switch")) {
         quickAction = { label: "Explore Recommendations", tab: "explore" };
       } else if (lower.includes("resource") || lower.includes("course") || lower.includes("material")) {
         quickAction = { label: "Browse Learning Resources", tab: "resources" };
@@ -180,10 +230,10 @@ export default function ProfessionalAICopilot({
               className={`p-3.5 rounded-2xl text-xs leading-relaxed max-w-[85%] ${
                 m.sender === "user"
                   ? "bg-emerald-600 text-white rounded-tr-none shadow-sm"
-                  : "bg-white border border-slate-200/90 text-slate-800 rounded-tl-none shadow-xs whitespace-pre-line"
+                  : "bg-white border border-slate-200/90 text-slate-800 rounded-tl-none shadow-xs"
               }`}
             >
-              <div>{m.text}</div>
+              {m.sender === "user" ? <div>{m.text}</div> : renderFormattedText(m.text)}
 
               {/* Action Button inside Bot Message */}
               {m.quickAction && onNavigateTab && (

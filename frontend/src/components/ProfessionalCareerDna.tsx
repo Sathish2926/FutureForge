@@ -4,7 +4,7 @@ import {
   Briefcase, TrendingUp, Sparkles, ArrowRight, ChevronRight,
   ExternalLink, RotateCcw, Brain, Check, Filter, MessageSquare,
   FileText, Award, Layers, DollarSign, Target, ChevronDown, ChevronUp, Send,
-  HelpCircle, Info
+  HelpCircle, Info, Search, Plus, Bell, X
 } from "lucide-react";
 import { api } from "../api/client";
 import ProfessionalAICopilot from "./ProfessionalAICopilot";
@@ -23,6 +23,22 @@ interface Props {
 }
 
 const SKILLS_BY_DOMAIN: Record<string, string[]> = {
+  "Healthcare & Medicine": [
+    "Clinical Diagnosis & Patient Assessment", "Medical Terminology & Pharmacology",
+    "Evidence-Based Clinical Decision Making", "ICH-GCP & Clinical Protocols",
+    "Patient Safety & Care Ethics", "Adverse Event & Drug Safety Reporting",
+    "Clinical Data & Medical Records (EHR)", "Health Systems & Hospital Operations",
+    "Medical Writing & Research Documentation", "Public Health Epidemiology",
+  ],
+  "Engineering & Technical": [
+    "Engineering Design & CAD", "Finite Element Analysis (FEA)", "PLC Programming & Automation",
+    "Thermodynamics & Heat Transfer", "Quality Assurance & Six Sigma", "Root Cause Analysis (RCA)",
+    "Lean Manufacturing", "Robotics & Motion Control",
+  ],
+  "Education & Training": [
+    "Curriculum Design & Pedagogy", "Classroom Management", "Instructional Design",
+    "Student Assessment & Rubrics", "Educational Technology Integration", "Special Education Support",
+  ],
   "Marketing & Growth": [
     "SEO & Organic Growth", "Content Marketing", "Google Analytics / GA4",
     "Performance Marketing", "Paid Advertising / Meta Ads", "Conversion Rate Optimization (CRO)",
@@ -55,12 +71,23 @@ const SKILLS_BY_DOMAIN: Record<string, string[]> = {
   "Finance & Accounting": [
     "Financial Reporting", "Bookkeeping", "Financial Modeling",
   ],
+  "Operations & Supply Chain": [
+    "Supply Chain Management", "Inventory Control & Demand Forecasting",
+    "Vendor Management", "Logistics & Fleet Operations", "Warehouse Management",
+  ],
 };
 
 // Flat list for backward compatibility
 const COMMON_SKILLS = Object.values(SKILLS_BY_DOMAIN).flat();
 
 const TOOLS_BY_DOMAIN: Record<string, string[]> = {
+  "Healthcare & Clinical Tools": [
+    "Electronic Health Records (EHR / Epic / Cerner)", "MedDRA Medical Dictionary",
+    "ICD-10 / CPT Coding", "Clinical Trial Management Systems (CTMS)", "SPSS / Biostatistics Tools",
+  ],
+  "Engineering & CAD Tools": [
+    "AutoCAD", "SolidWorks", "MATLAB / Simulink", "ANSYS", "Siemens TIA Portal",
+  ],
   "Marketing & Analytics": [
     "Google Analytics 4", "Google Ads", "Meta Ads Manager", "Google Search Console",
     "Semrush / Ahrefs", "HubSpot CRM", "Mailchimp",
@@ -80,6 +107,9 @@ const TOOLS_BY_DOMAIN: Record<string, string[]> = {
   ],
   "Infrastructure": [
     "Linux / Bash", "AWS", "Google Cloud",
+  ],
+  "Education & LMS": [
+    "Google Classroom", "Canvas LMS", "Moodle", "Articulate 360",
   ],
 };
 
@@ -123,8 +153,21 @@ export default function ProfessionalCareerDna(_props: Props) {
   const [nlpParsing, setNlpParsing] = useState(false);
   const [nlpMessage, setNlpMessage] = useState<string | null>(null);
 
-  // Recommendations Category Filter
+  // Recommendations Category Filter & Search
   const [selectedRecCategory, setSelectedRecCategory] = useState<string>("All");
+  const [recSearchQuery, setRecSearchQuery] = useState<string>("");
+
+  // Guidance Request Modal & State (For uncatalogued/requested careers)
+  const [guidanceModalOpen, setGuidanceModalOpen] = useState(false);
+  const [guidanceSubmitting, setGuidanceSubmitting] = useState(false);
+  const [guidanceSuccessMsg, setGuidanceSuccessMsg] = useState<string | null>(null);
+  const [guidanceForm, setGuidanceForm] = useState({
+    career_topic: "",
+    category: "Career Transition",
+    target_timeline: "3 to 6 months",
+    reason: "",
+  });
+  const [myGuidanceRequests, setMyGuidanceRequests] = useState<any[]>([]);
 
   // Onboarding Form Wizard State
   const [formStep, setFormStep] = useState(1);
@@ -235,11 +278,52 @@ export default function ProfessionalCareerDna(_props: Props) {
       // Preload verified resources
       const resList = await api.getProfessionalResources().catch(() => []);
       setResources(resList || []);
+
+      // Load existing personalized guidance requests
+      const reqList = await api.listGuidanceRequests().catch(() => []);
+      setMyGuidanceRequests(reqList || []);
     } catch (err: any) {
       console.error("Error loading professional planner data:", err);
       setErrorMsg("Failed to load your career profile. Please check your connection and try again.");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleGuidanceSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!guidanceForm.career_topic.trim()) {
+      alert("Please specify the career title or specialization you need guidance for.");
+      return;
+    }
+    setGuidanceSubmitting(true);
+    setGuidanceSuccessMsg(null);
+    try {
+      await api.submitGuidanceRequest({
+        career_topic: guidanceForm.career_topic.trim(),
+        category: guidanceForm.category,
+        reason: guidanceForm.reason,
+        user_context: {
+          current_job_title: profile?.current_job_title || formData.current_job_title,
+          current_industry: profile?.current_industry || formData.current_industry,
+          years_experience: profile?.years_experience ?? formData.years_experience,
+          target_timeline: guidanceForm.target_timeline,
+          weekly_learning_hours: profile?.weekly_learning_hours ?? formData.weekly_learning_hours,
+        },
+      });
+      const updatedReqs = await api.listGuidanceRequests().catch(() => []);
+      setMyGuidanceRequests(updatedReqs || []);
+      setGuidanceSuccessMsg("Once your personalised guide is ready you will get notified.");
+      setGuidanceForm({
+        career_topic: "",
+        category: "Career Transition",
+        target_timeline: "3 to 6 months",
+        reason: "",
+      });
+    } catch (err: any) {
+      alert(err.message || "Failed to submit career guide request.");
+    } finally {
+      setGuidanceSubmitting(false);
     }
   };
 
@@ -1927,163 +2011,471 @@ export default function ProfessionalCareerDna(_props: Props) {
       {/* =====================================================================
           TAB 3: CAREER OPTIONS RECOMMENDATIONS
           ===================================================================== */}
+      {/* =====================================================================
+          TAB 3: CAREER OPTIONS RECOMMENDATIONS & PERSONALIZED REQUESTS
+          ===================================================================== */}
       {activeTab === "explore" && (
         <div className="space-y-6">
+          {/* Header Card */}
           <div className="card p-6 border-slate-200 bg-white">
-            <h2 className="text-xl font-bold font-heading text-slate-900">
-              Alternative Career Recommendations (Explore Other Pathways)
-            </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Curated adjacent and transition pathways based on your profile ({profile?.current_job_title}, {profile?.years_experience} years in {profile?.current_industry}).
-              Prioritizes realistic adjacent growth paths before major career transitions.
-            </p>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h2 className="text-xl font-bold font-heading text-slate-900">
+                  Alternative Career Recommendations (Explore Other Pathways)
+                </h2>
+                <p className="text-sm text-slate-500 mt-1">
+                  Curated adjacent and transition pathways based on your profile ({profile?.current_job_title}, {profile?.years_experience} years in {profile?.current_industry}).
+                  Prioritizes realistic adjacent growth paths before major career transitions.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setGuidanceSuccessMsg(null);
+                  setGuidanceModalOpen(true);
+                }}
+                className="btn-primary bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl flex items-center gap-2 shrink-0 shadow-sm transition hover:scale-102"
+              >
+                <Plus className="w-4 h-4" /> Request Custom Career Guide
+              </button>
+            </div>
+
             <div className="mt-3 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center gap-1.5">
               <Info className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span>
-                Transparent Scoring: Match scores evaluate confirmed skills (50%), domain experience (25%), career goals (15%), and tools (10%). They are not hiring probabilities.
+                Transparent Scoring: Match scores evaluate confirmed skills (50%), domain experience (25%), career goals (15%), and tools (10%). They reflect curriculum alignment, not hiring probabilities.
               </span>
             </div>
 
-            {/* Category Filter Chips */}
-            <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 flex-wrap">
-              <span className="text-xs font-bold text-slate-700 mr-1">Pathway Category:</span>
-              {[
-                { id: "All", label: "All Pathways" },
-                { id: "Closely Related", label: "A. Closely Related" },
-                { id: "Career Growth", label: "B. Career Growth" },
-                { id: "Transition", label: "C. Career Transition" },
-              ].map((cat) => (
-                <button
-                  key={cat.id}
-                  type="button"
-                  onClick={() => setSelectedRecCategory(cat.id)}
-                  className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
-                    selectedRecCategory === cat.id
-                      ? "bg-emerald-600 text-white shadow-sm"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
+            {/* Search and Filters Bar */}
+            <div className="mt-5 pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              {/* Category Filter Chips */}
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <span className="text-xs font-bold text-slate-700 mr-1 flex items-center gap-1">
+                  <Filter className="w-3.5 h-3.5 text-slate-400" /> Filter:
+                </span>
+                {[
+                  { id: "All", label: "All Pathways" },
+                  { id: "Closely Related", label: "A. Closely Related" },
+                  { id: "Career Growth", label: "B. Career Growth" },
+                  { id: "Transition", label: "C. Career Transition" },
+                ].map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => setSelectedRecCategory(cat.id)}
+                    className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                      selectedRecCategory === cat.id
+                        ? "bg-emerald-600 text-white shadow-sm"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Live Search Input */}
+              <div className="relative min-w-[240px]">
+                <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  placeholder="Search roles or skills..."
+                  value={recSearchQuery}
+                  onChange={(e) => setRecSearchQuery(e.target.value)}
+                  className="input pl-9 pr-7 py-1.5 text-xs w-full bg-slate-50 border-slate-200 focus:bg-white focus:border-emerald-500"
+                />
+                {recSearchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setRecSearchQuery("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {(selectedRecCategory === "All"
-              ? recommendations
-              : recommendations.filter((r) =>
-                  (r.recommendation_category || "").toLowerCase().includes(selectedRecCategory.toLowerCase()) ||
-                  (r.move_type || "").toLowerCase().includes(selectedRecCategory.toLowerCase())
-                )
-            ).map((rec) => (
-              <div key={rec.slug} className="card p-6 border-slate-200 hover:shadow-md transition-all flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <div className="flex items-center gap-1.5 flex-wrap mb-1">
-                        <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
-                          {rec.recommendation_category || rec.move_type}
-                        </span>
-                        {rec.feasibility && (
-                          <span
-                            className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
-                              rec.feasibility === "High"
-                                ? "bg-green-100 text-green-800"
-                                : rec.feasibility === "Medium"
-                                ? "bg-amber-100 text-amber-800"
-                                : "bg-slate-100 text-slate-700"
-                            }`}
-                          >
-                            {rec.feasibility} Feasibility
-                          </span>
-                        )}
-                        {rec.estimated_duration && (
-                          <span className="text-[10px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
-                            Est. {rec.estimated_duration}
-                          </span>
-                        )}
-                      </div>
-                      <h3 className="text-lg font-bold font-heading text-slate-900 mt-1">
-                        {rec.role_title}
-                      </h3>
-                      <p className="text-xs text-slate-400">{rec.industry}</p>
-                    </div>
-                    <span className="text-base font-black font-heading text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-xl shrink-0">
-                      {rec.match_score}% Match
-                    </span>
-                  </div>
-
-                  {/* 4-Part Transparent Score Breakdown */}
-                  {rec.score_breakdown && (
-                    <div className="grid grid-cols-4 gap-1.5 text-[10px] bg-slate-50 p-2 rounded-lg border border-slate-200 text-center">
-                      <div>
-                        <span className="text-slate-400 block">Skills</span>
-                        <strong className="text-slate-800">{rec.score_breakdown.skills_score}/50</strong>
-                      </div>
-                      <div>
-                        <span className="text-slate-400 block">Exp & Ind</span>
-                        <strong className="text-slate-800">{rec.score_breakdown.experience_score}/25</strong>
-                      </div>
-                      <div>
-                        <span className="text-slate-400 block">Goals</span>
-                        <strong className="text-slate-800">{rec.score_breakdown.goal_alignment_score || rec.score_breakdown.goals_score}/15</strong>
-                      </div>
-                      <div>
-                        <span className="text-slate-400 block">Tools</span>
-                        <strong className="text-slate-800">{rec.score_breakdown.tools_score || rec.score_breakdown.tools_quals_score}/10</strong>
-                      </div>
-                    </div>
-                  )}
-
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    {rec.description}
-                  </p>
-
-                  <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs space-y-1.5">
-                    <div>
-                      <strong className="text-slate-800">Why it fits you: </strong>
-                      <span className="text-slate-600">{rec.why_it_fits}</span>
-                    </div>
-                    <div>
-                      <strong className="text-slate-800">Transferable Skills: </strong>
-                      {rec.transferable_skills && rec.transferable_skills.length > 0 ? (
-                        <span className="text-emerald-700 font-medium">{rec.transferable_skills.join(", ")}</span>
-                      ) : (
-                        <span className="text-slate-400 italic">No confirmed transferable skills in profile</span>
-                      )}
-                    </div>
-                    <div>
-                      <strong className="text-slate-800">Skills to Build: </strong>
-                      {rec.skills_to_develop && rec.skills_to_develop.length > 0 ? (
-                        <span className="text-amber-700 font-medium">{rec.skills_to_develop.join(", ")}</span>
-                      ) : (
-                        <span className="text-slate-400 italic">Curated role prerequisites</span>
-                      )}
-                    </div>
-                    {rec.source_references && rec.source_references.length > 0 && (
-                      <div className="pt-1 text-[10px] text-slate-400 border-t border-slate-200/60 flex items-center justify-between">
-                        <span>Verified: {rec.last_verified || "2026-03-15"}</span>
-                        <span>Source: {rec.source_references.map((s: any) => s.source || s.name || "Verified KB").join(", ")}</span>
-                      </div>
-                    )}
-                  </div>
+          {/* Prompt Banner: Can't Find Your Desired Career */}
+          <div className="card p-5 bg-gradient-to-r from-emerald-950 via-slate-900 to-teal-950 text-white border-0 shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-start gap-3.5">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center shrink-0">
+                <Sparkles className="w-5 h-5 text-emerald-300 animate-pulse" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-0.5">
+                  <h3 className="text-sm font-bold font-heading text-white">
+                    Can't find your desired career or target role?
+                  </h3>
+                  <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-400/30">
+                    Personalized Guidance
+                  </span>
                 </div>
+                <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
+                  If you have a specific specialization in mind, request a custom guide. Our career research team will verify the role, structure your roadmap, and <strong className="text-emerald-300">once your personalised guide is ready you will get notified.</strong>
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                setGuidanceSuccessMsg(null);
+                setGuidanceModalOpen(true);
+              }}
+              className="btn-primary bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-xl shadow-md transition flex items-center gap-1.5 shrink-0"
+            >
+              <Plus className="w-4 h-4" /> Request Personalised Guide
+            </button>
+          </div>
 
-                <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-[11px] text-slate-400">Preserves existing plan in saved history</span>
-                  <button
-                    type="button"
-                    disabled={actionLoading}
-                    onClick={() => handleSelectRecommendedRole(rec.role_title)}
-                    className="btn-primary text-xs px-4 py-2 flex items-center gap-1.5"
-                  >
-                    Select Role & Build Roadmap <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+          {/* Success Notification Alert */}
+          {guidanceSuccessMsg && (
+            <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs flex items-center justify-between gap-3 shadow-xs animate-fade-in">
+              <div className="flex items-center gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+                <div>
+                  <strong className="font-bold text-emerald-950 block">Request Successfully Recorded!</strong>
+                  <span>{guidanceSuccessMsg}</span>
                 </div>
               </div>
-            ))}
-          </div>
+              <button
+                type="button"
+                onClick={() => setGuidanceSuccessMsg(null)}
+                className="text-emerald-700 hover:text-emerald-900 p-1 rounded"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          )}
+
+          {/* Filtered Recommendations Grid */}
+          {(() => {
+            const filteredRecs = recommendations.filter((r) => {
+              const matchesCat =
+                selectedRecCategory === "All" ||
+                (r.recommendation_category || "").toLowerCase().includes(selectedRecCategory.toLowerCase()) ||
+                (r.move_type || "").toLowerCase().includes(selectedRecCategory.toLowerCase());
+              const q = recSearchQuery.trim().toLowerCase();
+              const matchesQuery =
+                !q ||
+                (r.role_title || "").toLowerCase().includes(q) ||
+                (r.industry || "").toLowerCase().includes(q) ||
+                (r.description || "").toLowerCase().includes(q) ||
+                (r.skills_to_develop || []).some((s: string) => s.toLowerCase().includes(q)) ||
+                (r.transferable_skills || []).some((s: string) => s.toLowerCase().includes(q));
+              return matchesCat && matchesQuery;
+            });
+
+            if (filteredRecs.length === 0) {
+              return (
+                <div className="card p-10 text-center border-slate-200 bg-white space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 mx-auto flex items-center justify-center">
+                    <HelpCircle className="w-6 h-6" />
+                  </div>
+                  <div className="max-w-md mx-auto">
+                    <h3 className="font-bold text-slate-900 text-base font-heading">
+                      No exact pathways found {recSearchQuery ? `for "${recSearchQuery}"` : "in this category"}
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-1">
+                      Looking for a career not currently in the catalog? Request a custom curriculum roadmap and our team will prepare it for you. Once your personalised guide is ready you will get notified.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (recSearchQuery) {
+                        setGuidanceForm((prev) => ({ ...prev, career_topic: recSearchQuery }));
+                      }
+                      setGuidanceModalOpen(true);
+                    }}
+                    className="btn-primary text-xs px-5 py-2.5 mx-auto flex items-center gap-2"
+                  >
+                    <Plus className="w-4 h-4" /> Request Personalised Guide for "{recSearchQuery || 'Your Target Role'}"
+                  </button>
+                </div>
+              );
+            }
+
+            return (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {filteredRecs.map((rec) => (
+                  <div key={rec.slug} className="card p-6 border-slate-200 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div className="space-y-3">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
+                              {rec.recommendation_category || rec.move_type}
+                            </span>
+                            {rec.feasibility && (
+                              <span
+                                className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
+                                  rec.feasibility === "High"
+                                    ? "bg-green-100 text-green-800"
+                                    : rec.feasibility === "Medium"
+                                    ? "bg-amber-100 text-amber-800"
+                                    : "bg-slate-100 text-slate-700"
+                                }`}
+                              >
+                                {rec.feasibility} Feasibility
+                              </span>
+                            )}
+                            {rec.estimated_duration && (
+                              <span className="text-[10px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                                Est. {rec.estimated_duration}
+                              </span>
+                            )}
+                          </div>
+                          <h3 className="text-lg font-bold font-heading text-slate-900 mt-1">
+                            {rec.role_title}
+                          </h3>
+                          <p className="text-xs text-slate-400">{rec.industry}</p>
+                        </div>
+                        <span className="text-base font-black font-heading text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-xl shrink-0">
+                          {rec.match_score}% Match
+                        </span>
+                      </div>
+
+                      {/* 4-Part Transparent Score Breakdown */}
+                      {rec.score_breakdown && (
+                        <div className="grid grid-cols-4 gap-1.5 text-[10px] bg-slate-50 p-2 rounded-lg border border-slate-200 text-center">
+                          <div>
+                            <span className="text-slate-400 block">Skills</span>
+                            <strong className="text-slate-800">{rec.score_breakdown.skills_score}/50</strong>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block">Exp & Ind</span>
+                            <strong className="text-slate-800">{rec.score_breakdown.experience_score}/25</strong>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block">Goals</span>
+                            <strong className="text-slate-800">{rec.score_breakdown.goal_alignment_score || rec.score_breakdown.goals_score}/15</strong>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block">Tools</span>
+                            <strong className="text-slate-800">{rec.score_breakdown.tools_score || rec.score_breakdown.tools_quals_score}/10</strong>
+                          </div>
+                        </div>
+                      )}
+
+                      <p className="text-xs text-slate-600 leading-relaxed">
+                        {rec.description}
+                      </p>
+
+                      <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs space-y-1.5">
+                        <div>
+                          <strong className="text-slate-800">Why it fits you: </strong>
+                          <span className="text-slate-600">{rec.why_it_fits}</span>
+                        </div>
+                        <div>
+                          <strong className="text-slate-800">Transferable Skills: </strong>
+                          {rec.transferable_skills && rec.transferable_skills.length > 0 ? (
+                            <span className="text-emerald-700 font-medium">{rec.transferable_skills.join(", ")}</span>
+                          ) : (
+                            <span className="text-slate-400 italic">No confirmed transferable skills in profile</span>
+                          )}
+                        </div>
+                        <div>
+                          <strong className="text-slate-800">Skills to Build: </strong>
+                          {rec.skills_to_develop && rec.skills_to_develop.length > 0 ? (
+                            <span className="text-amber-700 font-medium">{rec.skills_to_develop.join(", ")}</span>
+                          ) : (
+                            <span className="text-slate-400 italic">Curated role prerequisites</span>
+                          )}
+                        </div>
+                        {rec.source_references && rec.source_references.length > 0 && (
+                          <div className="pt-1 text-[10px] text-slate-400 border-t border-slate-200/60 flex items-center justify-between">
+                            <span>Verified: {rec.last_verified || "2026-10"}</span>
+                            <span>Source: {rec.source_references.map((s: any) => s.source || s.name || s.source_name || "Verified KB").join(", ")}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-[11px] text-slate-400">Preserves existing plan in saved history</span>
+                      <button
+                        type="button"
+                        disabled={actionLoading}
+                        onClick={() => handleSelectRecommendedRole(rec.role_title)}
+                        className="btn-primary text-xs px-4 py-2 flex items-center gap-1.5"
+                      >
+                        Select Role & Build Roadmap <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
+
+          {/* User Submitted Guidance Requests Tracker Section */}
+          {myGuidanceRequests && myGuidanceRequests.length > 0 && (
+            <div className="card p-6 border-slate-200 bg-white space-y-4 mt-8">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Bell className="w-4 h-4 text-emerald-600" />
+                  <h3 className="font-bold font-heading text-slate-900 text-sm">
+                    Your Personalised Career Guide Requests ({myGuidanceRequests.length})
+                  </h3>
+                </div>
+                <span className="text-[11px] text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                  Active Notifications Enabled
+                </span>
+              </div>
+
+              <div className="space-y-3">
+                {myGuidanceRequests.map((req) => (
+                  <div key={req.id} className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <strong className="text-sm font-bold text-slate-900 font-heading">{req.career_topic}</strong>
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">
+                          {req.status === "pending" ? "Expert Review In Progress" : req.status}
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-600">
+                        {req.reason || `Personalized curriculum request for transitioning into ${req.career_topic}.`}
+                      </p>
+                    </div>
+                    <div className="text-left sm:text-right shrink-0">
+                      <span className="text-[11px] text-emerald-700 font-semibold block">
+                        ✓ Once your personalised guide is ready you will get notified
+                      </span>
+                      <span className="text-[10px] text-slate-400">
+                        Ref: {req.request_id || `#REQ-${req.id}`}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* POPUP MODAL: Request Personalised Career Guide */}
+          {guidanceModalOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fade-in">
+              <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-5 animate-scale-in">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                      <Sparkles className="w-5 h-5 text-emerald-600" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-bold font-heading text-slate-900">
+                        Request a Personalised Career Guide
+                      </h3>
+                      <p className="text-xs text-slate-500 mt-0.5">
+                        Tell us which career or specialization you want to switch or grow into.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setGuidanceModalOpen(false)}
+                    className="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
+
+                <div className="p-3 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs text-emerald-950 flex items-start gap-2">
+                  <Info className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
+                  <span>
+                    Our curriculum research experts curate verified competencies and learning paths. <strong className="text-emerald-900 font-bold">Once your personalised guide is ready you will get notified.</strong>
+                  </span>
+                </div>
+
+                <form onSubmit={handleGuidanceSubmit} className="space-y-4">
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                      Desired Career Role or Specialization *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Clinical Trial Specialist, Health-Tech AI Lead, Public Health Officer"
+                      value={guidanceForm.career_topic}
+                      onChange={(e) => setGuidanceForm({ ...guidanceForm, career_topic: e.target.value })}
+                      className="input w-full text-xs"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                        Pathway Category
+                      </label>
+                      <select
+                        value={guidanceForm.category}
+                        onChange={(e) => setGuidanceForm({ ...guidanceForm, category: e.target.value })}
+                        className="input w-full text-xs"
+                      >
+                        <option value="Career Transition">Career Transition</option>
+                        <option value="Closely Related">Closely Related Move</option>
+                        <option value="Career Advancement">Career Advancement / Promotion</option>
+                        <option value="Emerging Domain">Emerging Domain / Specialization</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                        Target Timeline
+                      </label>
+                      <select
+                        value={guidanceForm.target_timeline}
+                        onChange={(e) => setGuidanceForm({ ...guidanceForm, target_timeline: e.target.value })}
+                        className="input w-full text-xs"
+                      >
+                        <option value="3 to 6 months">3 to 6 months</option>
+                        <option value="6 to 12 months">6 to 12 months</option>
+                        <option value="1 to 2 years">1 to 2 years</option>
+                        <option value="Flexible">Flexible / Ongoing</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                      Background Context or Specific Transition Questions
+                    </label>
+                    <textarea
+                      rows={3}
+                      placeholder="Share your current domain or specific requirements (e.g. 'I am currently a doctor with 2 years clinical experience and want to switch to a non-bedside role...')"
+                      value={guidanceForm.reason}
+                      onChange={(e) => setGuidanceForm({ ...guidanceForm, reason: e.target.value })}
+                      className="input w-full text-xs"
+                    />
+                  </div>
+
+                  <div className="pt-2 flex items-center justify-end gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setGuidanceModalOpen(false)}
+                      className="btn-ghost text-xs"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      disabled={guidanceSubmitting}
+                      className="btn-primary text-xs px-5 py-2 flex items-center gap-1.5"
+                    >
+                      {guidanceSubmitting ? (
+                        <>Submitting Request...</>
+                      ) : (
+                        <>
+                          <Send className="w-3.5 h-3.5" /> Submit & Get Notified
+                        </>
+                      )}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
